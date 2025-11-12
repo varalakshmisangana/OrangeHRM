@@ -21,15 +21,13 @@ jobs:
       # Step 1: Fix PowerShell script execution policy (for Windows only)
       - name: Allow PowerShell scripts (Windows only)
         if: runner.os == 'Windows'
-        shell: powershell
-        run: |
-          Write-Host "Adjusting PowerShell execution policy for this process..."
-          Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
+        shell: cmd
+        run: powershell -ExecutionPolicy Bypass -Command "Write-Host 'Adjusting PowerShell execution policy for this process...'"
 
       # Step 2: Show trigger and OS info
       - name: Display Trigger and Runner Info
         shell: powershell
-        run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
+        run: powershell -ExecutionPolicy Bypass -Command "Write-Host 'Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}.'"
 
       # Step 3: Run Eggplant DAI test
       - name: Eggplant Runner
