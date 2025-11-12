@@ -14,7 +14,7 @@ jobs:
       max-parallel: 1 # To set the maximum number of jobs that can run simultaneously 
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest] # Operating support by Eggplant DAI GitHub Action
-    runs-on: ${{ matrix.os }} # Provide OS matrix
+    runs-on: self-hosted
     name: Run Test Configuration
     steps:
       - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
