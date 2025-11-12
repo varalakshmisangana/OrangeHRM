@@ -25,19 +25,19 @@ jobs:
         shell: cmd
         run: powershell -ExecutionPolicy Bypass -Command "Write-Host 'Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}.'"
         
-      # Step 2: Debugging Step - Print out variables
-      - name: Debugging: Print Input Variables
+      # Step 2: Debugging Step - Print out variables (Including GitHub secrets)
+      - name: Debugging
         run: |
           echo "Server URL: ${{ secrets.SERVER_URL }}"
           echo "Test Config ID: ${{ secrets.TEST_CONFIG_ID }}"
           echo "Client ID: ${{ secrets.CLIENT_ID }}"
           echo "Client Secret: ${{ secrets.CLIENT_SECRET }}"
-
+        
       # Step 3: Run Eggplant DAI Test
       - name: Eggplant Runner
         uses: keysight-eggplant/eggplant-github-action@v1.0.19
         with:
-          serverURL: "http://varalakshmi.ideabytes.com:8000"  # Adjust as needed
-          testConfigID: "b38c5feb-8695-4a7d-95f9-dea9487ffe74"  # Adjust as needed
-          clientID: "client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62"  # Adjust as needed
-          clientSecret: "uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB"  # Adjust as needed
+          serverURL: ${{ secrets.SERVER_URL }}  # Use secrets for sensitive data
+          testConfigID: ${{ secrets.TEST_CONFIG_ID }}  # Use secrets for sensitive data
+          clientID: ${{ secrets.CLIENT_ID }}  # Use secrets for sensitive data
+          clientSecret: ${{ secrets.CLIENT_SECRET }}  # Use secrets for sensitive data
