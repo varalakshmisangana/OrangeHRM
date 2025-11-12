@@ -1,6 +1,5 @@
 name: "Run Eggplant DAI Test"
 
-# Triggers
 on:
   push:
     branches:
@@ -19,14 +18,17 @@ jobs:
     runs-on: self-hosted
     name: Run Test Configuration
     steps:
-      - name: Display Trigger Info
-        shell: ${{ matrix.os == 'windows-latest' && 'pwsh' || 'bash' }}
+      - name: Display Trigger Info (Windows)
+        if: matrix.os == 'windows-latest'
+        shell: pwsh
         run: |
-          if [[ "${{ matrix.os }}" == "windows-latest" ]]; then
-            Write-Host "Trigger event: $($env:GITHUB_EVENT_NAME). Runner OS: $($env:RUNNER_OS)"
-          else
-            echo "Trigger event: $GITHUB_EVENT_NAME. Runner OS: $RUNNER_OS"
-          fi
+          Write-Host "Trigger event: $($env:GITHUB_EVENT_NAME). Runner OS: $($env:RUNNER_OS)"
+
+      - name: Display Trigger Info (Linux/macOS)
+        if: matrix.os != 'windows-latest'
+        shell: bash
+        run: |
+          echo "Trigger event: $GITHUB_EVENT_NAME. Runner OS: $RUNNER_OS"
 
       - name: Eggplant Runner
         uses: keysight-eggplant/eggplant-github-action@v1.0.19
