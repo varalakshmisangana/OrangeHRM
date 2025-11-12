@@ -7,36 +7,21 @@ on:
   pull_request:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
   Run-DAI-Test-Configuration:
-    strategy:
-      max-parallel: 1
+    strategy: # Optional configuration by using matrix strategy
+      max-parallel: 1 # To set the maximum number of jobs that can run simultaneously 
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest, windows-latest, macos-latest] # Operating support by Eggplant DAI GitHub Action
     runs-on: self-hosted
     name: Run Test Configuration
     steps:
-      - name: Display Trigger Info
-        run: |
-          if [[ "${{ runner.os }}" == "Windows" ]]; then
-            Write-Host "Trigger event: $($env:GITHUB_EVENT_NAME). Runner OS: $($env:RUNNER_OS)"
-          else
-            echo "Trigger event: $GITHUB_EVENT_NAME. Runner OS: $RUNNER_OS"
-          fi
-        shell: pwsh
-        if: runner.os == 'Windows'
-
-      - name: Display Trigger Info (Linux/macOS)
-        run: echo "Trigger event: $GITHUB_EVENT_NAME. Runner OS: $RUNNER_OS"
-        shell: bash
-        if: runner.os != 'Windows'
-
+      - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
       - name: Eggplant Runner
         uses: keysight-eggplant/eggplant-github-action@v1.0.19
         with:
-          serverURL: "http://varalakshmi.ideabytes.com:8000"
-          testConfigID: "b38c5feb-8695-4a7d-95f9-dea9487ffe74"
-          clientID: "client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62"
-          clientSecret: "uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB"
+          serverURL: "http://varalakshmi.ideabytes.com:8000" # Required. Details below
+          testConfigID: "b38c5feb-8695-4a7d-95f9-dea9487ffe74" # Required. Details below
+          clientID: "client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62" # Required. Details below
+          clientSecret: "uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB" # Required
