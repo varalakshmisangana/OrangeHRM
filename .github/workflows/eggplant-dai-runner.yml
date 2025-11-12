@@ -10,7 +10,7 @@ on:
 
 jobs:
   Run-Test-Configuration:
-    runs-on: self-hosted  # Use a self-hosted runner
+    runs-on: VARALAKSHMI
 
     steps:
       - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
