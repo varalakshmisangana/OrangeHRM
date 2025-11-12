@@ -33,7 +33,7 @@ jobs:
           echo "Runner OS: ${{ runner.os }}"
 
       # Step 2: Debugging - Print Eggplant Input Variables
-      - name: Debugging: Print Eggplant Inputs
+      - name: Debugging Print Eggplant Inputs
         run: |
           echo "Server URL: http://varalakshmi.ideabytes.com:8000"
           echo "Test Config ID: b38c5feb-8695-4a7d-95f9-dea9487ffe74"
