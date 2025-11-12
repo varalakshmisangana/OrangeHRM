@@ -18,21 +18,21 @@ jobs:
     runs-on: self-hosted
     name: Run Test Configuration
     steps:
-      # Step for Windows
-      - name: Display Trigger Info (Windows)
-        if: matrix.os == 'windows-latest'
+      - name: Display Trigger Info
+        run: |
+          if [[ "${{ runner.os }}" == "Windows" ]]; then
+            Write-Host "Trigger event: $($env:GITHUB_EVENT_NAME). Runner OS: $($env:RUNNER_OS)"
+          else
+            echo "Trigger event: $GITHUB_EVENT_NAME. Runner OS: $RUNNER_OS"
+          fi
         shell: pwsh
-        run: |
-          Write-Host "Trigger event: $($env:GITHUB_EVENT_NAME). Runner OS: $($env:RUNNER_OS)"
+        if: runner.os == 'Windows'
 
-      # Step for Linux/macOS
       - name: Display Trigger Info (Linux/macOS)
-        if: matrix.os != 'windows-latest'
+        run: echo "Trigger event: $GITHUB_EVENT_NAME. Runner OS: $RUNNER_OS"
         shell: bash
-        run: |
-          echo "Trigger event: $GITHUB_EVENT_NAME. Runner OS: $RUNNER_OS"
+        if: runner.os != 'Windows'
 
-      # Eggplant Runner
       - name: Eggplant Runner
         uses: keysight-eggplant/eggplant-github-action@v1.0.19
         with:
