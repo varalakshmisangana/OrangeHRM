@@ -34,11 +34,13 @@ jobs:
 
       # Step 2: Debugging - Print Eggplant Input Variables
       - name: Debugging Print Eggplant Inputs
+        if: runner.os == 'Windows'
+        shell: cmd
         run: |
-          echo "Server URL: http://varalakshmi.ideabytes.com:8000"
-          echo "Test Config ID: b38c5feb-8695-4a7d-95f9-dea9487ffe74"
-          echo "Client ID: client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62"
-          echo "Client Secret: uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB"
+          powershell -ExecutionPolicy Bypass -Command "Write-Host 'Server URL: http://varalakshmi.ideabytes.com:8000'"
+          powershell -ExecutionPolicy Bypass -Command "Write-Host 'Test Config ID: b38c5feb-8695-4a7d-95f9-dea9487ffe74'"
+          powershell -ExecutionPolicy Bypass -Command "Write-Host 'Client ID: client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62'"
+          powershell -ExecutionPolicy Bypass -Command "Write-Host 'Client Secret: uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB'"
 
       # Step 3: Run Eggplant DAI Test
       - name: Run Eggplant DAI Test
