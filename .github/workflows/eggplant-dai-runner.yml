@@ -11,33 +11,40 @@ on:
 
 jobs:
   Run-DAI-Test-Configuration:
-    runs-on: "self-hosted"  # Assuming you're using a self-hosted runner for Windows
-    name: Run Test Configuration
+    runs-on: windows-latest  # Ensure we're using a Windows runner
+    name: Run Eggplant DAI Test on Windows
     steps:
 
       # Step 1: Display Trigger info on Windows
       - name: Display Trigger and Runner Info (Windows)
-        if: runner.os == 'Windows'
-        shell: cmd
+        shell: powershell
         run: |
-          powershell -ExecutionPolicy Bypass -Command "Write-Host 'Trigger Event.. ${{ github.event_name }}'; Write-Host 'Runner OS.. ${{ runner.os }}'"
+          Write-Host "Trigger Event: ${{ github.event_name }}"
+          Write-Host "Runner OS: ${{ runner.os }}"
 
       # Step 2: Debugging - Print Eggplant Input Variables
       - name: Debugging Print Eggplant Inputs
-        if: runner.os == 'Windows'
-        shell: cmd
+        shell: powershell
         run: |
-          powershell -ExecutionPolicy Bypass -Command "Write-Host 'Server URL: http://varalakshmi.ideabytes.com:8000'"
-          powershell -ExecutionPolicy Bypass -Command "Write-Host 'Test Config ID: b38c5feb-8695-4a7d-95f9-dea9487ffe74'"
-          powershell -ExecutionPolicy Bypass -Command "Write-Host 'Client ID: client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62'"
-          powershell -ExecutionPolicy Bypass -Command "Write-Host 'Client Secret: uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB'"
+          Write-Host "Server URL: http://varalakshmi.ideabytes.com:8000"
+          Write-Host "Test Config ID: b38c5feb-8695-4a7d-95f9-dea9487ffe74"
+          Write-Host "Client ID: client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62"
+          Write-Host "Client Secret: uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB"
 
-      # Step 3: Run Eggplant DAI Test on Windows using the Eggplant GitHub Action
-      - name: Run Eggplant DAI Test on Windows
-        if: runner.os == 'Windows'
+      # Step 3: Run Eggplant DAI Test using the Eggplant DAI GitHub Action
+      - name: Run Eggplant DAI Test
         uses: keysight-eggplant/eggplant-github-action@v1.0.19
         with:
           serverURL: "http://varalakshmi.ideabytes.com:8000"
           testConfigID: "b38c5feb-8695-4a7d-95f9-dea9487ffe74"
           clientID: "client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62"
           clientSecret: "uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB"
+          eggplantRunnerPath: "C:\\path\\to\\your\\eggplant\\runner.exe"  # Provide the path to the Eggplant runner if needed
+
+      # Optional: If you still need to set specific environment variables or install dependencies
+      - name: Install Eggplant Dependencies (Windows)
+        shell: powershell
+        run: |
+          # Example of installing dependencies or handling specific setup for Windows.
+          # You can install any prerequisites for the Eggplant DAI tests here.
+          Write-Host "Installing dependencies (if any)"
