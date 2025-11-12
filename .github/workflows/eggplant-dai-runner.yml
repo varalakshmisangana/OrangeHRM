@@ -39,7 +39,7 @@ jobs:
           testConfigID: "b38c5feb-8695-4a7d-95f9-dea9487ffe74"
           clientID: "client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62"
           clientSecret: "uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB"
-          eggplantRunnerPath: "C:\\path\\to\\your\\eggplant\\runner.exe"  # Provide the path to the Eggplant runner if needed
+          eggplantRunnerPath: "C:\\Eggplant\\Runner\\runner.exe"  # Make sure this path is correct
 
       # Optional: If you still need to set specific environment variables or install dependencies
       - name: Install Eggplant Dependencies (Windows)
