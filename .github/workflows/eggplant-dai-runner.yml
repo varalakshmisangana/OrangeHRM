@@ -11,14 +11,27 @@ on:
 
 jobs:
   Run-DAI-Test-Configuration:
-    strategy: # Optional configuration by using matrix strategy
-      max-parallel: 1 # To set the maximum number of jobs that can run simultaneously 
+    strategy:
+      max-parallel: 1
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest] # Operating support by Eggplant DAI GitHub Action
+        os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: "self-hosted"
     name: Run Test Configuration
     steps:
-      - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
+      # Step 1: Fix PowerShell script execution policy (for Windows only)
+      - name: Allow PowerShell scripts (Windows only)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          Write-Host "Adjusting PowerShell execution policy for this process..."
+          Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
+
+      # Step 2: Show trigger and OS info
+      - name: Display Trigger and Runner Info
+        shell: pwsh
+        run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
+
+      # Step 3: Run Eggplant DAI test
       - name: Eggplant Runner
         uses: keysight-eggplant/eggplant-github-action@v1.0.19
         with:
