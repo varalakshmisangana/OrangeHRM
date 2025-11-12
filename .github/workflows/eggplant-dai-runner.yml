@@ -23,7 +23,7 @@ jobs:
       - name: "Display Trigger and Runner Info (Windows)"
         if: runner.os == 'Windows'
         shell: cmd
-        run: powershell -ExecutionPolicy Bypass -Command "Write-Host 'Trigger event: ${{ github.event_name }}'; Write-Host 'Runner OS: ${{ runner.os }}'"
+        run: powershell -ExecutionPolicy Bypass -Command "Write-Host 'Trigger event.. ${{ github.event_name }}'; Write-Host 'Runner OS.. ${{ runner.os }}'"
 
       # Step 1b: Display Trigger info (Linux/macOS)
       - name: "Display Trigger and Runner Info (Linux/macOS)"
