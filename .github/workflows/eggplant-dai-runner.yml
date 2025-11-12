@@ -18,19 +18,12 @@ jobs:
     runs-on: "self-hosted"
     name: Run Test Configuration
     steps:
-      # Step 1: Platform-specific echo and execution policy
-      - name: Display Trigger and Runner Info (Cross-Platform)
-        run: |
-          if [ "${{ runner.os }}" == "Windows" ]; then
-            echo "Trigger event.. ${{ github.event_name }}. Runner OS.. Windows."
-            # Bypass execution policy directly
-            powershell -ExecutionPolicy Bypass -Command "Write-Host 'Trigger event.. ${{ github.event_name }}. Runner OS.. Windows.'"
-          elif [ "${{ runner.os }}" == "Linux" ]; then
-            echo "Trigger event.. ${{ github.event_name }}. Runner OS.. Linux."
-          elif [ "${{ runner.os }}" == "macOS" ]; then
-            echo "Trigger event.. ${{ github.event_name }}. Runner OS.. macOS."
-          fi
-
+      # Step 1: Display Trigger info (Using PowerShell for Windows)
+      - name: Display Trigger and Runner Info
+        if: runner.os == 'Windows'
+        shell: cmd
+        run: powershell -ExecutionPolicy Bypass -Command "Write-Host 'Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}.'"
+        
       # Step 2: Run Eggplant DAI test
       - name: Eggplant Runner
         uses: keysight-eggplant/eggplant-github-action@v1.0.19
