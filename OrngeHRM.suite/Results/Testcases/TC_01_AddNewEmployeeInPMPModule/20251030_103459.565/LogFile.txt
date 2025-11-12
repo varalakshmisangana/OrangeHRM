@@ -1,0 +1,54 @@
+﻿2025-10-30 10:34:59.571 +0530	START		Running Testcases/TC_01_AddNewEmployeeInPMPModule.script
+2025-10-30 10:35:09.022 +0530	imagefound	(TEXT:"Type the name")	Unable to Find Image (TEXT:"Type the name"). Text not found.	2	on_openrunwindow	commonUtilities/Core.script
+2025-10-30 10:35:09.084 +0530	typetext		[windowsKey]r	3	on_openrunwindow	commonUtilities/Core.script
+2025-10-30 10:35:14.681 +0530	imagefound	(TEXT:"Type the name")	found at (117, 875)	9	on_openrunwindow	commonUtilities/Core.script
+2025-10-30 10:35:14.866 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-30 10:35:15.786 +0530	typetext		Chrome	6	on_textentry	commonUtilities/Core.script
+2025-10-30 10:35:16.534 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-30 10:35:18.231 +0530	imagefound	refreshIcon	found at (93, 62)	2	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:35:18.310 +0530	LogSuccess		Element found ( refreshIcon ) at  [93,62]	3	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:35:18.703 +0530	capturescreen	refreshIcon_0001.png		7	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:35:20.821 +0530	typetext		[controlKey][shiftKey][deleteKey]	3	on_clearcache	commonUtilities/browser.script
+2025-10-30 10:35:22.344 +0530	imagefound	(TEXT:"Delete browsing data")	found at (794, 351)	2	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:35:22.478 +0530	LogSuccess		Element found ( Delete browsing data ) at  [794,351]	3	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:35:22.823 +0530	capturescreen	Delete browsing data_0001.png		7	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:35:23.524 +0530	waitfor	(TEXT:"Advanced")	found at (1079, 385)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:35:23.916 +0530	click		at (1079, 385)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:35:24.819 +0530	waitfor	(TEXT:"Time range")	found at (755, 434)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:35:25.115 +0530	click		at (955, 434)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:35:26.782 +0530	imagefound	(TEXT:"All time")	found at (831, 433)	3	on_selectdropdownelement	commonUtilities/Core.script
+2025-10-30 10:35:28.967 +0530	waitfor	(TEXT:"All time")	found at (831, 433)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:35:29.226 +0530	click		at (831, 433)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:35:29.775 +0530	waitfor	(TEXT:"Delete data")	found at (1150, 761)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:35:30.067 +0530	click		at (1150, 761)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:35:30.529 +0530	Log		waiting until Delete data is on screen	2	on_waituntilelementonscreen	commonUtilities/Core.script
+2025-10-30 10:35:47.986 +0530	imagefound	(TEXT:"Delete data")	Unable to Find Image (TEXT:"Delete data"). Text not found.	4	on_waituntilelementonscreen	commonUtilities/Core.script
+2025-10-30 10:35:48.391 +0530	typetext		[controlKey]l	9	on_launchapplication	commonUtilities/Core.script
+2025-10-30 10:35:49.153 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-30 10:35:51.196 +0530	typetext		https://opensource-demo.orangehrmlive.com/	6	on_textentry	commonUtilities/Core.script
+2025-10-30 10:35:51.940 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-30 10:36:08.176 +0530	imagefound	(TEXT:"Login")	found at (768, 405)	2	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:36:08.331 +0530	LogSuccess		Element found ( Login ) at  [768,405]	3	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:36:08.712 +0530	capturescreen	Login_0001.png		7	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:36:09.906 +0530	imagefound	(TEXT:"Login")	found at (768, 405)	2	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:36:10.103 +0530	LogSuccess		Element found ( Login ) at  [768,405]	3	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:36:10.464 +0530	capturescreen	Login_0002.png		7	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:36:11.439 +0530	LogWarning		(null) is not a recognized Language.	2	on_setcustomrectangle	commonUtilities/Core.script
+2025-10-30 10:36:11.448 +0530	imagerectangle	(TEXT:"Login")	at [737,394,799,417]	2	on_setcustomrectangle	commonUtilities/Core.script
+2025-10-30 10:36:12.589 +0530	waitfor	(TEXT:"Username")	found at (572, 557)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:36:13.160 +0530	click		at (572, 607)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:36:13.922 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-30 10:36:14.811 +0530	typetext		Admin	6	on_textentry	commonUtilities/Core.script
+2025-10-30 10:36:15.557 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-30 10:36:16.290 +0530	waitfor	(TEXT:"Password")	found at (572, 633)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:36:16.633 +0530	click		at (572, 683)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:36:17.394 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-30 10:36:18.360 +0530	typetext		admin123	6	on_textentry	commonUtilities/Core.script
+2025-10-30 10:36:19.107 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-30 10:36:20.857 +0530	imagefound	(TEXT:"Login")	found at (543, 63)	2	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:36:21.059 +0530	LogSuccess		Element found ( Login ) at  [543,63]	3	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:36:21.558 +0530	capturescreen	Login_0003.png		7	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:37:10.083 +0530	LogWarning		Unable to Find Text: Login -- AutoUpdate engaged	2	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:37:21.579 +0530	Exception	(TEXT:"Login")	Unable To Find Any Image On Screen "(TEXT:"Login")" within 30.00 seconds. Text not found.	2	on_mouseaction	commonUtilities/Core.script
+2025-10-30 10:37:21.760 +0530	EndTestCase		(Duration:"142.181", Errors:"1", Exceptions:"1", StartTime:"2025-10-30 10:34:59 +0530", Successes:"5", TestCase:"Testcases/TC_01_AddNewEmployeeInPMPModule.script", Warnings:"2")
+2025-10-30 10:37:22.014 +0530	FAILURE	Screen_Error.png	Image Not Found: WaitFor Error - Unable To Find Any Image On Screen "(TEXT:"Login")" within 30.00 seconds. Text not found.  Restricted Search Rectangle ((0,540),(1920,1080))\n -- Execution Time 0:02:22 Testcases/TC_01_AddNewEmployeeInPMPModule.script

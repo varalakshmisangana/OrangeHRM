@@ -1,0 +1,75 @@
+{
+	"originalcapturelocation": [
+		213,
+		476,
+		422,
+		165
+	],
+	"lastmodifieddate": 1761583117.1110001,
+	"createddate": 1761583013.9530001,
+	"name": "Submit2",
+	"lastfounddate": 1761583064.859,
+	"ocrcapturestring": "Submit",
+	"lastfoundlocation": [
+		213,
+		476,
+		422,
+		165
+	],
+	"testlocationdata": [
+		{
+				"deleted": true,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[211,82]",
+					"Tolerance": "_73",
+					"Discrepancy": "_0",
+					"SearchType": "Smoothed for Text"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Submit2/Submit2.png",
+				"connectionname": "ChatGPT Image Oct 23, 2025, 10_20_19 PM.png",
+				"type": 1,
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/ChatGPT Image Oct 23, 2025, 10_20_19 PM.png",
+				"capturerect": [
+					213,
+					476,
+					422,
+					165
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "Submit"
+			},
+		{
+				"deleted": true,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[211,82]",
+					"Tolerance": "_73",
+					"Discrepancy": "_0",
+					"SearchType": "Smoothed for Text"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Submit2/Submit3.png",
+				"connectionname": "ChatGPT Image Oct 23, 2025, 10_20_19 PM.png",
+				"type": 1,
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/ChatGPT Image Oct 23, 2025, 10_20_19 PM.png",
+				"capturerect": [
+					891,
+					476,
+					422,
+					165
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "Submit"
+			}
+	]
+}

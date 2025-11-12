@@ -1,0 +1,47 @@
+{
+	"originalcapturelocation": [
+		3,
+		92,
+		310,
+		225
+	],
+	"lastmodifieddate": 1761584760.0939999,
+	"createddate": 1761584760.0939999,
+	"name": "Stone",
+	"lastfounddate": 1761585123.142,
+	"ocrcapturestring": "t 7  i   t  ♦   r",
+	"lastfoundlocation": [
+		583,
+		92,
+		310,
+		225
+	],
+	"testlocationdata": [
+		{
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[155,112]",
+					"Tolerance": "_30",
+					"Discrepancy": "_0",
+					"SearchType": "Adaptive to Image"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Stone.png",
+				"connectionname": "Background3.jpg",
+				"type": 1,
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/Background3.jpg",
+				"capturerect": [
+					3,
+					92,
+					310,
+					225
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "t 7  i   t  ♦   r"
+			}
+	]
+}

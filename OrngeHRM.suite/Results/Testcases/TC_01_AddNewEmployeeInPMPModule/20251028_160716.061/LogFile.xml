@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_01_AddNewEmployeeInPMPModule_script" package="GNUCash.suite" timestamp="2025-10-28 16:07:16.061 +0530"
+ tests="1"  failures="0" errors="0" time="52.339000">
+  <properties>
+   <property name="RunDate" value="2025-10-28 16:07:16.061 +0530"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="Testcases/TC_01_AddNewEmployeeInPMPModule.script" assertions="1" status="success"  time="52.322">
+  </testcase>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,11 @@
+﻿to clearCache
+	wait 2
+	typetext controlKey, shiftKey, deleteKey
+	"commonUtilities/Core".validateElement "browsing data", "VM"
+	if ImageFound(text:"Advanced", waitFor:8, SearchRectangle:"commonUtilities/screenPart"().SUT.("Center")) then 
+		click FoundImageLocation()
+		"commonUtilities/Core".selectDropDownElement "Time range", "All time", "Center", [200,0]
+	end if
+	"commonUtilities/Core".ClickFromMultipleElements ["Delete data", "Delete from this device", "Clear"] , "BRQ"
+	"commonUtilities/Core".waitUntilElementOnScreen "Cancel", "Center"
+end clearCache

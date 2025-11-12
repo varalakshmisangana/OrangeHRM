@@ -1,0 +1,47 @@
+{
+	"lastmodifieddate": 1761150792.0999999,
+	"lastfoundlocation": [
+		1460,
+		101,
+		20,
+		20
+	],
+	"originalcapturelocation": [
+		929,
+		101,
+		20,
+		20
+	],
+	"createddate": 1761150792.0999999,
+	"lastfounddate": 1761586287.799,
+	"testlocationdata": [
+		{
+				"connectionportnum": 62863,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[10,11]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"epgw_path": "C:\\Program Files\\Eggplant\\Eggplant.app\\Resources\\epgw\\x64\\bin\\epgw.exe",
+					"Type": "Single System"
+				},
+				"name": "searchIcon.png",
+				"connectionname": "127.0.0.1",
+				"type": 1,
+				"capturerect": [
+					929,
+					101,
+					20,
+					20
+				],
+				"connectiontype": "Single System",
+				"connectionserverid": "127.0.0.1"
+			}
+	],
+	"name": "searchIcon"
+}

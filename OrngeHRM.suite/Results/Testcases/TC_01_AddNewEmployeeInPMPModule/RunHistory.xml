@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="Testcases/TC_01">
+ <run>
+  <RunDate>2025-10-23 14:33:17.028 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.371000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251023_143317.028/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>STUnknownMessage -- ERROR: No Such Function: &#x27;screenpart&#x27;</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-23 14:38:47.150 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>14.039000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251023_143847.150/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>STUnknownMessage -- ERROR: No Such Function: &#x27;determineimageortext&#x27;</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-23 15:53:22.727 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>8.948000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251023_155322.727/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>STInvalidParameters -- Command wait was called with invalid parameters</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-23 15:55:07.196 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>16.967000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251023_155507.196/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>STUnknownMessage -- ERROR: No Such Function: &#x27;determineimageortext&#x27;</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-23 16:15:29.038 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>28.888000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251023_161529.038/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-28 10:09:28.033 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>223.135000</Duration>
+  <Errors>0</Errors>
+  <Warnings>1</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251028_100928.033/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-28 16:07:16.061 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>52.339000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251028_160716.061/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-28 18:02:06.425 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>182.601000</Duration>
+  <Errors>1</Errors>
+  <Warnings>1</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251028_180206.425/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-29 11:05:41.532 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>224.308000</Duration>
+  <Errors>1</Errors>
+  <Warnings>1</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251029_110541.532/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>SenseTalk Runtime Exception -- Invalid operands for addition: expected numbers, dates and/or lists; got &#x27;&#x27; and &#x27;[163,410]&#x27;</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-30 10:16:20.947 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>23.796000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251030_101620.947/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>STUnknownMessage -- ERROR: No Such Command: &#x27;validate&#x27;</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-30 10:18:14.734 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>21.328000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251030_101814.734/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>STUnknownMessage -- ERROR: No Such Function: &#x27;determineimageortext&#x27;</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-30 10:25:08.936 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>38.944000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251030_102508.936/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>STUnknownMessage -- ERROR: No Such Command: &#x27;clearcache&#x27;</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-30 10:26:25.675 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>164.181000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>2</Successes>
+  <LogFile>20251030_102625.675/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-30 10:34:59.565 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>142.191000</Duration>
+  <Errors>1</Errors>
+  <Warnings>2</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>5</Successes>
+  <LogFile>20251030_103459.565/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- WaitFor Error - Unable To Find Any Image On Screen &quot;(TEXT:&quot;Login&quot;)&quot; within 30.00 seconds. Text not found.  Restricted Search Rectangle ((0,540),(1920,1080))
+</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-30 10:37:46.047 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>215.597000</Duration>
+  <Errors>1</Errors>
+  <Warnings>2</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>8</Successes>
+  <LogFile>20251030_103746.047/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-30 10:54:03.868 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>213.365000</Duration>
+  <Errors>0</Errors>
+  <Warnings>1</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>10</Successes>
+  <LogFile>20251030_105403.868/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-10-31 12:05:38.975 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>263.729000</Duration>
+  <Errors>0</Errors>
+  <Warnings>1</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>11</Successes>
+  <LogFile>20251031_120538.975/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

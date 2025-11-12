@@ -1,0 +1,75 @@
+{
+	"originalcapturelocation": [
+		131,
+		314,
+		345,
+		284
+	],
+	"lastmodifieddate": 1761585310.28,
+	"createddate": 1761585086.6950002,
+	"name": "Water",
+	"lastfounddate": 1761585267.036,
+	"ocrcapturestring": "i     -'J -- 3 ■*\tW-. *><’\tr i •>.  *’3 Xi",
+	"lastfoundlocation": [
+		710,
+		314,
+		345,
+		284
+	],
+	"testlocationdata": [
+		{
+				"deleted": true,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[172,142]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Water/Water.png",
+				"connectionname": "Background3.jpg",
+				"type": 1,
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/Background3.jpg",
+				"capturerect": [
+					131,
+					314,
+					345,
+					284
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "i     -'J -- 3 ■*\tW-. *><’\tr i •>.  *’3 Xi"
+			},
+		{
+				"deleted": true,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[172,142]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Water/Water2.png",
+				"connectionname": "Background3.jpg",
+				"type": 1,
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/Background3.jpg",
+				"capturerect": [
+					710,
+					314,
+					345,
+					284
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "■'*. *_■ i: . <F / ;*’*’^ \"  fed"
+			}
+	]
+}

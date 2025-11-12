@@ -1,0 +1,20 @@
+{
+	"entries": [
+		{
+				"message": "Running Testcases/TC_01.script",
+				"identifier": "START",
+				"timestamp": "2025-10-23 14:33:17.039 +0530"
+			},
+		{
+				"message": "(Duration:\"0.354\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-10-23 14:33:17 +0530\", Successes:\"0\", TestCase:\"Testcases/TC_01.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-10-23 14:33:17.402 +0530"
+			},
+		{
+				"message": "STUnknownMessage: ERROR: No Such Function: 'screenpart' -- Execution Time 0:00:00 Testcases/TC_01.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-10-23 14:33:17.516 +0530"
+			}
+	],
+	"createdTimestamp": "2025-10-23 14:33:17.046 +0530"
+}

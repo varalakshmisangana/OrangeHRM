@@ -1,0 +1,57 @@
+{
+	"entries": [
+		{
+				"message": "Running MobileTesting.script",
+				"identifier": "START",
+				"timestamp": "2025-11-03 15:10:28.773 +0530"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-03 15:10:28.995 +0530",
+				"message": "[controlKey]l",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 1,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-03 15:10:30.086 +0530",
+				"message": "[controlKey]ac",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-03 15:10:32.959 +0530",
+				"scriptName": "MobileTesting.script",
+				"identifier": "Log",
+				"handlerLine": 5
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-03 15:10:34.082 +0530",
+				"message": "at (20, 200)",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 7,
+				"identifier": "click"
+			},
+		{
+				"message": "(Duration:\"8.224\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-11-03 15:10:28 +0530\", Successes:\"0\", TestCase:\"MobileTesting.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-11-03 15:10:37.005 +0530"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "InvalidCommandOrRange: Not a valid command, or else incorrect types given for a range (must be numbers, date/times, or single characters -- got \"\" TO \" \") -- Execution Time 0:00:08 MobileTesting.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-11-03 15:10:37.336 +0530"
+			},
+		{
+				"message": "InvalidCommandOrRange: Not a valid command, or else incorrect types given for a range (must be numbers, date/times, or single characters -- got \"\" TO \" \") -- Screenshot unavailable -- Execution Time 0:00:08 MobileTesting.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-11-03 15:10:38.144 +0530"
+			}
+	],
+	"createdTimestamp": "2025-11-03 15:10:28.779 +0530"
+}

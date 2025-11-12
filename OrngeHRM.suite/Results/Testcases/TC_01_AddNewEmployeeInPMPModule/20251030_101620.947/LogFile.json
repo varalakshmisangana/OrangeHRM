@@ -1,0 +1,71 @@
+{
+	"entries": [
+		{
+				"message": "Running Testcases/TC_01_AddNewEmployeeInPMPModule.script",
+				"identifier": "START",
+				"timestamp": "2025-10-30 10:16:20.958 +0530"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-30 10:16:37.049 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Type the name\"). Text not found.",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-30 10:16:37.227 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-30 10:16:42.825 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (117, 875)",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-30 10:16:43.011 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-30 10:16:43.933 +0530",
+				"message": "Chrome",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-30 10:16:44.672 +0530",
+				"message": "[return]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 8,
+				"identifier": "typetext"
+			},
+		{
+				"message": "(Duration:\"23.777\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-10-30 10:16:20 +0530\", Successes:\"0\", TestCase:\"Testcases/TC_01_AddNewEmployeeInPMPModule.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-10-30 10:16:44.745 +0530"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "STUnknownMessage: ERROR: No Such Command: 'validate' -- Execution Time 0:00:23 Testcases/TC_01_AddNewEmployeeInPMPModule.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-10-30 10:16:46.776 +0530"
+			}
+	],
+	"createdTimestamp": "2025-10-30 10:16:20.966 +0530"
+}

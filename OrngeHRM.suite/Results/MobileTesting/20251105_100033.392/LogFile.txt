@@ -1,0 +1,4 @@
+﻿2025-11-05 10:00:33.399 +0530	START		Running MobileTesting.script
+2025-11-05 10:00:33.608 +0530	typetext		[commandKey]l	1	on_mobiletesting	MobileTesting.script
+2025-11-05 10:00:37.858 +0530	EndTestCase		(Duration:"4.455", Errors:"1", Exceptions:"0", StartTime:"2025-11-05 10:00:33 +0530", Successes:"0", TestCase:"MobileTesting.script", Warnings:"0")
+2025-11-05 10:00:37.874 +0530	ABORTED		Execution Time 0:00:04 MobileTesting.script

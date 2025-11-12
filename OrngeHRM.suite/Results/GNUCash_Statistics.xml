@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<statistics>
+ <script name="Testcases/TC_01_AddNewEmployeeInPMPModule">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>14</NumberOfRuns>
+  <NumberOfFails>9</NumberOfFails>
+  <FirstRun>2025-10-23 14:33:17 +0530</FirstRun>
+  <LastRun>2025-10-31 12:05:38 +0530</LastRun>
+  <TotalTimeOnSuccess>781.456000</TotalTimeOnSuccess>
+ </script>
+ <script name="MobileTesting">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>14</NumberOfRuns>
+  <NumberOfFails>2</NumberOfFails>
+  <FirstRun>2025-11-03 15:10:28 +0530</FirstRun>
+  <LastRun>2025-11-06 12:47:45 +0530</LastRun>
+  <TotalTimeOnSuccess>320.704000</TotalTimeOnSuccess>
+ </script>
+ <script name="commonUtilities/Core">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-11-03 15:00:51 +0530</FirstRun>
+  <LastRun>2025-11-03 15:00:51 +0530</LastRun>
+  <TotalTimeOnSuccess>0.177000</TotalTimeOnSuccess>
+ </script>
+ <script name="ApplicationUtilities/GnuCash">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-10-23 16:19:24 +0530</FirstRun>
+  <LastRun>2025-10-23 16:59:57 +0530</LastRun>
+  <TotalTimeOnSuccess>0.050000</TotalTimeOnSuccess>
+ </script>
+ <script name="ApplicationUtilities/OrangeHRM">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>2</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-10-31 11:28:43 +0530</FirstRun>
+  <LastRun>2025-11-05 12:28:07 +0530</LastRun>
+  <TotalTimeOnSuccess>0.089000</TotalTimeOnSuccess>
+ </script>
+ <script name="ApplicationUtilities/UserLogins">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>2</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-10-28 16:28:36 +0530</FirstRun>
+  <LastRun>2025-10-28 16:30:13 +0530</LastRun>
+  <TotalTimeOnSuccess>0.046000</TotalTimeOnSuccess>
+ </script>
+</statistics>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="commonUtilities/Core_script" package="GNUCash.suite" timestamp="2025-11-03 15:00:51.791 +0530"
+ tests="1"  failures="0" errors="0" time="0.177000">
+  <properties>
+   <property name="RunDate" value="2025-11-03 15:00:51.791 +0530"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="commonUtilities/Core.script" assertions="1" status="success"  time="0.148">
+  </testcase>
+ </testsuite>
+</testsuites>

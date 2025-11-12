@@ -1,0 +1,63 @@
+﻿2025-10-28 18:02:06.442 +0530	START		Running Testcases/TC_01_AddNewEmployeeInPMPModule.script
+2025-10-28 18:02:24.808 +0530	imagefound	(TEXT:"Type the name")	Unable to Find Image (TEXT:"Type the name"). Text not found.	2	on_openrunwindow	commonUtilities/Core.script
+2025-10-28 18:02:24.869 +0530	typetext		[windowsKey]r	3	on_openrunwindow	commonUtilities/Core.script
+2025-10-28 18:02:30.342 +0530	imagefound	(TEXT:"Type the name")	found at (117, 875)	9	on_openrunwindow	commonUtilities/Core.script
+2025-10-28 18:02:30.571 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-28 18:02:32.847 +0530	typetext		Chrome https://opensource-demo.orangehrmlive.com/	6	on_textentry	commonUtilities/Core.script
+2025-10-28 18:02:33.609 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-28 18:02:53.124 +0530	waitfor	refreshIcon	found at (93, 62)	2	on_validate	commonUtilities/Core.script
+2025-10-28 18:02:53.664 +0530	capturescreen	refreshIcon_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 18:02:55.488 +0530	waitfor	(TEXT:"Login")	found at (767, 405)	2	on_validate	commonUtilities/Core.script
+2025-10-28 18:02:56.056 +0530	capturescreen	Login_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 18:02:58.626 +0530	waitfor	(TEXT:"Login")	found at (543, 63)	2	on_validate	commonUtilities/Core.script
+2025-10-28 18:02:59.187 +0530	capturescreen	Login_0002.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 18:02:59.425 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-28 18:03:00.144 +0530	typetext			6	on_textentry	commonUtilities/Core.script
+2025-10-28 18:03:00.895 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-28 18:03:02.392 +0530	LogWarning		(null) is not a recognized Language.	2	on_setcustomrectangle	commonUtilities/Core.script
+2025-10-28 18:03:02.401 +0530	imagerectangle	(TEXT:"Login")	at [737,374,799,397]	2	on_setcustomrectangle	commonUtilities/Core.script
+2025-10-28 18:03:03.857 +0530	waitfor	(TEXT:"Username")	found at (572, 537)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:03:04.293 +0530	click		at (572, 587)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:03:05.043 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-28 18:03:05.919 +0530	typetext		Admin	6	on_textentry	commonUtilities/Core.script
+2025-10-28 18:03:06.665 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-28 18:03:08.424 +0530	waitfor	(TEXT:"Password")	found at (572, 633)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:03:08.963 +0530	click		at (572, 683)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:03:09.713 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-28 18:03:12.779 +0530	typetext		admin123	6	on_textentry	commonUtilities/Core.script
+2025-10-28 18:03:13.526 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-28 18:03:16.714 +0530	waitfor	(TEXT:"Login")	found at (543, 63)	2	on_validate	commonUtilities/Core.script
+2025-10-28 18:03:17.579 +0530	capturescreen	Login_0003.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 18:03:20.343 +0530	waitfor	(TEXT:"Login")	found at (767, 757)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:03:21.151 +0530	click		at (767, 757)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:03:23.206 +0530	waitfor	refreshIcon	found at (93, 62)	2	on_validate	commonUtilities/Core.script
+2025-10-28 18:03:24.309 +0530	capturescreen	refreshIcon_0002.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 18:03:52.035 +0530	imagefound	(TEXT:"Save password")	Unable to Find Image (TEXT:"Save password"). Text not found.	9	on_loginuser	ApplicationUtilities/UserLogins.script
+2025-10-28 18:03:54.723 +0530	waitfor	(TEXT:"PIM")	found at (72, 301)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:03:55.049 +0530	click		at (72, 301)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:04:13.566 +0530	waitfor	(TEXT:"Employee Information")	found at (400, 280)	2	on_validate	commonUtilities/Core.script
+2025-10-28 18:04:14.090 +0530	capturescreen	Employee Information_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 18:04:16.482 +0530	waitfor	(TEXT:"+ Add")	found at (384, 607)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:04:16.846 +0530	click		at (384, 607)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:04:26.583 +0530	waitfor	(TEXT:"Employee Full Name")	found at (786, 315)	2	on_validate	commonUtilities/Core.script
+2025-10-28 18:04:27.191 +0530	capturescreen	Employee Full Name_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 18:04:31.658 +0530	waitfor	(TEXT:"First Name")	found at (769, 357)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:04:32.156 +0530	click		at (969, 357)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:04:32.910 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-28 18:04:33.765 +0530	typetext		Vara	6	on_textentry	commonUtilities/Core.script
+2025-10-28 18:04:34.513 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-28 18:04:41.352 +0530	waitfor	(TEXT:"Middle Name")	found at (1143, 357)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:04:41.801 +0530	click		at (1343, 357)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:04:42.563 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-28 18:04:43.517 +0530	typetext		Lakshmi	6	on_textentry	commonUtilities/Core.script
+2025-10-28 18:04:44.263 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-28 18:04:48.700 +0530	waitfor	(TEXT:"Last Name")	found at (1504, 357)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:04:49.092 +0530	click		at (1704, 357)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:04:49.841 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-28 18:04:50.796 +0530	typetext		Sangana	6	on_textentry	commonUtilities/Core.script
+2025-10-28 18:04:51.544 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-28 18:04:52.175 +0530	waitfor	uploadProfileIcon	found at (575, 439)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:04:52.824 +0530	click		at (575, 439)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 18:05:08.928 +0530	Exception		Searching For Image: OCR Error: Operation was aborted	2	on_validate	commonUtilities/Core.script
+2025-10-28 18:05:09.027 +0530	EndTestCase		(Duration:"182.575", Errors:"1", Exceptions:"1", StartTime:"2025-10-28 18:02:06 +0530", Successes:"0", TestCase:"Testcases/TC_01_AddNewEmployeeInPMPModule.script", Warnings:"1")
+2025-10-28 18:05:09.053 +0530	ABORTED		Execution Time 0:03:02 Testcases/TC_01_AddNewEmployeeInPMPModule.script

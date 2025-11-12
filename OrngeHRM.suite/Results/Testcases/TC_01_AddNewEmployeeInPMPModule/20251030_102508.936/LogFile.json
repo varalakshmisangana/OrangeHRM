@@ -1,0 +1,96 @@
+{
+	"entries": [
+		{
+				"message": "Running Testcases/TC_01_AddNewEmployeeInPMPModule.script",
+				"identifier": "START",
+				"timestamp": "2025-10-30 10:25:08.945 +0530"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-30 10:25:23.922 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Type the name\"). Text not found.",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-30 10:25:23.982 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-30 10:25:29.695 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (117, 875)",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-30 10:25:29.872 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-30 10:25:30.792 +0530",
+				"message": "Chrome",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-30 10:25:31.540 +0530",
+				"message": "[return]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 8,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-10-30 10:25:47.319 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (93, 62)",
+				"image": "refreshIcon",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-10-30 10:25:47.361 +0530",
+				"message": "Element found ( refreshIcon ) at  [93,62]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-10-30 10:25:47.798 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "refreshIcon_0001.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"message": "(Duration:\"38.93\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-10-30 10:25:08 +0530\", Successes:\"1\", TestCase:\"Testcases/TC_01_AddNewEmployeeInPMPModule.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-10-30 10:25:47.882 +0530"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "STUnknownMessage: ERROR: No Such Command: 'clearcache' -- Execution Time 0:00:38 Testcases/TC_01_AddNewEmployeeInPMPModule.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-10-30 10:25:48.249 +0530"
+			}
+	],
+	"createdTimestamp": "2025-10-30 10:25:08.950 +0530"
+}

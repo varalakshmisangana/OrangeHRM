@@ -1,0 +1,48 @@
+{
+	"originalcapturelocation": [
+		303,
+		514,
+		249,
+		91
+	],
+	"lastmodifieddate": 1761582416.6469998,
+	"createddate": 1761582172.1210001,
+	"name": "Login_Tolerence",
+	"lastfounddate": 1761582387.714,
+	"ocrcapturestring": "Login",
+	"lastfoundlocation": [
+		978,
+		514,
+		249,
+		91
+	],
+	"testlocationdata": [
+		{
+				"deleted": true,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[124,45]",
+					"Tolerance": "_73",
+					"Discrepancy": "_0",
+					"SearchType": "Smoothed for Text"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Login_Tolerence.png",
+				"connectionname": "ChatGPT Image Oct 23, 2025, 10_07_59 PM.png",
+				"type": 1,
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/ChatGPT Image Oct 23, 2025, 10_07_59 PM.png",
+				"capturerect": [
+					303,
+					514,
+					249,
+					91
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "Login"
+			}
+	]
+}

@@ -1,0 +1,79 @@
+{
+	"entries": [
+		{
+				"message": "Running Testcases/TC_01.script",
+				"identifier": "START",
+				"timestamp": "2025-10-23 15:55:07.207 +0530"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-23 15:55:14.398 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Type the name\"). Text not found.",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-23 15:55:14.468 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-23 15:55:20.171 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (117, 563)",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-23 15:55:20.281 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-23 15:55:22.530 +0530",
+				"message": "C:\\Program Files (x86)\\gnucash\\bin\\gnucash.exe",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-23 15:55:23.282 +0530",
+				"message": "[escape]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 7,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-23 15:55:24.046 +0530",
+				"message": "[return]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 8,
+				"identifier": "typetext"
+			},
+		{
+				"message": "(Duration:\"16.95\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-10-23 15:55:07 +0530\", Successes:\"0\", TestCase:\"Testcases/TC_01.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-10-23 15:55:24.165 +0530"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "STUnknownMessage: ERROR: No Such Function: 'determineimageortext' -- Execution Time 0:00:16 Testcases/TC_01.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-10-23 15:55:25.092 +0530"
+			}
+	],
+	"createdTimestamp": "2025-10-23 15:55:07.212 +0530"
+}

@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="MobileTesting">
+ <run>
+  <RunDate>2025-11-03 15:10:28.765 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>8.238000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251103_151028.765/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>InvalidCommandOrRange -- Not a valid command, or else incorrect types given for a range (must be numbers, date/times, or single characters -- got &quot;&quot; TO &quot; &quot;)</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-03 15:13:01.811 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>8.370000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251103_151301.811/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>InvalidCommandOrRange -- Not a valid command, or else incorrect types given for a range (must be numbers, date/times, or single characters -- got &quot;&quot; TO &quot; &quot;)</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-03 15:14:01.298 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>13.197000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251103_151401.298/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-03 15:14:52.697 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>15.798000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251103_151452.697/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-03 15:18:23.131 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>18.062000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251103_151823.131/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-03 15:20:20.787 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>17.817000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251103_152020.787/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-03 17:35:04.330 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>17.816000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251103_173504.330/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-04 20:49:57.727 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>8.230000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251104_204957.727/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-04 20:51:30.402 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>19.486000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251104_205130.402/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-05 09:57:42.565 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>19.894000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251105_095742.565/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-05 09:58:55.727 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>19.463000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251105_095855.727/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-05 10:00:00.971 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>10.153000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251105_100000.971/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-05 10:00:33.392 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>4.464000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251105_100033.392/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-05 10:00:56.573 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>23.827000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251105_100056.573/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-05 10:01:50.662 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>5.027000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251105_100150.662/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-05 10:02:55.820 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>8.298000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251105_100255.820/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-05 10:04:41.781 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>7.580000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20251105_100441.781/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-05 10:12:41.180 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>42.162000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251105_101241.180/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-06 10:12:42.416 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>40.117000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251106_101242.416/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-06 10:31:21.770 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>42.562000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251106_103121.770/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-11-06 12:47:45.424 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>49.966000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20251106_124745.424/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

@@ -1,0 +1,20 @@
+{
+	"entries": [
+		{
+				"message": "Running ApplicationUtilities/UserLogins.script",
+				"identifier": "START",
+				"timestamp": "2025-10-28 16:30:13.630 +0530"
+			},
+		{
+				"message": "(Duration:\"0.001\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-10-28 16:30:13 +0530\", Successes:\"1\", TestCase:\"ApplicationUtilities/UserLogins.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-10-28 16:30:13.639 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:00 ApplicationUtilities/UserLogins.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-10-28 16:30:13.778 +0530"
+			}
+	],
+	"createdTimestamp": "2025-10-28 16:30:13.634 +0530"
+}

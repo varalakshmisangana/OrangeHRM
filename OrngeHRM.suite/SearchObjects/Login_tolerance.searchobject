@@ -1,0 +1,101 @@
+{
+	"originalcapturelocation": [
+		223,
+		474,
+		403,
+		167
+	],
+	"lastmodifieddate": 1761582733.8369999,
+	"createddate": 1761582456.1500001,
+	"name": "Login_tolerance",
+	"lastfounddate": 1761582683.48,
+	"ocrcapturestring": "Login",
+	"lastfoundlocation": [
+		899,
+		474,
+		403,
+		167
+	],
+	"testlocationdata": [
+		{
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[201,83]",
+					"Tolerance": "_73",
+					"Discrepancy": "_0",
+					"SearchType": "Smoothed for Text"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Login_tolerance/Login_tolerance.png",
+				"connectionname": "ChatGPT Image Oct 23, 2025, 10_07_59 PM.png",
+				"type": 1,
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/ChatGPT Image Oct 23, 2025, 10_07_59 PM.png",
+				"capturerect": [
+					223,
+					474,
+					403,
+					167
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "Login"
+			},
+		{
+				"deleted": true,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[201,83]",
+					"Tolerance": "_73",
+					"Discrepancy": "_0",
+					"SearchType": "Smoothed for Text"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Login_tolerance/Login_tolerance2.png",
+				"connectionname": "ChatGPT Image Oct 23, 2025, 10_07_59 PM.png",
+				"type": 1,
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/ChatGPT Image Oct 23, 2025, 10_07_59 PM.png",
+				"capturerect": [
+					899,
+					474,
+					403,
+					167
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "Login"
+			},
+		{
+				"deleted": true,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[201,83]",
+					"Tolerance": "_73",
+					"Discrepancy": "_0",
+					"SearchType": "Smoothed for Text"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Login_tolerance/Login_tolerance2.png",
+				"connectionname": "ChatGPT Image Oct 23, 2025, 10_07_59 PM.png",
+				"type": 1,
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/ChatGPT Image Oct 23, 2025, 10_07_59 PM.png",
+				"capturerect": [
+					899,
+					474,
+					403,
+					167
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "Login"
+			}
+	]
+}

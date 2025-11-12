@@ -1,0 +1,9 @@
+﻿2025-10-30 10:16:20.958 +0530	START		Running Testcases/TC_01_AddNewEmployeeInPMPModule.script
+2025-10-30 10:16:37.049 +0530	imagefound	(TEXT:"Type the name")	Unable to Find Image (TEXT:"Type the name"). Text not found.	2	on_openrunwindow	commonUtilities/Core.script
+2025-10-30 10:16:37.227 +0530	typetext		[windowsKey]r	3	on_openrunwindow	commonUtilities/Core.script
+2025-10-30 10:16:42.825 +0530	imagefound	(TEXT:"Type the name")	found at (117, 875)	9	on_openrunwindow	commonUtilities/Core.script
+2025-10-30 10:16:43.011 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-30 10:16:43.933 +0530	typetext		Chrome	6	on_textentry	commonUtilities/Core.script
+2025-10-30 10:16:44.672 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-30 10:16:44.745 +0530	EndTestCase		(Duration:"23.777", Errors:"1", Exceptions:"0", StartTime:"2025-10-30 10:16:20 +0530", Successes:"0", TestCase:"Testcases/TC_01_AddNewEmployeeInPMPModule.script", Warnings:"0")
+2025-10-30 10:16:46.776 +0530	FAILURE	Screen_Error.png	STUnknownMessage: ERROR: No Such Command: 'validate' -- Execution Time 0:00:23 Testcases/TC_01_AddNewEmployeeInPMPModule.script

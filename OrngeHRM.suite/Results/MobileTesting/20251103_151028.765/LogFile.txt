@@ -1,0 +1,8 @@
+﻿2025-11-03 15:10:28.773 +0530	START		Running MobileTesting.script
+2025-11-03 15:10:28.995 +0530	typetext		[controlKey]l	1	on_mobiletesting	MobileTesting.script
+2025-11-03 15:10:30.086 +0530	typetext		[controlKey]ac	3	on_mobiletesting	MobileTesting.script
+2025-11-03 15:10:32.959 +0530	Log			5	on_mobiletesting	MobileTesting.script
+2025-11-03 15:10:34.082 +0530	click		at (20, 200)	7	on_mobiletesting	MobileTesting.script
+2025-11-03 15:10:37.005 +0530	EndTestCase		(Duration:"8.224", Errors:"1", Exceptions:"0", StartTime:"2025-11-03 15:10:28 +0530", Successes:"0", TestCase:"MobileTesting.script", Warnings:"0")
+2025-11-03 15:10:37.336 +0530	FAILURE	Screen_Error.png	InvalidCommandOrRange: Not a valid command, or else incorrect types given for a range (must be numbers, date/times, or single characters -- got "" TO " ") -- Execution Time 0:00:08 MobileTesting.script
+2025-11-03 15:10:38.144 +0530	FAILURE		InvalidCommandOrRange: Not a valid command, or else incorrect types given for a range (must be numbers, date/times, or single characters -- got "" TO " ") -- Screenshot unavailable -- Execution Time 0:00:08 MobileTesting.script

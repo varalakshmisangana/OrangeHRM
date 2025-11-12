@@ -1,0 +1,49 @@
+{
+	"originalcapturelocation": [
+		86,
+		54,
+		18,
+		18
+	],
+	"lastmodifieddate": 1762323140.2519999,
+	"createddate": 1761648435.5339999,
+	"name": "refreshIcon",
+	"lastfounddate": 1762157222.335,
+	"ocrcapturestring": "3",
+	"lastfoundlocation": [
+		86,
+		54,
+		18,
+		18
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 52789,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[7,8]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Single System",
+					"epgw_path": "C:\\Program Files\\Eggplant\\Eggplant.app\\Resources\\epgw\\x64\\bin\\epgw.exe"
+				},
+				"name": "refreshIcon/refreshIcon.png",
+				"connectionname": "Single System",
+				"type": 1,
+				"connectionserverid": "127.0.0.1",
+				"capturerect": [
+					86,
+					54,
+					18,
+					18
+				],
+				"connectiontype": "Single System",
+				"capturedocrtext": "3"
+			}
+	]
+}

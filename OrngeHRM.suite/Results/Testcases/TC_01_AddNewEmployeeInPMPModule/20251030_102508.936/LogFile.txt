@@ -1,0 +1,12 @@
+﻿2025-10-30 10:25:08.945 +0530	START		Running Testcases/TC_01_AddNewEmployeeInPMPModule.script
+2025-10-30 10:25:23.922 +0530	imagefound	(TEXT:"Type the name")	Unable to Find Image (TEXT:"Type the name"). Text not found.	2	on_openrunwindow	commonUtilities/Core.script
+2025-10-30 10:25:23.982 +0530	typetext		[windowsKey]r	3	on_openrunwindow	commonUtilities/Core.script
+2025-10-30 10:25:29.695 +0530	imagefound	(TEXT:"Type the name")	found at (117, 875)	9	on_openrunwindow	commonUtilities/Core.script
+2025-10-30 10:25:29.872 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-30 10:25:30.792 +0530	typetext		Chrome	6	on_textentry	commonUtilities/Core.script
+2025-10-30 10:25:31.540 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-30 10:25:47.319 +0530	imagefound	refreshIcon	found at (93, 62)	2	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:25:47.361 +0530	LogSuccess		Element found ( refreshIcon ) at  [93,62]	3	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:25:47.798 +0530	capturescreen	refreshIcon_0001.png		7	on_validateelement	commonUtilities/Core.script
+2025-10-30 10:25:47.882 +0530	EndTestCase		(Duration:"38.93", Errors:"1", Exceptions:"0", StartTime:"2025-10-30 10:25:08 +0530", Successes:"1", TestCase:"Testcases/TC_01_AddNewEmployeeInPMPModule.script", Warnings:"0")
+2025-10-30 10:25:48.249 +0530	FAILURE	Screen_Error.png	STUnknownMessage: ERROR: No Such Command: 'clearcache' -- Execution Time 0:00:38 Testcases/TC_01_AddNewEmployeeInPMPModule.script

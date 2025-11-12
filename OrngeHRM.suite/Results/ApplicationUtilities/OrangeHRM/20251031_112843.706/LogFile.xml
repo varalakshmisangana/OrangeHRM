@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="ApplicationUtilities/FlipKart_script" package="GNUCash.suite" timestamp="2025-10-31 11:28:43.706 +0530"
+ tests="1"  failures="0" errors="0" time="0.055000">
+  <properties>
+   <property name="RunDate" value="2025-10-31 11:28:43.706 +0530"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="ApplicationUtilities/FlipKart.script" assertions="1" status="success"  time="0.002">
+  </testcase>
+ </testsuite>
+</testsuites>

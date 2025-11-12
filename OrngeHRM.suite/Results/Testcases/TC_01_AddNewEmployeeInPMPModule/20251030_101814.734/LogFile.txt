@@ -1,0 +1,9 @@
+﻿2025-10-30 10:18:14.750 +0530	START		Running Testcases/TC_01_AddNewEmployeeInPMPModule.script
+2025-10-30 10:18:28.321 +0530	imagefound	(TEXT:"Type the name")	Unable to Find Image (TEXT:"Type the name"). Text not found.	2	on_openrunwindow	commonUtilities/Core.script
+2025-10-30 10:18:28.382 +0530	typetext		[windowsKey]r	3	on_openrunwindow	commonUtilities/Core.script
+2025-10-30 10:18:33.928 +0530	imagefound	(TEXT:"Type the name")	found at (117, 875)	9	on_openrunwindow	commonUtilities/Core.script
+2025-10-30 10:18:34.173 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-30 10:18:35.078 +0530	typetext		Chrome	6	on_textentry	commonUtilities/Core.script
+2025-10-30 10:18:35.826 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-30 10:18:36.066 +0530	EndTestCase		(Duration:"21.307", Errors:"1", Exceptions:"0", StartTime:"2025-10-30 10:18:14 +0530", Successes:"0", TestCase:"Testcases/TC_01_AddNewEmployeeInPMPModule.script", Warnings:"0")
+2025-10-30 10:18:39.831 +0530	FAILURE	Screen_Error.png	STUnknownMessage: ERROR: No Such Function: 'determineimageortext' -- Execution Time 0:00:21 Testcases/TC_01_AddNewEmployeeInPMPModule.script

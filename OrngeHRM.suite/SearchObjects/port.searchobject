@@ -1,0 +1,73 @@
+{
+	"originalcapturelocation": [
+		352,
+		292,
+		86,
+		86
+	],
+	"lastmodifieddate": 1761583959.8429999,
+	"createddate": 1761583898.27,
+	"name": "port",
+	"lastfounddate": 1761584052.1599998,
+	"ocrcapturestring": "*",
+	"lastfoundlocation": [
+		999,
+		292,
+		86,
+		86
+	],
+	"testlocationdata": [
+		{
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[43,43]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "port/port.png",
+				"connectionname": "Background2.jpg",
+				"type": 1,
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/Background2.jpg",
+				"capturerect": [
+					352,
+					292,
+					86,
+					86
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "*"
+			},
+		{
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[43,43]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "port/port2.png",
+				"connectionname": "Background2.jpg",
+				"type": 1,
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/Background2.jpg",
+				"capturerect": [
+					999,
+					292,
+					86,
+					86
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "Sfe"
+			}
+	]
+}

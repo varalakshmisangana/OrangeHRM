@@ -1,0 +1,146 @@
+﻿(*
+Hnadler Name: openRunWindow
+Author: Varalakshmi S
+Description: open run window and validate the run window was opened or not if repeat exceed five time test will fail
+*)
+to openRunWindow
+	repeat until ImageFound(text:"Type the name", waitFor:2, SearchRectangle:"commonUtilities/screenPart"().SUT.("BLQ"))
+		typetext windowsKey, r
+		wait universal minWaitTime
+		if repeatIndex()>5
+			LogError "Unable to open run window"
+			Exit repeat
+		end if
+	end repeat
+end openRunWindow
+
+to LaunchApplication browser, path, expectation, SR:empty
+	set universal minWaitTime to 5
+	set universal meanWaitTime to 15
+	set universal maxWaitTime to 30
+	openRunWindow
+	textEntry "", browser,,,"Yes"
+	validateElement "refreshIcon", "TLQ"
+	"commonUtilities/browser".clearCache
+	typetext controlKey, l
+	textEntry "", path,,,"Yes"
+	validateElement expectation, SR
+end LaunchApplication
+
+to textEntry fieldName, input, SR:empty, offSet:[200,0], returnValue:"No", action:"Click"
+	if fieldName is not empty then 
+		mouseAction fieldName, "", SR, "", offSet, action
+	end if
+	typetext controlKey, a
+	typetext input
+	//typetext escapeKey
+	if returnValue is "Yes" then typetext return
+end textEntry
+
+to mouseAction element, expectation, SR1:empty, SR2:empty, offset:[0,0], action:"Click"
+	waitfor universal maxWaitTime, {(findImageOrText(element)):element,SearchRectangle:"commonUtilities/screenPart"().SUT.(SR1)}
+	put foundimageinfo().ImageLocation + offset into ImageLocation
+	do action&&ImageLocation
+	if expectation is not empty then validateElement expectation, SR2
+end mouseAction
+
+to ClickFromMultipleElements elements, SR:empty, Offset:[0, 0]
+	repeat with each element of elements
+		if imagefound((findImageOrText(element)):element, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal maxWaitTime) then
+			click FoundImageLocation() + Offset
+			Exit repeat
+		end if
+	end repeat
+end ClickFromMultipleElements
+
+to validateElement expectation, SR:empty
+	if imagefound((findImageOrText(expectation)):expectation, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal maxWaitTime) then
+		LogSuccess "Element found ("&&expectation&&") at "&&FoundImageLocation()
+	else
+		LogError "Element not found ("&&expectation&&")"
+	end if
+	CaptureScreen {Name: expectation, increment:true}
+end validateElement
+
+to validateElementNotFound expectation, SR:empty
+	if not imagefound((findImageOrText(expectation)):expectation, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal maxWaitTime) then
+		LogSuccess "Element not found ("&&expectation&&")"
+	else
+		LogError "Element found ("&&expectation&&") at "&&FoundImageLocation()
+	end if
+	CaptureScreen {Name: expectation, increment:true}
+end validateElementNotFound
+
+to waitUntilElementOnScreen expectation, SR:[]
+	log "waiting until"&&expectation&&"is on screen"
+	Repeat for 10 minutes 
+		if not ImageFound((findImageOrText(expectation)):expectation, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal minWaitTime)
+			Exit repeat
+		end if
+		wait 5
+	End repeat
+end waitUntilElementOnScreen
+
+to scrollToElement element, SR:empty, scrollSpeed:3, direction:"down"
+	Repeat until ImageFound((findImageOrText(element)):element, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal minWaitTime)
+		if direction is "down"
+			ScrollWheelDown scrollSpeed
+		else
+			ScrollWheelUp scrollSpeed			
+		end if
+		if repeatIndex()>10
+			LogError element&" not found on the screen"
+			Exit repeat
+		end if
+	End repeat
+	LogSuccess element&" not found on the screen at "&&FoundImageLocation()
+end scrollToElement
+
+to selectDropDownElement element, input, SR:empty, offset:[0,0], returnValue:"No"
+	mouseAction element, "", SR, "", offset
+	if input is not empty
+		if writable is "No"
+			mouseAction input, "", SR,,[10,100],"moveTo"
+			scrollToElement input, SR
+			mouseAction input, "", SR
+		else
+			textEntry "", input, SR, offset, returnValue
+			typetext downArrow, return
+		end if
+	else
+		typetext downArrow, return
+	end if
+end selectDropDownElement
+
+to selectDropDownElementNotEditable element, input, SR:empty, offset:[0,0], offset2:[30,90]
+	mouseAction element, , SR, , offset
+	if input is not empty
+		wait 1
+		typetext first character of input
+		mouseAction element, , SR, , offset2, "moveTo"
+		scrollToElement input, SR
+		mouseAction input, , SR
+	else
+		typetext downArrow, return
+	end if
+end selectDropDownElementNotEditable
+
+to setCustomRectangle element, SR:empty, searchRect
+	put ImageRectangle((findImageOrText(element)):element, waitFor:10,ignoreNewlines:on,searchRectangle:"commonUtilities/screenPart"().SUT.(SR), ignorespaces:on,language:universal language & ", English") into customRect
+	set global searchRect to customRect + searchRect
+end setCustomRectangle
+
+function findImageOrText expectation
+	if file (suiteinfo().imagesFolder&"/"&expectation&".png") exists or file (suiteinfo().imagesFolder&"/"&expectation) exists
+		return "ImageName"
+	else
+		return "Text"
+	end if
+end findImageOrText
+
+to getRandomName
+	put "Testing" into name
+	put formattedTime("ddMMYYYYhhmmss",long time) into todayDate
+	put name&todayDate into RandomName
+	return RandomName
+end getRandomName

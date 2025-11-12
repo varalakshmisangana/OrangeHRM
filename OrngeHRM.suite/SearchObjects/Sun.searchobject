@@ -1,0 +1,46 @@
+{
+	"lastmodifieddate": 1761584006.8210001,
+	"lastfoundlocation": [
+		340,
+		50,
+		213,
+		200
+	],
+	"originalcapturelocation": [
+		340,
+		50,
+		213,
+		200
+	],
+	"createddate": 1761583536.473,
+	"lastfounddate": 1761583676.8039999,
+	"testlocationdata": [
+		{
+				"deleted": true,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[106,100]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Sun.png",
+				"connectionname": "Background.jpg",
+				"type": 1,
+				"capturerect": [
+					340,
+					50,
+					213,
+					200
+				],
+				"connectiontype": "Screenshot",
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/Background.jpg"
+			}
+	],
+	"name": "Sun"
+}

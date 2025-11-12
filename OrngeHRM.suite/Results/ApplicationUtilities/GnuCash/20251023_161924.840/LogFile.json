@@ -1,0 +1,20 @@
+{
+	"entries": [
+		{
+				"message": "Running ApplicationUtilities/GnuCash.script",
+				"identifier": "START",
+				"timestamp": "2025-10-23 16:19:24.852 +0530"
+			},
+		{
+				"message": "(Duration:\"0.001\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-10-23 16:19:24 +0530\", Successes:\"1\", TestCase:\"ApplicationUtilities/GnuCash.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-10-23 16:19:24.858 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:00 ApplicationUtilities/GnuCash.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-10-23 16:19:24.930 +0530"
+			}
+	],
+	"createdTimestamp": "2025-10-23 16:19:24.857 +0530"
+}

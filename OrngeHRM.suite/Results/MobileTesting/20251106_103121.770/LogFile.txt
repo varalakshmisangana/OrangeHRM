@@ -1,0 +1,13 @@
+﻿2025-11-06 10:31:21.788 +0530	START		Running MobileTesting.script
+2025-11-06 10:31:22.224 +0530	click		at (60, 200)	1	on_mobiletesting	MobileTesting.script
+2025-11-06 10:31:27.442 +0530	typetext		[commandKey]l	3	on_mobiletesting	MobileTesting.script
+2025-11-06 10:31:32.541 +0530	typetext		[commandKey]ac	5	on_mobiletesting	MobileTesting.script
+2025-11-06 10:31:35.425 +0530	Log			7	on_mobiletesting	MobileTesting.script
+2025-11-06 10:31:40.600 +0530	click		at (60, 200)	9	on_mobiletesting	MobileTesting.script
+2025-11-06 10:31:50.642 +0530	setremoteclipboard		Set Text: 	11	on_mobiletesting	MobileTesting.script
+2025-11-06 10:31:52.789 +0530	typetext		[commandKey][downArrow]	13	on_mobiletesting	MobileTesting.script
+2025-11-06 10:31:58.083 +0530	typetext		[commandKey]l	15	on_mobiletesting	MobileTesting.script
+2025-11-06 10:32:03.195 +0530	typetext		[commandKey]ac	17	on_mobiletesting	MobileTesting.script
+2025-11-06 10:32:04.229 +0530	Log		https://www.keysight.com/us/en/home.html	19	on_mobiletesting	MobileTesting.script
+2025-11-06 10:32:04.339 +0530	EndTestCase		(Duration:"42.541", Errors:"0", Exceptions:"0", StartTime:"2025-11-06 10:31:21 +0530", Successes:"1", TestCase:"MobileTesting.script", Warnings:"0")
+2025-11-06 10:32:04.637 +0530	SUCCESS		Execution Time 0:00:42 MobileTesting.script

@@ -1,0 +1,77 @@
+{
+	"originalcapturelocation": [
+		555,
+		418,
+		41,
+		42
+	],
+	"lastmodifieddate": 1762323851.085,
+	"createddate": 1761650987.961,
+	"name": "uploadProfileIcon",
+	"lastfounddate": 1762324875.0739999,
+	"ocrcapturestring": "□",
+	"lastfoundlocation": [
+		556,
+		444,
+		41,
+		42
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 52789,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[20,21]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Single System",
+					"epgw_path": "C:\\Program Files\\Eggplant\\Eggplant.app\\Resources\\epgw\\x64\\bin\\epgw.exe"
+				},
+				"name": "uploadProfileIcon/uploadProfileIcon.png",
+				"connectionname": "Single System",
+				"type": 1,
+				"connectionserverid": "127.0.0.1",
+				"capturerect": [
+					555,
+					418,
+					41,
+					42
+				],
+				"connectiontype": "Single System",
+				"capturedocrtext": "□"
+			},
+		{
+				"connectionportnum": 65310,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[20,21]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"epgw_path": "C:\\Program Files\\Eggplant\\Eggplant.app\\Resources\\epgw\\x64\\bin\\epgw.exe",
+					"Type": "Single System"
+				},
+				"name": "uploadProfileIcon/uploadProfileIcon2.png",
+				"connectionname": "Single System",
+				"type": 1,
+				"connectionserverid": "127.0.0.1",
+				"capturerect": [
+					556,
+					444,
+					41,
+					42
+				],
+				"connectiontype": "Single System",
+				"capturedocrtext": "□"
+			}
+	]
+}

@@ -1,0 +1,23 @@
+﻿set [x1,y1,x2,y2] to [0,0,ConnectionInfo().ScreenSize.x,ConnectionInfo().ScreenSize.y]
+return {
+	SUT :{
+		LH:[x1,y1,x2/2,y2],
+		RH:[x2/2,y1,x2,y2],
+		TH:[x1,y1,x2,y2/2],
+		BH:[x1,y2/2,x2,y2],
+		TLQ:[x1,y1,x2/2,y2/2],
+		TRQ:[x2/2,y1,x2,y2/2],
+		BLQ:[x1,y2/2,x2/2,y2],
+		BRQ:[x2/2,y2/2,x2,y2],
+		VM:[x2/2,y1,x2,y2]/2+[x1,y1,x2/2,y2]/2,
+		HM:[x1,y2/2,x2,y2]/2+[x1,y1,x2,y2/2]/2,
+		BHBH:[x1,y2/1.27,x2,y2],
+		THBH:[x1,y2/2,x2,y2/1.33],
+		BHTH:[x1,y2/3,x2,y2/2],
+		LHLH:[x1,y1,x2/4,y2],
+		RHRH:[x2/1.33,y1,x2,y2],
+		Center:[x2/4,y2/4,x2/1.33,y2/1.33],
+		THTH:[x1,y1,x2,y2/3],
+		customPart: global searchRect,
+	}
+}

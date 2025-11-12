@@ -1,0 +1,87 @@
+{
+	"entries": [
+		{
+				"message": "Running Testcases/TC_01.script",
+				"identifier": "START",
+				"timestamp": "2025-10-23 16:15:29.044 +0530"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-23 16:15:40.286 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Type the name\"). Text not found.",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-23 16:15:40.341 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-23 16:15:45.944 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (117, 875)",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-23 16:15:46.655 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-23 16:15:48.896 +0530",
+				"message": "C:\\Program Files (x86)\\gnucash\\bin\\gnucash.exe",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-23 16:15:49.644 +0530",
+				"message": "[return]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 8,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-23 16:15:57.121 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (329, 196)",
+				"image": "(TEXT:\"GnuCash\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-23 16:15:57.884 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "GnuCash_0001.png",
+				"handlerLine": 3,
+				"identifier": "capturescreen"
+			},
+		{
+				"message": "(Duration:\"28.877\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-10-23 16:15:29 +0530\", Successes:\"1\", TestCase:\"Testcases/TC_01.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-10-23 16:15:57.926 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:28 Testcases/TC_01.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-10-23 16:15:57.978 +0530"
+			}
+	],
+	"createdTimestamp": "2025-10-23 16:15:29.048 +0530"
+}

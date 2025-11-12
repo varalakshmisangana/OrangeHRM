@@ -1,0 +1,24 @@
+﻿to createNewfile
+	try
+		"commonUtilities/Core".mouseAction "File", "New File", "TLQ"
+	catch
+		"commonUtilities/Core".mouseAction "File", "New File", "TLQ"
+	end try
+	"commonUtilities/Core".mouseAction "New File", "New Account Hierarchy Setup", "TLQ"
+	"commonUtilities/Core".mouseAction "Next", "Reset defaults", "Center"
+	"commonUtilities/Core".mouseAction "Next", "Please choose the currency", "VM"
+	"commonUtilities/core".selectDropDownElement "Please choose the currency", "IDR (Rupiah)", "TH", [20,40]
+	"commonUtilities/Core".validateElement "IDR (Rupiah)", "TH"
+	"commonUtilities/Core".mouseAction "Next", "Category Description", "Center"
+	"commonUtilities/Core".mouseAction "Next", "Assets", "Center"
+	"commonUtilities/Core".mouseAction "Next", "Apply", "Center"
+	"commonUtilities/Core".mouseAction "Apply", "Save As", "BRQ"
+	put "commonUtilities/Core".getRandomName into global Name
+	"commonUtilities/Core".textEntry "Name", global Name,"VM"
+	"commonUtilities/Core".mouseAction "Save As", "", "BRQ"
+	"commonUtilities/Core".validateElement "Save", "Center"
+	"commonUtilities/Core".mouseAction "Save", "", "Center"
+end createNewfile
+
+
+

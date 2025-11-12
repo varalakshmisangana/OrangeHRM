@@ -1,0 +1,85 @@
+﻿#Omega 13
+Start Using Omega13
+//launchApplication
+//searchProduct
+getQuote
+Stop Using Omega13
+
+#Image Auto-Healing Options
+--Adaptive to image
+set the SearchRectangle to [126,332,713,829]
+Click imageName:"Login_tolerance", waitFor:2
+
+set the SearchRectangle to [851,332,1344,773]
+Click imageName:"Login_tolerance", waitFor:2
+
+--Smoothed For text
+set the SearchRectangle to [128,89,557,651]
+Click imageName:"port", waitFor:2
+
+set the SearchRectangle to [725,84,1240,646]
+Click imageName:"port", waitFor:2
+
+--Scaling
+launchApplication
+set the SearchRectangle to [1095,42,1908,778]
+Click imageName:"GlobeIcon", waitFor:2
+--Zoom application
+set the SearchRectangle to [1095,42,1908,778]
+Click imageName:"GlobeIcon", waitFor:2
+
+#OCR Auto healing
+--caseSensitive
+Click text: "part Of keysight", WaitFor: 5,caseSensitive:"true"
+
+--ignoreSpaces
+Click text: "Your Mission- Ready Positioning", WaitFor: 5
+
+--textDifference
+Click text: "Poducts", WaitFor: 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+to launchApplication
+	wait 2
+	typetext windowsKey, r
+	WaitFor 5, text:"Type the name"
+	typetext "Chrome www.Keysight.com", return
+	WaitFor 30, text:"KEYSIGHT"
+end launchApplication
+
+to searchProduct
+	click imageName:"searchIcon", WaitFor:8
+	wait 2
+	typetext "34465A", return
+	WaitFor 30, text:"Add to Cart", WaitFor:8
+end searchProduct
+
+to getQuote
+	ScrollWheelDown 3
+	wait 5
+	click text:"Get Quote", WaitFor:8
+	WaitFor 10, text:"Select a configuration"
+	Click text:"Sold By", waitFor:2	
+end getQuote
+
+to attemptRecovery given theException, theCommand, theParams
+	typetext escape
+	return yes
+	(*If ImageFound(text:"Select a Configuration")
+		Click text: "Cancel"
+		Return yes
+	Else
+		Return no
+	End If*)
+end attemptRecovery

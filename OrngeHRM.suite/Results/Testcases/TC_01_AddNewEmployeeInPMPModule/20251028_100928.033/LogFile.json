@@ -1,0 +1,459 @@
+{
+	"entries": [
+		{
+				"message": "Running Testcases/TC_01.script",
+				"identifier": "START",
+				"timestamp": "2025-10-28 10:09:28.213 +0530"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-28 10:10:04.374 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Type the name\"). Text not found.",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-28 10:10:04.443 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-28 10:10:10.922 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (117, 875)",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-28 10:10:11.273 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-28 10:10:13.512 +0530",
+				"message": "C:\\Program Files (x86)\\gnucash\\bin\\gnucash.exe",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-28 10:10:14.273 +0530",
+				"message": "[return]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 8,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:10:49.194 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (199, 66)",
+				"image": "(TEXT:\"GnuCash\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:10:50.611 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "GnuCash_0001.png",
+				"handlerLine": 3,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_tc_01",
+				"timestamp": "2025-10-28 10:10:50.697 +0530",
+				"message": "[windowsKey][upArrow]",
+				"scriptName": "Testcases/TC_01.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:10:54.195 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (16, 34)",
+				"image": "(TEXT:\"File\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:10:54.485 +0530",
+				"message": "at (16, 34)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:11:36.444 +0530",
+				"message": "Unable to Find Text: New File -- AutoUpdate engaged",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 2,
+				"identifier": "LogWarning"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:11:40.286 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable To Find Any Image On Screen \"(TEXT:\"New File\")\" within 30.00 seconds. Text not found.",
+				"image": "(TEXT:\"New File\")",
+				"handlerLine": 2,
+				"identifier": "Exception"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:11:41.395 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (16, 34)",
+				"image": "(TEXT:\"File\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:11:41.701 +0530",
+				"message": "at (16, 34)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:11:44.070 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (53, 60)",
+				"image": "(TEXT:\"New File\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:11:44.445 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "New File_0001.png",
+				"handlerLine": 3,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:11:45.559 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (53, 60)",
+				"image": "(TEXT:\"New File\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:11:45.891 +0530",
+				"message": "at (53, 60)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:09.715 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (698, 237)",
+				"image": "(TEXT:\"New Account Hierarchy Setup\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:10.166 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "New Account Hierarchy Setup_0001.png",
+				"handlerLine": 3,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:11.139 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1200, 765)",
+				"image": "(TEXT:\"Next\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:11.455 +0530",
+				"message": "at (1200, 765)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:14.150 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1051, 695)",
+				"image": "(TEXT:\"Reset defaults\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:15.023 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Reset defaults_0001.png",
+				"handlerLine": 3,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:17.878 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1125, 765)",
+				"image": "(TEXT:\"Next\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:18.168 +0530",
+				"message": "at (1125, 765)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:21.411 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (985, 273)",
+				"image": "(TEXT:\"Please choose the currency\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:21.729 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Please choose the currency_0001.png",
+				"handlerLine": 3,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:22.731 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (985, 273)",
+				"image": "(TEXT:\"Please choose the currency\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:22.920 +0530",
+				"message": "at (1005, 313)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-28 10:12:23.673 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-28 10:12:24.857 +0530",
+				"message": "IDR (Rupiah)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_selectdropdownelement",
+				"timestamp": "2025-10-28 10:12:25.639 +0530",
+				"message": "[downArrow][return]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:31.979 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (937, 303)",
+				"image": "(TEXT:\"IDR (Rupiah)\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:32.304 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "IDR (Rupiah)_0001.png",
+				"handlerLine": 3,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:33.057 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1125, 765)",
+				"image": "(TEXT:\"Next\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:33.508 +0530",
+				"message": "at (1125, 765)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:41.203 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (936, 538)",
+				"image": "(TEXT:\"Category Description\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:41.597 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Category Description_0001.png",
+				"handlerLine": 3,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:43.811 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1050, 765)",
+				"image": "(TEXT:\"Next\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:44.074 +0530",
+				"message": "at (1050, 765)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:48.472 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1208, 373)",
+				"image": "(TEXT:\"Assets\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:48.973 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Assets_0001.png",
+				"handlerLine": 3,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:50.685 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1125, 765)",
+				"image": "(TEXT:\"Next\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:51.044 +0530",
+				"message": "at (1125, 765)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:55.276 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (842, 471)",
+				"image": "(TEXT:\"Apply\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:12:55.550 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Apply_0001.png",
+				"handlerLine": 3,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:56.072 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1124, 767)",
+				"image": "(TEXT:\"Apply\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-28 10:12:56.304 +0530",
+				"message": "at (1124, 767)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:13:10.796 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1217, 881)",
+				"image": "(TEXT:\"Save As\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 10:13:11.086 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Save As_0001.png",
+				"handlerLine": 3,
+				"identifier": "capturescreen"
+			},
+		{
+				"message": "(Duration:\"222.697\", Errors:\"0\", Exceptions:\"1\", StartTime:\"2025-10-28 10:09:28 +0530\", Successes:\"1\", TestCase:\"Testcases/TC_01.script\", Warnings:\"1\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-10-28 10:13:11.169 +0530"
+			},
+		{
+				"message": "Execution Time 0:03:43 Testcases/TC_01.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-10-28 10:13:11.242 +0530"
+			}
+	],
+	"createdTimestamp": "2025-10-28 10:09:28.457 +0530"
+}

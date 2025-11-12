@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="MobileTesting_script" package="GNUCash.suite" timestamp="2025-11-03 15:13:01.811 +0530"
+ tests="1"  failures="2" errors="0" time="8.370000">
+  <properties>
+   <property name="RunDate" value="2025-11-03 15:13:01.811 +0530"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="MobileTesting.script" assertions="1" status="failure"  time="8.359">
+    <failure type="FAILURE" message="InvalidCommandOrRange: Not a valid command, or else incorrect types given for a range (must be numbers, date/times, or single characters -- got &quot;&quot; TO &quot; &quot;) -- Execution Time 0:00:08 MobileTesting.script" />
+    <failure type="FAILURE" message="InvalidCommandOrRange: Not a valid command, or else incorrect types given for a range (must be numbers, date/times, or single characters -- got &quot;&quot; TO &quot; &quot;) -- Execution Time 0:00:08 MobileTesting.script" />
+  </testcase>
+ </testsuite>
+</testsuites>

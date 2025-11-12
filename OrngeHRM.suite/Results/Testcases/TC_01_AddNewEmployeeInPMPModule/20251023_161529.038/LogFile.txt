@@ -1,0 +1,11 @@
+﻿2025-10-23 16:15:29.044 +0530	START		Running Testcases/TC_01.script
+2025-10-23 16:15:40.286 +0530	imagefound	(TEXT:"Type the name")	Unable to Find Image (TEXT:"Type the name"). Text not found.	2	on_openrunwindow	commonUtilities/Core.script
+2025-10-23 16:15:40.341 +0530	typetext		[windowsKey]r	3	on_openrunwindow	commonUtilities/Core.script
+2025-10-23 16:15:45.944 +0530	imagefound	(TEXT:"Type the name")	found at (117, 875)	9	on_openrunwindow	commonUtilities/Core.script
+2025-10-23 16:15:46.655 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-23 16:15:48.896 +0530	typetext		C:\Program Files (x86)\gnucash\bin\gnucash.exe	6	on_textentry	commonUtilities/Core.script
+2025-10-23 16:15:49.644 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-23 16:15:57.121 +0530	waitfor	(TEXT:"GnuCash")	found at (329, 196)	2	on_validate	commonUtilities/Core.script
+2025-10-23 16:15:57.884 +0530	capturescreen	GnuCash_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-23 16:15:57.926 +0530	EndTestCase		(Duration:"28.877", Errors:"0", Exceptions:"0", StartTime:"2025-10-23 16:15:29 +0530", Successes:"1", TestCase:"Testcases/TC_01.script", Warnings:"0")
+2025-10-23 16:15:57.978 +0530	SUCCESS		Execution Time 0:00:28 Testcases/TC_01.script

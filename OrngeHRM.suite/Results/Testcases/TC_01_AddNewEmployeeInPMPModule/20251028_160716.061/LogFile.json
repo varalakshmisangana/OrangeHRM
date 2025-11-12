@@ -1,0 +1,87 @@
+{
+	"entries": [
+		{
+				"message": "Running Testcases/TC_01_AddNewEmployeeInPMPModule.script",
+				"identifier": "START",
+				"timestamp": "2025-10-28 16:07:16.073 +0530"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-28 16:07:31.894 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Type the name\"). Text not found.",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-28 16:07:31.957 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-28 16:07:37.492 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (117, 875)",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-28 16:07:37.749 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-28 16:07:40.043 +0530",
+				"message": "Chrome https://opensource-demo.orangehrmlive.com/",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-28 16:07:40.792 +0530",
+				"message": "[return]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 8,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 16:08:07.864 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (767, 405)",
+				"image": "(TEXT:\"Login\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2025-10-28 16:08:08.339 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Login_0001.png",
+				"handlerLine": 3,
+				"identifier": "capturescreen"
+			},
+		{
+				"message": "(Duration:\"52.322\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-10-28 16:07:16 +0530\", Successes:\"1\", TestCase:\"Testcases/TC_01_AddNewEmployeeInPMPModule.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-10-28 16:08:08.402 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:52 Testcases/TC_01_AddNewEmployeeInPMPModule.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-10-28 16:08:08.483 +0530"
+			}
+	],
+	"createdTimestamp": "2025-10-28 16:07:16.078 +0530"
+}

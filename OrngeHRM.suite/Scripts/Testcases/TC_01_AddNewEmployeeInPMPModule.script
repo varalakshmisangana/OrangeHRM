@@ -1,0 +1,7 @@
+﻿"commonUtilities/Core".LaunchApplication "Firefox", "https://opensource-demo.orangehrmlive.com/", "Login", "Center"
+"ApplicationUtilities/UserLogins".loginUser "Admin", "admin123"
+"ApplicationUtilities/OrangeHRM".createNewEmployeeInPMPModule "Vara", "Lakshmi", "Sangana", "C:\Users\varalakshmi.sangana\Documents\OrangeHRMProfile.jpg"
+"ApplicationUtilities/OrangeHRM".enableCreateLoginCredentials
+"ApplicationUtilities/OrangeHRM".fillContactDetails
+"ApplicationUtilities/OrangeHRM".fillEmergencyContacts
+"ApplicationUtilities/OrangeHRM".fillDependents

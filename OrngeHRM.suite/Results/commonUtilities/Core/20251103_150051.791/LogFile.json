@@ -1,0 +1,20 @@
+{
+	"entries": [
+		{
+				"message": "Running commonUtilities/Core.script",
+				"identifier": "START",
+				"timestamp": "2025-11-03 15:00:51.813 +0530"
+			},
+		{
+				"message": "(Duration:\"0.148\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-11-03 15:00:51 +0530\", Successes:\"1\", TestCase:\"commonUtilities/Core.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-11-03 15:00:51.974 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:00 commonUtilities/Core.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-11-03 15:00:52.050 +0530"
+			}
+	],
+	"createdTimestamp": "2025-11-03 15:00:51.819 +0530"
+}

@@ -1,0 +1,45 @@
+{
+	"lastmodifieddate": 1761587347.9359999,
+	"lastfoundlocation": [
+		69,
+		70,
+		57,
+		60
+	],
+	"originalcapturelocation": [
+		69,
+		70,
+		57,
+		60
+	],
+	"createddate": 1761587242.063,
+	"lastfounddate": 1761587419.677,
+	"testlocationdata": [
+		{
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[28,30]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Orangebox.png",
+				"connectionname": "Background_Images.gif",
+				"type": 1,
+				"capturerect": [
+					69,
+					70,
+					57,
+					60
+				],
+				"connectiontype": "Screenshot",
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/Background_Images.gif"
+			}
+	],
+	"name": "Orange box"
+}

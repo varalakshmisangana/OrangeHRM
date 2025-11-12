@@ -1,0 +1,110 @@
+﻿2025-10-31 12:05:38.995 +0530	START		Running Testcases/TC_01_AddNewEmployeeInPMPModule.script
+2025-10-31 12:05:56.816 +0530	imagefound	(TEXT:"Type the name")	Unable to Find Image (TEXT:"Type the name"). Text not found.	2	on_openrunwindow	commonUtilities/Core.script
+2025-10-31 12:05:56.881 +0530	typetext		[windowsKey]r	3	on_openrunwindow	commonUtilities/Core.script
+2025-10-31 12:06:03.692 +0530	imagefound	(TEXT:"Type the name")	found at (117, 875)	9	on_openrunwindow	commonUtilities/Core.script
+2025-10-31 12:06:04.321 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-31 12:06:05.247 +0530	typetext		Chrome	6	on_textentry	commonUtilities/Core.script
+2025-10-31 12:06:05.988 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-31 12:06:26.275 +0530	imagefound	refreshIcon	found at (93, 62)	2	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:06:26.453 +0530	LogSuccess		Element found ( refreshIcon ) at  [93,62]	3	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:06:27.050 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/GNUCash.suite/Results/Testcases/TC_01_AddNewEmployeeInPMPModule/20251031_120538.975/refreshIcon_0001.png	UserCapturedScreenshot	EBD92F91-95AE-3606-6995-A15BA6701F2E	7	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:06:29.248 +0530	typetext		[controlKey][shiftKey][deleteKey]	3	on_clearcache	commonUtilities/browser.script
+2025-10-31 12:06:33.380 +0530	imagefound	(TEXT:"Delete browsing data")	found at (794, 351)	2	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:06:33.577 +0530	LogSuccess		Element found ( Delete browsing data ) at  [794,351]	3	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:06:33.953 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/GNUCash.suite/Results/Testcases/TC_01_AddNewEmployeeInPMPModule/20251031_120538.975/Delete browsing data_0001.png	UserCapturedScreenshot	C5B0B294-8A64-C606-4689-F36D924E5370	7	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:06:35.289 +0530	waitfor	(TEXT:"Advanced")	found at (1079, 385)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:06:35.655 +0530	click		at (1079, 385)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:06:37.384 +0530	waitfor	(TEXT:"Time range")	found at (755, 434)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:06:37.779 +0530	click		at (955, 434)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:06:40.502 +0530	imagefound	(TEXT:"All time")	found at (831, 433)	3	on_selectdropdownelement	commonUtilities/Core.script
+2025-10-31 12:06:43.532 +0530	waitfor	(TEXT:"All time")	found at (831, 433)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:06:43.881 +0530	click		at (831, 433)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:06:44.731 +0530	waitfor	(TEXT:"Delete data")	found at (1150, 761)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:06:45.336 +0530	click		at (1150, 761)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:06:48.108 +0530	Log		waiting until Delete data is on screen	2	on_waituntilelementonscreen	commonUtilities/Core.script
+2025-10-31 12:06:51.251 +0530	imagefound	(TEXT:"Delete data")	found at (1149, 761)	4	on_waituntilelementonscreen	commonUtilities/Core.script
+2025-10-31 12:07:15.770 +0530	imagefound	(TEXT:"Delete data")	Unable to Find Image (TEXT:"Delete data"). Text not found.	4	on_waituntilelementonscreen	commonUtilities/Core.script
+2025-10-31 12:07:16.048 +0530	typetext		[controlKey]l	9	on_launchapplication	commonUtilities/Core.script
+2025-10-31 12:07:16.814 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-31 12:07:18.816 +0530	typetext		https://opensource-demo.orangehrmlive.com/	6	on_textentry	commonUtilities/Core.script
+2025-10-31 12:07:19.565 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-31 12:07:27.160 +0530	imagefound	(TEXT:"Login")	found at (767, 414)	2	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:07:27.396 +0530	LogSuccess		Element found ( Login ) at  [767,414]	3	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:07:27.928 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/GNUCash.suite/Results/Testcases/TC_01_AddNewEmployeeInPMPModule/20251031_120538.975/Login_0001.png	UserCapturedScreenshot	4128ECA2-6F0D-F303-7328-54CBF9BDA2FC	7	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:07:29.964 +0530	imagefound	(TEXT:"Login")	found at (767, 405)	2	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:07:30.188 +0530	LogSuccess		Element found ( Login ) at  [767,405]	3	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:07:30.608 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/GNUCash.suite/Results/Testcases/TC_01_AddNewEmployeeInPMPModule/20251031_120538.975/Login_0002.png	UserCapturedScreenshot	1AE1C328-6948-9606-433B-78908B0F302D	7	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:07:32.122 +0530	LogWarning		(null) is not a recognized Language.	2	on_setcustomrectangle	commonUtilities/Core.script
+2025-10-31 12:07:32.132 +0530	imagerectangle	(TEXT:"Login")	at [736,394,799,417]	2	on_setcustomrectangle	commonUtilities/Core.script
+2025-10-31 12:07:33.273 +0530	waitfor	(TEXT:"Username")	found at (572, 557)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:07:33.926 +0530	click		at (572, 607)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:07:34.675 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-31 12:07:35.565 +0530	typetext		Admin	6	on_textentry	commonUtilities/Core.script
+2025-10-31 12:07:36.556 +0530	waitfor	(TEXT:"Password")	found at (572, 643)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:07:36.985 +0530	click		at (572, 693)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:07:37.734 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-31 12:07:38.695 +0530	typetext		admin123	6	on_textentry	commonUtilities/Core.script
+2025-10-31 12:07:41.752 +0530	imagefound	(TEXT:"Login")	found at (767, 757)	2	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:07:41.982 +0530	LogSuccess		Element found ( Login ) at  [767,757]	3	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:07:42.405 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/GNUCash.suite/Results/Testcases/TC_01_AddNewEmployeeInPMPModule/20251031_120538.975/Login_0003.png	UserCapturedScreenshot	50C2E353-3D18-3C0C-5EE2-16168284DF39	7	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:07:46.690 +0530	waitfor	(TEXT:"Login")	found at (767, 757)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:07:47.184 +0530	click		at (767, 757)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:07:48.971 +0530	imagefound	refreshIcon	found at (93, 62)	2	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:07:49.417 +0530	LogSuccess		Element found ( refreshIcon ) at  [93,62]	3	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:07:50.885 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/GNUCash.suite/Results/Testcases/TC_01_AddNewEmployeeInPMPModule/20251031_120538.975/refreshIcon_0002.png	UserCapturedScreenshot	0D139459-ADC4-3909-5CBB-BB75ED1BC671	7	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:08:23.605 +0530	imagefound	(TEXT:"Save password")	Unable to Find Image (TEXT:"Save password"). Text not found.	8	on_loginuser	ApplicationUtilities/UserLogins.script
+2025-10-31 12:08:26.389 +0530	waitfor	(TEXT:"PIM")	found at (72, 301)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:08:26.785 +0530	click		at (72, 301)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:08:40.329 +0530	imagefound	(TEXT:"Employee Information")	found at (400, 280)	2	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:08:40.559 +0530	LogSuccess		Element found ( Employee Information ) at  [400,280]	3	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:08:40.986 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/GNUCash.suite/Results/Testcases/TC_01_AddNewEmployeeInPMPModule/20251031_120538.975/Employee Information_0001.png	UserCapturedScreenshot	C2EA311F-5B08-2404-5B54-7EAFBF9724C0	7	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:08:44.043 +0530	waitfor	(TEXT:"Add")	found at (391, 607)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:08:44.460 +0530	click		at (391, 607)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:08:55.203 +0530	imagefound	(TEXT:"Employee Full Name")	found at (786, 315)	2	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:08:55.405 +0530	LogSuccess		Element found ( Employee Full Name ) at  [786,315]	3	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:08:55.818 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/GNUCash.suite/Results/Testcases/TC_01_AddNewEmployeeInPMPModule/20251031_120538.975/Employee Full Name_0001.png	UserCapturedScreenshot	3D51A815-A0A2-AA0A-72E4-E871ECDD2856	7	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:08:59.104 +0530	waitfor	(TEXT:"First Name")	found at (769, 357)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:08:59.517 +0530	click		at (969, 357)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:00.267 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-31 12:09:01.125 +0530	typetext		Vara	6	on_textentry	commonUtilities/Core.script
+2025-10-31 12:09:04.411 +0530	waitfor	(TEXT:"Middle Name")	found at (1143, 357)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:04.819 +0530	click		at (1343, 357)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:05.566 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-31 12:09:06.519 +0530	typetext		Lakshmi	6	on_textentry	commonUtilities/Core.script
+2025-10-31 12:09:11.512 +0530	waitfor	(TEXT:"Last Name")	found at (1504, 357)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:11.947 +0530	click		at (1704, 357)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:12.695 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-31 12:09:13.644 +0530	typetext		Sangana	6	on_textentry	commonUtilities/Core.script
+2025-10-31 12:09:14.206 +0530	waitfor	uploadProfileIcon	found at (575, 439)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:14.717 +0530	click		at (575, 439)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:25.125 +0530	imagefound	(TEXT:"File name")	found at (163, 410)	2	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:09:25.299 +0530	LogSuccess		Element found ( File name ) at  [163,410]	3	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:09:25.689 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/GNUCash.suite/Results/Testcases/TC_01_AddNewEmployeeInPMPModule/20251031_120538.975/File name_0001.png	UserCapturedScreenshot	57B59D86-A917-7707-542D-472B7F9915CA	7	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:09:30.285 +0530	waitfor	(TEXT:"File name")	found at (163, 410)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:30.661 +0530	click		at (363, 410)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:31.409 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-31 12:09:34.104 +0530	typetext		C:\Users\varalakshmi.sangana\Documents\OrangeHRMProfile.jpg	6	on_textentry	commonUtilities/Core.script
+2025-10-31 12:09:36.478 +0530	waitfor	(TEXT:"Open")	found at (469, 442)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:36.886 +0530	click		at (469, 442)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:37.832 +0530	imagefound	profilePhoto	found at (535, 388)	2	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:09:38.343 +0530	LogSuccess		Element found ( profilePhoto ) at  [535,388]	3	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:09:38.899 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/GNUCash.suite/Results/Testcases/TC_01_AddNewEmployeeInPMPModule/20251031_120538.975/profilePhoto_0001.png	UserCapturedScreenshot	E0F160A0-B7DE-7707-7117-21AF380E0979	7	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:09:42.700 +0530	waitfor	(TEXT:"Create Login Details")	found at (787, 521)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:43.125 +0530	click		at (887, 521)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:44.744 +0530	imagefound	(TEXT:"Enabled")	found at (1348, 587)	2	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:09:44.950 +0530	LogSuccess		Element found ( Enabled ) at  [1348,587]	3	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:09:45.390 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/GNUCash.suite/Results/Testcases/TC_01_AddNewEmployeeInPMPModule/20251031_120538.975/Enabled_0001.png	UserCapturedScreenshot	3766F6D3-6D2E-0A0A-7AB6-332E109A09E7	7	on_validateelement	commonUtilities/Core.script
+2025-10-31 12:09:49.846 +0530	waitfor	(TEXT:"Username")	found at (759, 554)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:50.212 +0530	click		at (769, 604)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:50.963 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-31 12:09:52.351 +0530	typetext		Testing31102025120946	6	on_textentry	commonUtilities/Core.script
+2025-10-31 12:09:55.633 +0530	waitfor	(TEXT:"Password")	found at (768, 648)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:56.040 +0530	click		at (778, 698)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:09:56.786 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-31 12:09:58.174 +0530	typetext		Testing31102025120946	6	on_textentry	commonUtilities/Core.script
+2025-10-31 12:09:59.909 +0530	waitfor	(TEXT:"Confirm password")	found at (1344, 648)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:10:00.338 +0530	click		at (1354, 698)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-31 12:10:01.089 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-31 12:10:02.476 +0530	typetext		Testing31102025120946	6	on_textentry	commonUtilities/Core.script
+2025-10-31 12:10:02.705 +0530	EndTestCase		(Duration:"263.7", Errors:"0", Exceptions:"0", StartTime:"2025-10-31 12:05:39 +0530", Successes:"11", TestCase:"Testcases/TC_01_AddNewEmployeeInPMPModule.script", Warnings:"1")
+2025-10-31 12:10:02.813 +0530	SUCCESS		Execution Time 0:04:23 Testcases/TC_01_AddNewEmployeeInPMPModule.script

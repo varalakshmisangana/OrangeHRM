@@ -1,0 +1,45 @@
+{
+	"lastmodifieddate": 1761587400.631,
+	"lastfoundlocation": [
+		269,
+		75,
+		50,
+		50
+	],
+	"originalcapturelocation": [
+		73,
+		75,
+		50,
+		50
+	],
+	"createddate": 1761587400.631,
+	"lastfounddate": 1761587434.289,
+	"testlocationdata": [
+		{
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[37,34]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "squre.png",
+				"connectionname": "Background_Images.gif",
+				"type": 1,
+				"capturerect": [
+					73,
+					75,
+					50,
+					50
+				],
+				"connectiontype": "Screenshot",
+				"connectionserverid": "C:/Users/varalakshmi.sangana/Downloads/Background_Images.gif"
+			}
+	],
+	"name": "squre"
+}

@@ -1,0 +1,38 @@
+{
+	"entries": [
+		{
+				"message": "Running Testcases/TC_01.script",
+				"identifier": "START",
+				"timestamp": "2025-10-23 15:53:22.744 +0530"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-23 15:53:31.333 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Type the name\"). Text not found.",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-23 15:53:31.394 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"message": "(Duration:\"8.924\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-10-23 15:53:22 +0530\", Successes:\"0\", TestCase:\"Testcases/TC_01.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-10-23 15:53:31.679 +0530"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "STInvalidParameters: Command wait was called with invalid parameters -- Execution Time 0:00:08 Testcases/TC_01.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-10-23 15:53:32.360 +0530"
+			}
+	],
+	"createdTimestamp": "2025-10-23 15:53:22.751 +0530"
+}

@@ -1,0 +1,58 @@
+{
+	"entries": [
+		{
+				"message": "Running MobileTesting.script",
+				"identifier": "START",
+				"timestamp": "2025-11-03 15:13:01.818 +0530"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-03 15:13:02.151 +0530",
+				"message": "[controlKey]l",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 1,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-03 15:13:03.260 +0530",
+				"message": "[controlKey]ac",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-03 15:13:06.149 +0530",
+				"scriptName": "MobileTesting.script",
+				"identifier": "Log",
+				"handlerLine": 5
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-03 15:13:07.269 +0530",
+				"message": "at (20, 200)",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 7,
+				"identifier": "click"
+			},
+		{
+				"message": "(Duration:\"8.359\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-11-03 15:13:01 +0530\", Successes:\"0\", TestCase:\"MobileTesting.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-11-03 15:13:10.183 +0530"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "InvalidCommandOrRange: Not a valid command, or else incorrect types given for a range (must be numbers, date/times, or single characters -- got \"\" TO \" \") -- Execution Time 0:00:08 MobileTesting.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-11-03 15:13:11.740 +0530"
+			},
+		{
+				"image": "Screen_Error_Web.png",
+				"message": "InvalidCommandOrRange: Not a valid command, or else incorrect types given for a range (must be numbers, date/times, or single characters -- got \"\" TO \" \") -- Execution Time 0:00:08 MobileTesting.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-11-03 15:13:14.203 +0530"
+			}
+	],
+	"createdTimestamp": "2025-11-03 15:13:01.822 +0530"
+}

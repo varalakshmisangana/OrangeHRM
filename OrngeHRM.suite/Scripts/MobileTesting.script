@@ -1,0 +1,19 @@
+﻿click [60,200]
+wait 5
+typetext commandKey, l
+wait 10
+typetext commandKey, a, c
+wait 1
+log RemoteClipboard()
+wait 5
+click [60, 200]
+wait 10
+SetRemoteClipboard " "
+wait 2
+TypeText commandKey, downArrow
+wait 5
+typetext commandKey, l
+wait 10
+typetext commandKey, a, c
+wait 1
+log RemoteClipboard()

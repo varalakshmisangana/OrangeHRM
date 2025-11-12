@@ -1,0 +1,92 @@
+{
+	"entries": [
+		{
+				"message": "Running MobileTesting.script",
+				"identifier": "START",
+				"timestamp": "2025-11-05 10:00:56.584 +0530"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-05 10:00:56.760 +0530",
+				"message": "[commandKey]l",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 1,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-05 10:01:01.861 +0530",
+				"message": "[commandKey]ac",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-05 10:01:02.877 +0530",
+				"message": "https://www.keysight.com/us/en/home.html",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 5,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-05 10:01:04.006 +0530",
+				"message": "at (20, 200)",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 7,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-05 10:01:05.024 +0530",
+				"message": "Set Text: ",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 9,
+				"identifier": "setremoteclipboard"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-05 10:01:07.102 +0530",
+				"message": "[commandKey][downArrow]",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 11,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-05 10:01:12.176 +0530",
+				"message": "[commandKey]l",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 13,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-05 10:01:17.267 +0530",
+				"message": "[commandKey]ac",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 15,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mobiletesting",
+				"timestamp": "2025-11-05 10:01:20.361 +0530",
+				"message": " ",
+				"scriptName": "MobileTesting.script",
+				"handlerLine": 17,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"23.81\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-11-05 10:00:56 +0530\", Successes:\"1\", TestCase:\"MobileTesting.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-11-05 10:01:20.400 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:23 MobileTesting.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-11-05 10:01:20.472 +0530"
+			}
+	],
+	"createdTimestamp": "2025-11-05 10:00:56.588 +0530"
+}

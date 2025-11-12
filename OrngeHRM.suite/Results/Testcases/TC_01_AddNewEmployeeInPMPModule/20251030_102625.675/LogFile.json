@@ -1,0 +1,393 @@
+{
+	"entries": [
+		{
+				"message": "Running Testcases/TC_01_AddNewEmployeeInPMPModule.script",
+				"identifier": "START",
+				"timestamp": "2025-10-30 10:26:25.684 +0530"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-30 10:26:39.254 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Type the name\"). Text not found.",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-30 10:26:39.323 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-10-30 10:26:45.657 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (117, 875)",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-30 10:26:45.912 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-30 10:26:46.819 +0530",
+				"message": "Chrome",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-10-30 10:26:47.567 +0530",
+				"message": "[return]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 8,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-10-30 10:27:02.457 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (93, 62)",
+				"image": "refreshIcon",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-10-30 10:27:02.584 +0530",
+				"message": "Element found ( refreshIcon ) at  [93,62]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-10-30 10:27:02.847 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "refreshIcon_0001.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearcache",
+				"timestamp": "2025-10-30 10:27:04.969 +0530",
+				"message": "[controlKey][shiftKey][deleteKey]",
+				"scriptName": "commonUtilities/browser.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-10-30 10:27:06.498 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (794, 351)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-10-30 10:27:06.628 +0530",
+				"message": "Element found ( Delete browsing data ) at  [794,351]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-10-30 10:27:06.940 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Delete browsing data_0001.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-30 10:27:08.218 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1079, 385)",
+				"image": "(TEXT:\"Advanced\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-30 10:27:08.556 +0530",
+				"message": "at (1079, 385)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-30 10:27:09.842 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (755, 434)",
+				"image": "(TEXT:\"Time range\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-30 10:27:10.175 +0530",
+				"message": "at (955, 434)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_selectdropdownelement",
+				"timestamp": "2025-10-30 10:27:12.622 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (830, 560)",
+				"image": "(TEXT:\"All time\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-30 10:27:15.022 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (830, 560)",
+				"image": "(TEXT:\"All time\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-30 10:27:15.320 +0530",
+				"message": "at (830, 560)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-30 10:27:16.068 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1150, 761)",
+				"image": "(TEXT:\"Delete data\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-10-30 10:27:16.541 +0530",
+				"message": "at (1150, 761)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:27:18.021 +0530",
+				"message": "waiting until Delete browsing data is on screen",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:27:19.992 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (794, 351)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:27:26.012 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:27:31.707 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:27:37.404 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:27:43.110 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:27:48.815 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:27:54.534 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:28:00.271 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:28:05.967 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:28:11.663 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:28:17.376 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:28:23.014 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:28:28.856 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:28:34.702 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:28:40.495 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:28:46.337 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:28:52.096 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:28:57.780 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:29:03.575 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-10-30 10:29:09.289 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (736, 378)",
+				"image": "(TEXT:\"Delete browsing data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"message": "(Duration:\"164.168\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-10-30 10:26:25 +0530\", Successes:\"2\", TestCase:\"Testcases/TC_01_AddNewEmployeeInPMPModule.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-10-30 10:29:09.857 +0530"
+			},
+		{
+				"message": "Execution Time 0:02:44 Testcases/TC_01_AddNewEmployeeInPMPModule.script",
+				"identifier": "ABORTED",
+				"timestamp": "2025-10-30 10:29:09.869 +0530"
+			}
+	],
+	"createdTimestamp": "2025-10-30 10:26:25.688 +0530"
+}

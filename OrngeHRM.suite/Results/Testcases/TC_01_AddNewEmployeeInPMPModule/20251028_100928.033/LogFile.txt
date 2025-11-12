@@ -1,0 +1,55 @@
+﻿2025-10-28 10:09:28.213 +0530	START		Running Testcases/TC_01.script
+2025-10-28 10:10:04.374 +0530	imagefound	(TEXT:"Type the name")	Unable to Find Image (TEXT:"Type the name"). Text not found.	2	on_openrunwindow	commonUtilities/Core.script
+2025-10-28 10:10:04.443 +0530	typetext		[windowsKey]r	3	on_openrunwindow	commonUtilities/Core.script
+2025-10-28 10:10:10.922 +0530	imagefound	(TEXT:"Type the name")	found at (117, 875)	9	on_openrunwindow	commonUtilities/Core.script
+2025-10-28 10:10:11.273 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-28 10:10:13.512 +0530	typetext		C:\Program Files (x86)\gnucash\bin\gnucash.exe	6	on_textentry	commonUtilities/Core.script
+2025-10-28 10:10:14.273 +0530	typetext		[return]	8	on_textentry	commonUtilities/Core.script
+2025-10-28 10:10:49.194 +0530	waitfor	(TEXT:"GnuCash")	found at (199, 66)	2	on_validate	commonUtilities/Core.script
+2025-10-28 10:10:50.611 +0530	capturescreen	GnuCash_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 10:10:50.697 +0530	typetext		[windowsKey][upArrow]	2	on_tc_01	Testcases/TC_01.script
+2025-10-28 10:10:54.195 +0530	waitfor	(TEXT:"File")	found at (16, 34)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:10:54.485 +0530	click		at (16, 34)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:11:36.444 +0530	LogWarning		Unable to Find Text: New File -- AutoUpdate engaged	2	on_validate	commonUtilities/Core.script
+2025-10-28 10:11:40.286 +0530	Exception	(TEXT:"New File")	Unable To Find Any Image On Screen "(TEXT:"New File")" within 30.00 seconds. Text not found.	2	on_validate	commonUtilities/Core.script
+2025-10-28 10:11:41.395 +0530	waitfor	(TEXT:"File")	found at (16, 34)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:11:41.701 +0530	click		at (16, 34)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:11:44.070 +0530	waitfor	(TEXT:"New File")	found at (53, 60)	2	on_validate	commonUtilities/Core.script
+2025-10-28 10:11:44.445 +0530	capturescreen	New File_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 10:11:45.559 +0530	waitfor	(TEXT:"New File")	found at (53, 60)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:11:45.891 +0530	click		at (53, 60)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:09.715 +0530	waitfor	(TEXT:"New Account Hierarchy Setup")	found at (698, 237)	2	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:10.166 +0530	capturescreen	New Account Hierarchy Setup_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:11.139 +0530	waitfor	(TEXT:"Next")	found at (1200, 765)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:11.455 +0530	click		at (1200, 765)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:14.150 +0530	waitfor	(TEXT:"Reset defaults")	found at (1051, 695)	2	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:15.023 +0530	capturescreen	Reset defaults_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:17.878 +0530	waitfor	(TEXT:"Next")	found at (1125, 765)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:18.168 +0530	click		at (1125, 765)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:21.411 +0530	waitfor	(TEXT:"Please choose the currency")	found at (985, 273)	2	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:21.729 +0530	capturescreen	Please choose the currency_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:22.731 +0530	waitfor	(TEXT:"Please choose the currency")	found at (985, 273)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:22.920 +0530	click		at (1005, 313)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:23.673 +0530	typetext		[controlKey]a	5	on_textentry	commonUtilities/Core.script
+2025-10-28 10:12:24.857 +0530	typetext		IDR (Rupiah)	6	on_textentry	commonUtilities/Core.script
+2025-10-28 10:12:25.639 +0530	typetext		[downArrow][return]	5	on_selectdropdownelement	commonUtilities/Core.script
+2025-10-28 10:12:31.979 +0530	waitfor	(TEXT:"IDR (Rupiah)")	found at (937, 303)	2	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:32.304 +0530	capturescreen	IDR (Rupiah)_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:33.057 +0530	waitfor	(TEXT:"Next")	found at (1125, 765)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:33.508 +0530	click		at (1125, 765)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:41.203 +0530	waitfor	(TEXT:"Category Description")	found at (936, 538)	2	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:41.597 +0530	capturescreen	Category Description_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:43.811 +0530	waitfor	(TEXT:"Next")	found at (1050, 765)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:44.074 +0530	click		at (1050, 765)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:48.472 +0530	waitfor	(TEXT:"Assets")	found at (1208, 373)	2	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:48.973 +0530	capturescreen	Assets_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:50.685 +0530	waitfor	(TEXT:"Next")	found at (1125, 765)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:51.044 +0530	click		at (1125, 765)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:55.276 +0530	waitfor	(TEXT:"Apply")	found at (842, 471)	2	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:55.550 +0530	capturescreen	Apply_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 10:12:56.072 +0530	waitfor	(TEXT:"Apply")	found at (1124, 767)	2	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:12:56.304 +0530	click		at (1124, 767)	1	on_mouseaction	commonUtilities/Core.script
+2025-10-28 10:13:10.796 +0530	waitfor	(TEXT:"Save As")	found at (1217, 881)	2	on_validate	commonUtilities/Core.script
+2025-10-28 10:13:11.086 +0530	capturescreen	Save As_0001.png		3	on_validate	commonUtilities/Core.script
+2025-10-28 10:13:11.169 +0530	EndTestCase		(Duration:"222.697", Errors:"0", Exceptions:"1", StartTime:"2025-10-28 10:09:28 +0530", Successes:"1", TestCase:"Testcases/TC_01.script", Warnings:"1")
+2025-10-28 10:13:11.242 +0530	SUCCESS		Execution Time 0:03:43 Testcases/TC_01.script

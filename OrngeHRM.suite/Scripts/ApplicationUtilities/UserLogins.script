@@ -1,0 +1,11 @@
+﻿to loginUser username, password
+	"commonUtilities/Core".validateElement "Login", "Center"
+	"commonUtilities/Core".setCustomRectangle "Login", "Center", [-250,150,200,300]
+	"commonUtilities/Core".textEntry "Username", username, "customPart", [0,50]
+	"commonUtilities/Core".textEntry "Password", password, "customPart", [0,50],
+	"commonUtilities/Core".validateElement "Login", "BH"
+	"commonUtilities/Core".mouseAction "Login", "refreshIcon", "BH", "TLQ"
+	if ImageFound(text:"Save password", waitFor:universal meanWaitTime,SearchRectangle:"commonUtilities/screenPart"().SUT.("TH") )
+		"commonUtilities/Core".mouseAction "Never", "", "TH"
+	end if
+end loginUser
