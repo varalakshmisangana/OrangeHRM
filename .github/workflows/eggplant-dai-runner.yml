@@ -23,6 +23,7 @@ jobs:
         run: |
           if [ "${{ runner.os }}" == "Windows" ]; then
             echo "Trigger event.. ${{ github.event_name }}. Runner OS.. Windows."
+            # Bypass execution policy directly
             powershell -ExecutionPolicy Bypass -Command "Write-Host 'Trigger event.. ${{ github.event_name }}. Runner OS.. Windows.'"
           elif [ "${{ runner.os }}" == "Linux" ]; then
             echo "Trigger event.. ${{ github.event_name }}. Runner OS.. Linux."
