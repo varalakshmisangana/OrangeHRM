@@ -1,4 +1,4 @@
-name: "Run Eggplant DAI Test"
+name: "Run Eggplant DAI Test on Windows"
 
 on:
   push:
@@ -11,11 +11,7 @@ on:
 
 jobs:
   Run-DAI-Test-Configuration:
-    strategy:
-      max-parallel: 1
-      matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
-    runs-on: "self-hosted"
+    runs-on: "self-hosted"  # Assuming you're using a self-hosted runner for Windows
     name: Run Test Configuration
     steps:
 
@@ -23,14 +19,8 @@ jobs:
       - name: Display Trigger and Runner Info (Windows)
         if: runner.os == 'Windows'
         shell: cmd
-        run: powershell -ExecutionPolicy Bypass -Command "Write-Host 'Trigger Event.. ${{ github.event_name }}'; Write-Host 'Runner OS.. ${{ runner.os }}'"
-
-      # Step 1b: Display Trigger info on Linux/macOS
-      - name: Display Trigger and Runner Info (Linux/macOS)
-        if: runner.os != 'Windows'
         run: |
-          echo "Trigger Event: ${{ github.event_name }}"
-          echo "Runner OS: ${{ runner.os }}"
+          powershell -ExecutionPolicy Bypass -Command "Write-Host 'Trigger Event.. ${{ github.event_name }}'; Write-Host 'Runner OS.. ${{ runner.os }}'"
 
       # Step 2: Debugging - Print Eggplant Input Variables
       - name: Debugging Print Eggplant Inputs
@@ -42,8 +32,9 @@ jobs:
           powershell -ExecutionPolicy Bypass -Command "Write-Host 'Client ID: client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62'"
           powershell -ExecutionPolicy Bypass -Command "Write-Host 'Client Secret: uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB'"
 
-      # Step 3: Run Eggplant DAI Test
-      - name: Run Eggplant DAI Test
+      # Step 3: Run Eggplant DAI Test on Windows using the Eggplant GitHub Action
+      - name: Run Eggplant DAI Test on Windows
+        if: runner.os == 'Windows'
         uses: keysight-eggplant/eggplant-github-action@v1.0.19
         with:
           serverURL: "http://varalakshmi.ideabytes.com:8000"
