@@ -18,26 +18,39 @@ jobs:
     runs-on: "self-hosted"
     name: Run Test Configuration
     steps:
-      
-      # Step 1: Display Trigger info (Using PowerShell for Windows)
-      - name: Display Trigger and Runner Info
+
+      # Step 1: Display Trigger info (Windows)
+      - name: "Display Trigger and Runner Info (Windows)"
         if: runner.os == 'Windows'
         shell: cmd
-        run: powershell -ExecutionPolicy Bypass -Command "Write-Host 'Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}.'"
-        
-      # Step 2: Debugging Step - Print out variables (Including GitHub secrets)
-      - name: Debugging
+        run: powershell -ExecutionPolicy Bypass -Command "Write-Host 'Trigger event: ${{ github.event_name }}'; Write-Host 'Runner OS: ${{ runner.os }}'"
+
+      # Step 1b: Display Trigger info (Linux/macOS)
+      - name: "Display Trigger and Runner Info (Linux/macOS)"
+        if: runner.os != 'Windows'
         run: |
-          echo "Server URL: ${{ secrets.SERVER_URL }}"
-          echo "Test Config ID: ${{ secrets.TEST_CONFIG_ID }}"
-          echo "Client ID: ${{ secrets.CLIENT_ID }}"
-          echo "Client Secret: ${{ secrets.CLIENT_SECRET }}"
-        
-      # Step 3: Run Eggplant DAI Test
-      - name: Eggplant Runner
+          echo "Trigger event: ${{ github.event_name }}"
+          echo "Runner OS: ${{ runner.os }}"
+
+      # Step 2: Debugging - Print non-sensitive variables
+      - name: "Debugging: Print Non-Sensitive Variables"
+        run: |
+          echo "Trigger Event: ${{ github.event_name }}"
+          echo "Runner OS: ${{ runner.os }}"
+
+      # Step 3: Debugging - Print Eggplant Input (for testing)
+      - name: "Debugging: Eggplant Runner Inputs"
+        run: |
+          echo "Server URL: http://varalakshmi.ideabytes.com:8000"
+          echo "Test Config ID: b38c5feb-8695-4a7d-95f9-dea9487ffe74"
+          echo "Client ID: client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62"
+          echo "Client Secret: uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB"
+
+      # Step 4: Run Eggplant DAI Test
+      - name: "Run Eggplant DAI Test"
         uses: keysight-eggplant/eggplant-github-action@v1.0.19
         with:
-          serverURL: ${{ secrets.SERVER_URL }}  # Use secrets for sensitive data
-          testConfigID: ${{ secrets.TEST_CONFIG_ID }}  # Use secrets for sensitive data
-          clientID: ${{ secrets.CLIENT_ID }}  # Use secrets for sensitive data
-          clientSecret: ${{ secrets.CLIENT_SECRET }}  # Use secrets for sensitive data
+          serverURL: "http://varalakshmi.ideabytes.com:8000"
+          testConfigID: "b38c5feb-8695-4a7d-95f9-dea9487ffe74"
+          clientID: "client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62"
+          clientSecret: "uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB"
