@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   Run-Test-Configuration:
     strategy:
@@ -17,11 +18,26 @@ jobs:
     name: Run Test Configuration
     steps:
       - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
+
+      # Test server connectivity
+      - name: Test server connectivity
+        run: |
+          echo "Testing server connectivity..."
+          if ping -c 4 varalakshmi.ideabytes.com; then
+            echo "Server is reachable"
+          else
+            echo "Server not reachable"
+            exit 1  # Fail the job if the server is not reachable
+          fi
+
+      # Eggplant Runner Action
       - name: Eggplant Runner
         uses: keysight-eggplant/eggplant-github-action@v1.0.19
         with:
-          dryRun: false
+          dryRun: true
           serverURL: "http://varalakshmi.ideabytes.com:8000"
           clientID: "client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62"
-          testConfigID: "b38c5feb-8695-4a7d-95f9-dea9487ffe74" # Test configuration which need to perform execution
-          clientSecret: "uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB" # Eggplant DAI service client secret
+          testConfigID: "b38c5feb-8695-4a7d-95f9-dea9487ffe74" # Test configuration to execute
+          clientSecret: "uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB" # DAI service client secret
+
+      # Additional action(s) can be added here if required
