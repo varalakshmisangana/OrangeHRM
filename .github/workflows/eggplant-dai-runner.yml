@@ -10,12 +10,8 @@ on:
 
 jobs:
   Run-Test-Configuration:
-    strategy:
-      max-parallel: 1
-      matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
-    runs-on: ${{ matrix.os }}
-    name: Run Test Configuration
+    runs-on: self-hosted  # Use a self-hosted runner
+
     steps:
       - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
 
@@ -39,5 +35,3 @@ jobs:
           clientID: "client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62"
           testConfigID: "b38c5feb-8695-4a7d-95f9-dea9487ffe74" # Test configuration to execute
           clientSecret: "uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB" # DAI service client secret
-
-      # Additional action(s) can be added here if required
