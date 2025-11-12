@@ -1,37 +1,40 @@
-name: Eggplant Runner Build
+name: Eggplant DAI Test Runner
 
 on:
-  pull_request:
+  push:
     branches:
       - main
-  push:
+  pull_request:
     branches:
       - main
 
 jobs:
-  Run-Test-Configuration:
-    runs-on: VARALAKSHMI
+  run-test:
+    runs-on: [self-hosted, windows-latest]  # Replace 'windows-latest' with your self-hosted runner's label if needed
 
+    strategy:
+      max-parallel: 1  # Limits parallel execution
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]  # OS options (adjust as needed)
+
+    name: Run Eggplant DAI Test Configuration
     steps:
-      - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
+      - name: Checkout Code
+        uses: actions/checkout@v2  # This checks out the code from your repo
 
-      # Test server connectivity
-      - name: Test server connectivity
-        run: |
-          echo "Testing server connectivity..."
-          if ping -c 4 varalakshmi.ideabytes.com; then
-            echo "Server is reachable"
-          else
-            echo "Server not reachable"
-            exit 1  # Fail the job if the server is not reachable
-          fi
-
-      # Eggplant Runner Action
       - name: Eggplant Runner
         uses: keysight-eggplant/eggplant-github-action@v1.0.19
         with:
-          dryRun: true
-          serverURL: "http://varalakshmi.ideabytes.com:8000"
-          clientID: "client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62"
-          testConfigID: "b38c5feb-8695-4a7d-95f9-dea9487ffe74" # Test configuration to execute
-          clientSecret: "uQTquZZHz8O6ndWRE4Nn1NU3I8JzRHCB" # DAI service client secret
+          # These values will be used to trigger your Eggplant DAI tests
+          dryRun: false
+          serverURL: "http://varalakshmi.ideabytes.com:8000"  # Replace with your DAI server URL
+          clientID: "client:dai:api:integration:287b5b5c-5311-45a6-ae8b-f29ca717cc62"  # Your client ID for DAI
+          testConfigID: "b38c5feb-8695-4a7d-95f9-dea9487ffe74"  # Your DAI Test Configuration ID
+          clientSecret: ${{ secrets.DAI_CLIENT_SECRET }}  # Store your client secret as a GitHub secret for security
+
+          # Optional fields (you can configure these based on your needs)
+          requestTimeout: 30  # Set HTTP request timeout (in seconds)
+          requestRetries: 5   # Set number of retries for failed requests
+          backoffFactor: 0.5  # Exponential backoff factor for retries
+          logLevel: INFO      # Set log level (can be DEBUG, INFO, WARN, or ERROR)
+          parameters: "param1=value1;;param2=value2"  # Optional: Override global parameters
