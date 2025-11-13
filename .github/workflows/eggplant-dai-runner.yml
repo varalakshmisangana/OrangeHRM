@@ -10,7 +10,7 @@ on:
 
 jobs:
   run-test:
-    runs-on: self-hosted, windows-latest  # Replace 'windows-latest' with your self-hosted runner's label if needed
+    runs-on: self-hosted  # Replace 'windows-latest' with your self-hosted runner's label if needed
 
     strategy:
       max-parallel: 1  # Limits parallel execution
