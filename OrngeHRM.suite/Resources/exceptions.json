@@ -1,0 +1,13 @@
+{
+  "exceptions": {
+    "GatewayTimeout": "504 Gateway Time-out",
+    "ErrorNotFound": "Error 404 not found",
+    "TOManyRequests":"429 Too Many Requests",
+     "ServerError":"Error 500 Server Error",
+     "pageisNotAvailable":"page is not available",
+     "BadGateway":"Bad Gateway",
+     "ServiceTemporarilyUnavailable":"503 Service Temporarily Unavailable",
+     "ForBidden":"403 Forbidden",
+     "ThisPageIsNotWorking": "This page isn't working"
+  }
+}

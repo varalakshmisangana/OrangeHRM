@@ -1,11 +1,41 @@
-﻿to loginUser username, password
+﻿to loginUser username, password,login:"true"
 	"commonUtilities/Core".validateElement "Login", "Center"
 	"commonUtilities/Core".setCustomRectangle "Login", "Center", [-250,150,200,300]
 	"commonUtilities/Core".textEntry "Username", username, "customPart", [0,50]
 	"commonUtilities/Core".textEntry "Password", password, "customPart", [0,50],
 	"commonUtilities/Core".validateElement "Login", "BH"
+	set the TextStyle to {contrast:on}
 	"commonUtilities/Core".mouseAction "Login", "refreshIcon", "BH", "TLQ"
-	if ImageFound(text:"Save password", waitFor:universal meanWaitTime,SearchRectangle:"commonUtilities/screenPart"().SUT.("TH") )
-		"commonUtilities/Core".mouseAction "Never", "", "TH"
+	set the TextStyle to empty
+	if login is "true" then 
+		"commonUtilities/Core".validateElement "Dashboard","LHLH"
+		if ImageFound(text:"Save password", waitFor:universal meanWaitTime,SearchRectangle:"commonUtilities/screenPart"().SUT.("TH") )
+			"commonUtilities/Core".ClickFromMultipleElements ["Never", "Not now"], "TH"
+		end if
+		log username&&"successfully login into the application"
+	else
+		"commonUtilities/Core".validateElement "Account disabled","Center"
+		log username&&"unable to log in to the application because the account is disabled."
 	end if
 end loginUser
+
+to loginGuestUser
+	loginUser "Admin", "admin123"
+end loginGuestUser
+
+to loginEmployee
+	loginUser universal loginUserName, universal data."loginPassword"
+end loginEmployee
+
+to logoutUser
+	"commonUtilities/Core".mouseAction "profileDropDownIcon", "Logout", "TRQ", "TRQ"
+	"commonUtilities/Core".mouseAction "Logout","Login" , "TRQ", "Center"
+end logoutUser
+
+to loginAdminUser
+	loginUser universal adminUserName, universal data."adminPassword"
+end loginAdminUser
+
+to loginDisabledAdminUser
+	loginUser universal adminUserName, universal data."adminPassword", "false"
+end loginDisabledAdminUser

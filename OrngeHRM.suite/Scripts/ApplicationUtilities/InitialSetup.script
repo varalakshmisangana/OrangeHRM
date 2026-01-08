@@ -1,0 +1,19 @@
+﻿to readJSONTestdata tcName
+	set MyJsonFile to ResourcePath("OrangeHRMTestData.json")
+	
+	put JSONValue(file MyJsonFile) into myJsonData
+	
+	put myJsonData as propertyList into mySheetData
+	
+	put mySheetData.(tcName) into universal data
+	
+	log universal data
+end readJSONTestdata
+
+to launchOrangeHRMApplication
+	params tcName
+	Set universal screenshotPath to the resourcepath & slash &"screenshots" & slash & the abbrev date & slash
+	"ApplicationUtilities/InitialSetup".readJSONTestdata tcName
+	"commonUtilities/Core".LaunchApplication "Firefox", "https://opensource-demo.orangehrmlive.com/", "Login", "Center"
+end launchOrangeHRMApplication
+

@@ -1,3 +1,0 @@
-﻿2025-10-31 11:28:43.742 +0530	START		Running ApplicationUtilities/FlipKart.script
-2025-10-31 11:28:43.764 +0530	EndTestCase		(Duration:"0.002", Errors:"0", Exceptions:"0", StartTime:"2025-10-31 11:28:43 +0530", Successes:"1", TestCase:"ApplicationUtilities/FlipKart.script", Warnings:"0")
-2025-10-31 11:28:43.969 +0530	SUCCESS		Execution Time 0:00:00 ApplicationUtilities/FlipKart.script

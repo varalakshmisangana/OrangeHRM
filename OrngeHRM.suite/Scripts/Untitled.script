@@ -1,0 +1,101 @@
+﻿put "dir" && ">" && quote & ResourcePath("output.txt") & quote && "2>&1" into file ResourcePath("MyCommand.bat")
+Shell "C:\Windows\system32\cmd.exe", "/c" && ResourcePath("MyCommand.bat")
+
+#get ip address
+set the shellCommand to "ShellExecute"
+shell "c:\windows\system32\cmd.exe","/c ipconfig > someFile.txt 2>&1"
+put file "c:\Users\varalakshmi.sangana\Documents\SomeFile.txt"
+
+set the shellCommand to "ShellExecute"
+shell "C:\Pathwave\cmd.exe","/c "& quote &"C:\Pathwave\ExecutionFile.bat"& quote &" "& quote &"C:\Pathwave\expected.csv"& quote &" "& quote &"C:\Pathwave\actual.csv"& quote &" 5 5 "& quote &"C:\Pathwave\log.txt"& quote &""
+
+
+set the shellCommand to "ShellExecute"
+shell "cmd.exe", "/c cd C:\Pathwave && ExecutionFile.bat ""C:\Pathwave\expected.csv"" ""C:\Pathwave\actual.csv"" 5 5 ""C:\Pathwave\log.txt"""
+
+
+
+
+
+set the shellCommand to "ShellExecute"
+shell "C:\Pathwave\cmd.exe","/c D:\Pathwave\ExecutionFile.bat"&&"D:\pathwave\expected.csv"&&"D:\Pathwave\actual.csv"&&5&&5&&"D:\Pathwave\log.txt"
+
+log "/c "& quote &"C:\Pathwave\ExecutionFile.bat"& quote &" "& quote &"C:\Pathwave\expected.csv"& quote &" "& quote &"C:\Pathwave\actual.csv"& quote &" 5 5 "& quote &"C:\Pathwave\log.txt"& quote &""
+
+#ping application
+set the shellCommand to "ShellExecute"
+shell "c:\windows\system32\cmd.exe","/c ping google.com > someFile.txt 2>&1"
+put file "c:\Users\varalakshmi.sangana\Documents\SomeFile.txt"
+
+#Copy files
+set the shellCommand to "ShellExecute"
+shell "c:\windows\system32\cmd.exe", "/c copy " & quote & "C:\Users\varalakshmi.sangana\Documents\Eggplant.txt" & quote & " " & quote & "C:\Users\varalakshmi.sangana\Downloads\shellCommands.txt" & quote
+put file "C:\Users\varalakshmi.sangana\Downloads\shellCommands.txt"
+
+#move and rename files
+set the shellCommand to "ShellExecute"
+shell "c:\windows\system32\cmd.exe", "/c move " & quote & "C:\Users\varalakshmi.sangana\Documents\Eggplant.txt" & quote & " " & quote & "C:\Users\varalakshmi.sangana\Downloads\shellCommands.txt" & quote
+put file "C:\Users\varalakshmi.sangana\Downloads\shellCommands.txt"
+
+#Delete files
+set the shellCommand to "ShellExecute"
+shell "c:\windows\system32\cmd.exe", "/c del " & quote & "C:\Users\varalakshmi.sangana\Documents\Eggplant.txt" & quote
+
+#Create new folder
+set the shellCommand to "ShellExecute"
+shell "c:\windows\system32\cmd.exe", "/c mkdir " & quote & "C:\Users\varalakshmi.sangana\Documents\NewFolder" & quote
+
+#view file content
+set the shellCommand to "ShellExecute"
+shell "c:\windows\system32\cmd.exe", "/c type " & quote & "C:\Users\varalakshmi.sangana\Documents\shellCommands.txt" & quote &"> someFile.txt 2>&1"
+put file "c:\Users\varalakshmi.sangana\Documents\SomeFile.txt"
+
+#check disk space
+set the shellCommand to "ShellExecute"
+shell "c:\windows\system32\cmd.exe", "/c dir " & quote & "C:\Users\varalakshmi.sangana\Documents" & quote &"> someFile.txt 2>&1"
+put file "c:\Users\varalakshmi.sangana\Documents\SomeFile.txt"
+
+#run batch file
+set the shellCommand to "ShellExecute"
+shell "c:\windows\system32\cmd.exe", "/c " & quote & "C:\Users\varalakshmi.sangana\Documents\Testing.bat" & quote &"> someFile.txt 2>&1"
+put file "c:\Users\varalakshmi.sangana\Documents\SomeFile.txt"
+
+#change directory path
+set the shellCommand to "ShellExecute"
+shell "c:\windows\system32\cmd.exe", "/c cd " & quote & "C:\Program Files\Eggplant\Eggplant.app\Resources\epgw\x64\bin" & quote & " && adb devices > " & quote & "c:\Users\varalakshmi.sangana\Documents\SomeFile.txt" & quote & " 2>&1"
+put file "c:\Users\varalakshmi.sangana\Documents\SomeFile.txt"
+
+
+put "c:\windows\system32\cmd.exe"&& "/c cd " & quote & "C:\Program Files\Eggplant\Eggplant.app\Resources\epgw\x64\bin" & quote & " && adb devices > " & quote & "c:\Users\varalakshmi.sangana\Documents\SomeFile.txt" & quote & " 2>&1" into file ResourcePath("batfile.bat")
+
+
+set the shellCommand to "ShellExecute"
+shell "c:\windows\system32\cmd.exe", "/c cd " & quote & "C:\Windows" & quote && "ipconfig" &&"> someFile.txt 2>&1"
+put file "c:\Users\varalakshmi.sangana\Documents\SomeFile.txt"
+
+
+
+
+Move file "C:\Users\varalakshmi.sangana\Documents\demo.txt" into folder "C:\Users\varalakshmi.sangana\Downloads"
+
+
+
+
+
+
+
+
+
+
+
+set the shellCommand to "ShellExecute"
+shell "c:\windows\system32\cmd.exe","/c cd C:\windows && ipconfig > someFile.txt 2>&1"
+put file "c:\Users\varalakshmi.sangana\Documents\SomeFile.txt"
+
+
+
+
+
+set the shellCommand to "ShellExecute"
+shell "c:\windows\system32\cmd.exe", <</c "C:\Program Files\Eggplant\Eggplant.app\Resources\epgw\x64\bin" >> && "adb devices" && "> someFile.txt 2>&1"
+put file "c:\Users\varalakshmi.sangana\Documents\SomeFile.txt"

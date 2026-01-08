@@ -16,3 +16,24 @@
 2025-10-30 10:37:46.047 +0530,"Aborted",0:03:35,1,2,0,"20251030_103746.047/LogFile.txt","","",8
 2025-10-30 10:54:03.868 +0530,"Success",0:03:33,0,1,0,"20251030_105403.868/LogFile.txt","","",10
 2025-10-31 12:05:38.975 +0530,"Success",0:04:23,0,1,0,"20251031_120538.975/LogFile.txt","","",11
+2025-12-18 11:53:13.952 +0530,"Failure",0:04:53,1,2,1,"20251218_115313.952/LogFile.txt","","Image Not Found -- WaitFor Error - Unable To Find Any Image On Screen ""(TEXT:""Never"")"" within 30.00 seconds. Text not found.  Restricted Search Rectangle ((0,0),(1920,540))\n",6
+2025-12-18 12:23:25.578 +0530,"Aborted",0:04:04,3,0,1,"20251218_122325.578/LogFile.txt","","",0
+2025-12-18 12:27:34.118 +0530,"Failure",0:04:21,1,2,1,"20251218_122734.118/LogFile.txt","","Image Not Found -- WaitFor Error - Unable To Find Any Image On Screen ""(TEXT:""Last Name"")"" within 30.00 seconds. Text not found.  Restricted Search Rectangle ((0,0),(1920,540))\n",8
+2025-12-18 14:04:30.747 +0530,"Aborted",0:04:25,1,1,0,"20251218_140430.747/LogFile.txt","","",9
+2025-12-18 14:09:12.961 +0530,"Failure",0:12:40,1,3,0,"20251218_140912.961/LogFile.txt","","Script Error -- Number of Errors logged: 1",20
+2025-12-18 14:50:58.335 +0530,"Failure",0:08:08,2,2,1,"20251218_145058.335/LogFile.txt","","Image Not Found -- WaitFor Error - Unable To Find Any Image On Screen ""(TEXT:""Contact Details"")"" within 30.00 seconds. Text not found.  Restricted Search Rectangle ((0,0),(960,1080))\n",11
+2025-12-18 15:00:04.726 +0530,"Aborted",0:05:21,1,1,1,"20251218_150004.726/LogFile.txt","","",11
+2025-12-18 15:05:46.158 +0530,"Failure",0:13:15,2,3,0,"20251218_150546.158/LogFile.txt","","Script Error -- Number of Errors logged: 2",19
+2025-12-21 21:39:09.691 +0530,"Failure",0:17:48,2,7,1,"20251221_213909.691/LogFile.txt","","Image Not Found -- WaitFor Error - Unable To Find Any Image On Screen ""(TEXT:""Amount*"")"" within 30.00 seconds. Text not found.  Restricted Search Rectangle ((0,0),(1920,540))\n",37
+2025-12-21 22:29:56.528 +0530,"Failure",11:05:45,3,2,1,"20251221_222956.528/LogFile.txt","","Image Not Found -- WaitFor Error - Unable To Find Any Image On Screen ""(TEXT:""Login"")"" within 30.00 seconds. Text not found.  Restricted Search Rectangle ((0,540),(1920,1080))\n",3
+2025-12-22 10:01:18.992 +0530,"Failure",0:25:55,6,8,1,"20251222_100118.992/LogFile.txt","","Image Not Found -- WaitFor Error - Unable To Find Any Image On Screen ""(TEXT:""Add"")"" within 30.00 seconds. Text not found.  Restricted Search Rectangle ((780,506),(782,587))\n",37
+2025-12-22 14:03:55.121 +0530,"Failure",0:03:34,1,2,1,"20251222_140355.121/LogFile.txt","","Image Not Found -- WaitFor Error - Unable To Find Any Image On Screen ""(TEXT:""First Name"")"" within 30.00 seconds. Text not found.  Restricted Search Rectangle ((0,0),(1920,540))\n",8
+2025-12-22 14:59:40.914 +0530,"Aborted",0:03:27,1,1,0,"20251222_145940.914/LogFile.txt","","",6
+2025-12-22 15:03:33.251 +0530,"Failure",0:07:20,2,2,1,"20251222_150333.251/LogFile.txt","","Image Not Found -- WaitFor Error - Unable To Find Any Image On Screen ""(TEXT:""Contact Details"")"" within 30.00 seconds. Text not found.  Restricted Search Rectangle ((0,0),(960,1080))\n",11
+2025-12-22 15:22:21.176 +0530,"Aborted",0:05:26,1,1,0,"20251222_152221.176/LogFile.txt","","",11
+2025-12-22 15:29:47.138 +0530,"Failure",0:08:19,2,2,1,"20251222_152947.138/LogFile.txt","","Image Not Found -- WaitFor Error - Unable To Find Any Image On Screen ""(TEXT:""Contact Details"")"" within 30.00 seconds. Text not found.  Restricted Search Rectangle ((0,0),(960,1080))\n",11
+2026-01-08 14:03:17.581 +0530,"Failure",0:05:46,1,2,1,"20260108_140317.581/LogFile.txt","","Script Error -- Number of Errors logged: 1",9
+2026-01-08 14:19:41.514 +0530,"Failure",0:06:15,1,2,1,"20260108_141941.514/LogFile.txt","","Script Error -- Number of Errors logged: 1",9
+2026-01-08 14:30:32.243 +0530,"Failure",0:25:08,1,6,1,"20260108_143032.243/LogFile.txt","","Script Error -- Number of Errors logged: 1",36
+2026-01-08 15:02:32.381 +0530,"Aborted",0:29:40,5,6,1,"20260108_150232.381/LogFile.txt","","",31
+2026-01-08 15:32:43.773 +0530,"Aborted",0:26:56,3,12,1,"20260108_153243.773/LogFile.txt","","",45

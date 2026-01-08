@@ -1,0 +1,170 @@
+﻿to createNewEmployeeInPMPModule
+	"commonUtilities/Core".mouseAction "PIM", "Employee Information", "LHLH", "LH"
+	"commonUtilities/Core".mouseAction "Add", "Employee Full Name", "LHLH","TH"
+	"commonUtilities/Core".textEntry "First Name", universal data."firstName","TH"
+	wait 1
+	"commonUtilities/Core".textEntry "Middle Name", universal data."middleName"
+	"commonUtilities/Core".textEntry "Last Name", universal data."lastName"
+	"commonUtilities/Core".validateElement universal data."firstName", "TH"
+	--"commonUtilities/Core".mouseAction "uploadProfileIcon", "File name", "TLQ", "TLQ"
+	--"commonUtilities/Core".textEntry "File name", photoPath, "TH"
+	--"commonUtilities/Core".mouseAction "Open", "profilePhoto", "HM"
+end createNewEmployeeInPMPModule
+
+to enableCreateLoginCredentials
+	"commonUtilities/Core".mouseAction "Create Login Details", "Enabled", "LH", "RH",[100,0]
+	put "commonUtilities/Core".getRandomName into universal loginUserName
+	"commonUtilities/Core".textEntry "Username", universal loginUserName, "LH",[10,50]
+	"commonUtilities/Core".textEntry "Password", universal data."loginPassword", "LH",[10,50]
+	"commonUtilities/Core".textEntry "Confirm password", universal data."loginPassword", "RH",[10,50]
+	"commonUtilities/Core".mouseAction "Save", , "RHRH"
+	if ImageFound(text:"Save Password", waitFor:universal meanWaitTime,SearchRectangle:"commonUtilities/screenPart"().SUT.("TH") )
+		"commonUtilities/Core".mouseAction "Not now", "", "TH"
+	end if
+	"commonUtilities/core".validateElement "Personal Details", "TLQ"
+end enableCreateLoginCredentials
+
+to fillContactDetails
+	"commonUtilities/Core".mouseAction "Contact Details", "Contact Details", "LH", "THTH"
+	"commonUtilities/Core".textEntry "Street 1", universal data."Street1", "TH",[10,50]
+	"commonUtilities/Core".textEntry "Street 2", universal data."Street2", "TH",[10,50]
+	"commonUtilities/Core".textEntry "City", universal data."city", "TH",[10,50]
+	"commonUtilities/Core".textEntry "State", universal data."state", "TH",[10,50]
+	"commonUtilities/Core".textEntry "Zip", universal data."zip", "TH",[10,50]
+	"commonUtilities/Core".selectDropDownElement "Country", , "RH", [10,50]
+	"commonUtilities/Core".textEntry "Home", universal data."homeTelephone", "HM",[10,50]
+	"commonUtilities/Core".textEntry "Mobile", universal data."mobile", "HM",[10,50]
+	"commonUtilities/Core".textEntry "Work", universal data."workTelephone", "RH",[10,50]
+	put "commonUtilities/Core".getRandomName into workEmail
+	"commonUtilities/Core".textEntry "Work Email", workEmail&"@gmail.com", "HM",[10,50]
+	put "commonUtilities/Core".getRandomName into otherEmail
+	"commonUtilities/Core".textEntry "Other Email", otherEmail&"@gmail.com", "HM",[10,50]
+	CaptureScreen {Name: universal screenshotPath & "ContactDetails" && the hour && the minute }
+	wait 2
+	"commonUtilities/Core".mouseAction "Save", , "RHRH"
+	set the TextStyle to {dpi:144}
+	"commonUtilities/Core".validateElement "Success", "BLQ"
+	set the TextStyle to empty
+	if ImageFound(text:"Save Address", waitFor:universal meanWaitTime,SearchRectangle:"commonUtilities/screenPart"().SUT.("TH") )
+		"commonUtilities/Core".mouseAction "Not now", "", "TH"
+	end if
+end fillContactDetails
+
+to fillEmergencyContacts
+	"commonUtilities/Core".mouseAction "Emergency Contacts", "Assigned Emergency Contacts", "LH", "TLQ"
+	"commonUtilities/Core".setCustomRectangle "Assigned Emergency Contacts", "TLQ", [230,-30,160,40]
+	"commonUtilities/Core".mouseAction "Add", "Save Emergency Contact", "customPart", "TLQ"
+	"commonUtilities/Core".textEntry "Name", universal data."emergencyContactName", "TH",[10,50]
+	"commonUtilities/Core".textEntry "Relationship", universal data."emergencyContactRelationship", "TH",[10,50]
+	"commonUtilities/Core".textEntry "Home Telephone", universal data."homeTelephone", "TH",[10,50]
+	CaptureScreen {Name: universal screenshotPath & "EmergencyContacts" && the hour && the minute }
+	"commonUtilities/Core".mouseAction "Save", "Success", "RHRH", "BLQ"
+end fillEmergencyContacts
+
+to fillDependents
+	"commonUtilities/Core".mouseAction "Dependents", "Assigned Dependents", "LH", "TLQ"
+	"commonUtilities/Core".setCustomRectangle "Assigned Dependents", "TLQ", [230,-30,160,40]
+	"commonUtilities/Core".mouseAction "Add", "Add Dependent", "customPart", "TLQ"
+	"commonUtilities/Core".textEntry "Name", universal data."dependentName", "TH",[10,50]
+	"commonUtilities/Core".selectDropDownElementNotEditable "Relationship", universal data."dependentRelationship", "TH",[10,50]
+	"commonUtilities/Core".textEntry "Please Specify", universal data."pleaseSpecifyRelationship", "TH",[10,50]
+	"commonUtilities/Core".textEntry "Date of Birth", universal data."dependentDateOfBirth", "TH",[10,50]
+	CaptureScreen {Name: universal screenshotPath & "DependentDetails" && the hour && the minute }
+	"commonUtilities/Core".mouseAction "Save", "Success", "RHRH", "BLQ"
+end fillDependents
+
+to fillImmigration
+	"commonUtilities/Core".mouseAction "Immigration", "Assigned Immigration Records"
+	"commonUtilities/Core".setCustomRectangle "Assigned Immigration Records", , [230,-30,160,40]
+	"commonUtilities/Core".mouseAction "Add", "Add Immigration", "customPart"
+	"commonUtilities/Core".mouseAction "Passport"
+	"commonUtilities/Core".textEntry "Number*", universal data."passportNumber", ,[10,50] 
+	wait 2
+	"commonUtilities/Core".textEntry "Issued Date", universal data."issueDate","TH" ,[10,50]
+	"commonUtilities/Core".textEntry "Expiry Date", universal data."expiryDate", ,[10,50]
+	"commonUtilities/Core".textEntry "Eligible Status", universal data."eligibleStatus", ,[10,50]
+	"commonUtilities/Core".selectDropDownElementNotEditable "Issued By", , "TH",[10,50]
+	"commonUtilities/Core".textEntry "Eligible Review Date", universal data."eligibleReviewDate", ,[10,50]
+	"commonUtilities/Core".mouseAction "Eligible Review Date",,,,[-20,90]
+	CaptureScreen {Name: universal screenshotPath & "ImmigrationDetails" && the hour && the minute }
+	"commonUtilities/Core".mouseAction "Save", "Success", "RHRH", "BLQ"
+end fillImmigration
+
+to jobDetails
+	"commonUtilities/Core".mouseAction "Job", "Job Details", "LH", "TLQ"
+	put formattedTime("YYYY-MM-dd", today) into todayDate
+	"commonUtilities/Core".textEntry "Joined Date", todayDate, "TH",[10,50]
+	"commonUtilities/Core".selectDropDownElementNotEditable "Job Title", universal data."jobTitle", ,[10,50]
+	"commonUtilities/Core".selectDropDownElementNotEditable "Job Category", universal data."jobCategory", ,[10,50]
+	"commonUtilities/Core".selectDropDownElementNotEditable "Sub Unit", universal data."subUnit", ,[10,50]
+	"commonUtilities/Core".selectDropDownElementNotEditable "Location", universal data."location", ,[10,50]
+	"commonUtilities/Core".selectDropDownElementNotEditable "Employment Status", universal data."employmentStatus", ,[10,50]
+	CaptureScreen {Name: universal screenshotPath & "JobDetails" && the hour && the minute }
+	"commonUtilities/Core".mouseAction "Save", "Success", "RHRH", "BLQ"
+end jobDetails
+
+to fillSalary
+	"commonUtilities/Core".mouseAction "Salary", "Assigned Salary Components", "LH", "TLQ"
+	"commonUtilities/Core".setCustomRectangle "Assigned Salary Components", , [230,-30,160,40]
+	"commonUtilities/Core".mouseAction "Add", "Add Salary Component", "customPart"
+	"commonUtilities/Core".textEntry "Salary Component*", universal data."salaryComponent", "TH",[10,50]
+	"commonUtilities/Core".selectDropDownElementNotEditable "Pay Grade", universal data."payGrade", "TH",[10,50]
+	"commonUtilities/Core".selectDropDownElementNotEditable "Pay Frequency", universal data."payFrequency", "TH",[10,50]
+	"commonUtilities/Core".selectDropDownElementNotEditable "Currency", universal data."Currency", "TH",[10,50]
+	"commonUtilities/Core".textEntry "Amount*", universal data."Amount", "TH",[10,50]
+	CaptureScreen {Name: expectation, increment:true}
+	"commonUtilities/Core".mouseAction "Save", "Success", "RHRH", "BLQ"
+end fillSalary
+
+to fillReportToSection
+	"commonUtilities/Core".mouseAction "Report-to", "Assigned Supervisors", "LH", "TLQ"
+	"commonUtilities/Core".setCustomRectangle "Assigned Supervisors", , [230,-30,160,40]
+	"commonUtilities/Core".mouseAction "Add", "Add Supervisor", "customPart"
+	"commonUtilities/Core".textEntry "Name", "a", "TH",[10,50]
+	wait 2
+	TypeText downArrow, return
+	--"commonUtilities/Core".selectDropDownElement "Name", universal data."reporterName", "TH",[10,50]
+	"commonUtilities/Core".selectDropDownElementNotEditable "Reporting Method*", universal data."reportingMethod", ,[10,50]
+	CaptureScreen {Name: universal screenshotPath & "ReportToDetails" && the hour && the minute }
+	"commonUtilities/Core".mouseAction "Save", , "RHRH"
+	"commonUtilities/core".validateElement universal data."reportingMethod","Center"
+end fillReportToSection
+
+to fillQualificationDetails
+	"commonUtilities/Core".mouseAction "Qualifications", "Qualifications", "LH", "TLQ"
+	"commonUtilities/Core".setCustomRectangle "Education", , [130,-30,390,40]
+	"commonUtilities/Core".mouseAction "Add", "Add Education", "customPart"
+	"commonUtilities/Core".selectDropDownElementNotEditable "Level", universal data."educationLevel", "LH",[10,50]
+	"commonUtilities/Core".textEntry "Institute", universal data."Institute", "Center",[10,50]
+	"commonUtilities/Core".textEntry "Specialization", universal data."specialization", ,[10,50]
+	"commonUtilities/Core".textEntry "Year", universal data."YearOfPassedOut", ,[10,50]
+	"commonUtilities/Core".textEntry "GPA/Score", universal data."score", ,[10,50]
+	"commonUtilities/Core".textEntry "Start Date", universal data."startDate", ,[10,50]
+	"commonUtilities/Core".textEntry "End Date", universal data."endDate", ,[10,50]
+	CaptureScreen {Name: universal screenshotPath & "QualificationDetails" && the hour && the minute }
+	"commonUtilities/Core".mouseAction "Save", "Success", "RHRH", "BLQ"
+	wait 5
+	"commonUtilities/Core".mouseAction "Add", "Add Skill", "customPart"
+	"commonUtilities/Core".setCustomRectangle "Skills", , [90,-30,390,40]
+	"commonUtilities/Core".mouseAction "Add", "Add Skill", "customPart"
+	"commonUtilities/Core".selectDropDownElementNotEditable "Skill*", universal data."skill", ,[10,50]
+	CaptureScreen {Name: universal screenshotPath & "Skills" && the hour && the minute }
+	"commonUtilities/Core".scrollToElement "Save", "RHRH"
+	"commonUtilities/Core".mouseAction "Save", "Success", "RHRH", "BLQ"
+end fillQualificationDetails
+
+to copyEmployeeID
+	"commonUtilities/Core".mouseAction "Personal Details", , "TLQ"
+	"commonUtilities/Core".mouseAction "Employee Id", , "TLQ", ,[10,50]
+	typetext controlKey, a, c
+	set universal employeeId to RemoteClipboard()
+	log universal employeeId
+end copyEmployeeID
+
+to SearchEmployeeInEmployeeListPage
+	"commonUtilities/Core".mouseAction "Employee List", "Employee Information", "TLQ", "TLQ"
+	"commonUtilities/Core".textEntry "Employee Id", universal employeeId, ,[10,50]
+	"commonUtilities/Core".mouseAction "Search", "(1) Record Found", "RH", "LH"
+	"commonUtilities/Core".mouseAction  universal employeeId, "Personal Details", "BLQ", "TLQ"
+	"commonUtilities/Core".validateElement  universal employeeId, "TLQ"
+end SearchEmployeeInEmployeeListPage

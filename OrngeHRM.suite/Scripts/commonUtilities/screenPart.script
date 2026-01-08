@@ -19,5 +19,6 @@ return {
 		Center:[x2/4,y2/4,x2/1.33,y2/1.33],
 		THTH:[x1,y1,x2,y2/3],
 		customPart: global searchRect,
+		empty: empty,
 	}
 }

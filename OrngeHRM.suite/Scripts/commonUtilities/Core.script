@@ -4,14 +4,19 @@ Author: Varalakshmi S
 Description: open run window and validate the run window was opened or not if repeat exceed five time test will fail
 *)
 to openRunWindow
-	repeat until ImageFound(text:"Type the name", waitFor:2, SearchRectangle:"commonUtilities/screenPart"().SUT.("BLQ"))
+	try
 		typetext windowsKey, r
-		wait universal minWaitTime
-		if repeatIndex()>5
-			LogError "Unable to open run window"
-			Exit repeat
-		end if
-	end repeat
+		repeat until ImageFound(text:"Type the name", waitFor:2, SearchRectangle:"commonUtilities/screenPart"().SUT.("BLQ"))
+			typetext windowsKey, r
+			wait universal minWaitTime
+			if repeatIndex()>5
+				LogError "Unable to open run window"
+				Exit repeat
+			end if
+		end repeat
+	Catch theException
+		"commonUtilities/exceptionHandling".errorCapture theException
+	End try
 end openRunWindow
 
 to LaunchApplication browser, path, expectation, SR:empty
@@ -27,107 +32,142 @@ to LaunchApplication browser, path, expectation, SR:empty
 	validateElement expectation, SR
 end LaunchApplication
 
-to textEntry fieldName, input, SR:empty, offSet:[200,0], returnValue:"No", action:"Click"
-	if fieldName is not empty then 
-		mouseAction fieldName, "", SR, "", offSet, action
-	end if
-	typetext controlKey, a
-	typetext input
-	//typetext escapeKey
-	if returnValue is "Yes" then typetext return
+to textEntry fieldName, input, SR:"empty", offSet:[200,0], returnValue:"No", action:"Click"
+	try
+		if fieldName is not empty then 
+			mouseAction fieldName, , SR, , offSet, action
+		end if
+		typetext controlKey, a
+		typetext input
+		//typetext escapeKey
+		if returnValue is "Yes" then typetext return
+	Catch theException
+		"commonUtilities/exceptionHandling".errorCapture theException
+	End try
 end textEntry
 
 to mouseAction element, expectation, SR1:empty, SR2:empty, offset:[0,0], action:"Click"
-	waitfor universal maxWaitTime, {(findImageOrText(element)):element,SearchRectangle:"commonUtilities/screenPart"().SUT.(SR1)}
-	put foundimageinfo().ImageLocation + offset into ImageLocation
-	do action&&ImageLocation
-	if expectation is not empty then validateElement expectation, SR2
+	try
+		waitfor universal maxWaitTime, {(findImageOrText(element)):element,SearchRectangle:"commonUtilities/screenPart"().SUT.(SR1)}
+		put foundimageinfo().ImageLocation + offset into ImageLocation
+		do action&&ImageLocation
+		if expectation is not empty then validateElement expectation, SR2
+	Catch theException
+		"commonUtilities/exceptionHandling".errorCapture theException
+	End try
 end mouseAction
 
 to ClickFromMultipleElements elements, SR:empty, Offset:[0, 0]
-	repeat with each element of elements
-		if imagefound((findImageOrText(element)):element, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal maxWaitTime) then
-			click FoundImageLocation() + Offset
-			Exit repeat
-		end if
-	end repeat
+	try
+		repeat with each element of elements
+			if imagefound((findImageOrText(element)):element, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal minWaitTime) then
+				click FoundImageLocation() + Offset
+				Exit repeat
+			end if
+		end repeat
+	Catch theException
+		"commonUtilities/exceptionHandling".errorCapture theException
+	End try
 end ClickFromMultipleElements
 
 to validateElement expectation, SR:empty
-	if imagefound((findImageOrText(expectation)):expectation, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal maxWaitTime) then
-		LogSuccess "Element found ("&&expectation&&") at "&&FoundImageLocation()
-	else
-		LogError "Element not found ("&&expectation&&")"
-	end if
-	CaptureScreen {Name: expectation, increment:true}
+	try
+		if imagefound((findImageOrText(expectation)):expectation, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal maxWaitTime, ignoreSpaces:true, ignoreNewlines:true) then
+			LogSuccess "Element found ("&&expectation&&") at "&&FoundImageLocation()
+		else
+			LogError "Element not found ("&&expectation&&")"
+		end if
+		CaptureScreen {Name: universal screenshotPath & expectation && the hour && the minute }
+	Catch theException
+		"commonUtilities/exceptionHandling".errorCapture theException
+	End try
 end validateElement
 
 to validateElementNotFound expectation, SR:empty
-	if not imagefound((findImageOrText(expectation)):expectation, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal maxWaitTime) then
-		LogSuccess "Element not found ("&&expectation&&")"
-	else
-		LogError "Element found ("&&expectation&&") at "&&FoundImageLocation()
-	end if
-	CaptureScreen {Name: expectation, increment:true}
+	try
+		if not imagefound((findImageOrText(expectation)):expectation, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal maxWaitTime) then
+			LogSuccess "Element not found ("&&expectation&&")"
+		else
+			LogError "Element found ("&&expectation&&") at "&&FoundImageLocation()
+		end if
+		CaptureScreen {Name: universal screenshotPath & expectation && the hour && the minute }
+	Catch theException
+		"commonUtilities/exceptionHandling".errorCapture theException
+	End try
 end validateElementNotFound
 
 to waitUntilElementOnScreen expectation, SR:[]
-	log "waiting until"&&expectation&&"is on screen"
-	Repeat for 10 minutes 
-		if not ImageFound((findImageOrText(expectation)):expectation, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal minWaitTime)
-			Exit repeat
-		end if
-		wait 5
-	End repeat
+	try
+		log "waiting until"&&expectation&&"is on screen"
+		Repeat for 10 minutes 
+			if not ImageFound((findImageOrText(expectation)):expectation, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal minWaitTime)
+				Exit repeat
+			end if
+			wait 5
+		End repeat
+	Catch theException
+		"commonUtilities/exceptionHandling".errorCapture theException
+	End try
 end waitUntilElementOnScreen
 
 to scrollToElement element, SR:empty, scrollSpeed:3, direction:"down"
-	Repeat until ImageFound((findImageOrText(element)):element, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal minWaitTime)
-		if direction is "down"
-			ScrollWheelDown scrollSpeed
-		else
-			ScrollWheelUp scrollSpeed			
-		end if
-		if repeatIndex()>10
-			LogError element&" not found on the screen"
-			Exit repeat
-		end if
-	End repeat
-	LogSuccess element&" not found on the screen at "&&FoundImageLocation()
+	try
+		Repeat until ImageFound((findImageOrText(element)):element, SearchRectangle:"commonUtilities/screenPart"().SUT.(SR), WaitFor:universal minWaitTime)
+			if direction is "down"
+				ScrollWheelDown scrollSpeed
+			else
+				ScrollWheelUp scrollSpeed			
+			end if
+			if repeatIndex()>10
+				LogError element&" not found on the screen"
+				Exit repeat
+			end if
+		End repeat
+		LogSuccess element&" found on the screen at "&&FoundImageLocation()
+	Catch theException
+		"commonUtilities/exceptionHandling".errorCapture theException
+	End try
 end scrollToElement
 
 to selectDropDownElement element, input, SR:empty, offset:[0,0], returnValue:"No"
-	mouseAction element, "", SR, "", offset
-	if input is not empty
-		if writable is "No"
-			mouseAction input, "", SR,,[10,100],"moveTo"
-			scrollToElement input, SR
-			mouseAction input, "", SR
-		else
+	try
+		mouseAction element, "", SR, "", offset
+		if input is not empty
 			textEntry "", input, SR, offset, returnValue
+			wait 2
+			typetext downArrow, return
+		else
 			typetext downArrow, return
 		end if
-	else
-		typetext downArrow, return
-	end if
+	Catch theException
+		"commonUtilities/exceptionHandling".errorCapture theException
+	End try
 end selectDropDownElement
 
 to selectDropDownElementNotEditable element, input, SR:empty, offset:[0,0], offset2:[30,90]
-	mouseAction element, , SR, , offset
-	if input is not empty
-		wait 1
-		typetext first character of input
-		mouseAction element, , SR, , offset2, "moveTo"
-		scrollToElement input, SR
-		mouseAction input, , SR
-	else
-		typetext downArrow, return
-	end if
+	try
+		mouseAction element, , SR, , offset
+		if input is not empty
+			wait 1
+			typetext first character of input
+			mouseAction element, , SR, , offset2, "moveTo"
+			scrollToElement input, SR
+			mouseAction input, , SR
+		else
+			typetext downArrow, return
+		end if
+	Catch theException
+		"commonUtilities/exceptionHandling".errorCapture theException
+	End try
 end selectDropDownElementNotEditable
 
 to setCustomRectangle element, SR:empty, searchRect
-	put ImageRectangle((findImageOrText(element)):element, waitFor:10,ignoreNewlines:on,searchRectangle:"commonUtilities/screenPart"().SUT.(SR), ignorespaces:on,language:universal language & ", English") into customRect
-	set global searchRect to customRect + searchRect
+	try
+		put ImageRectangle((findImageOrText(element)):element, waitFor:10,ignoreNewlines:on,searchRectangle:"commonUtilities/screenPart"().SUT.(SR), ignorespaces:on,language:universal language & ", English") into customRect
+		set global searchRect to customRect + searchRect
+	Catch theException
+		"commonUtilities/exceptionHandling".errorCapture theException
+	End try
 end setCustomRectangle
 
 function findImageOrText expectation
@@ -139,8 +179,25 @@ function findImageOrText expectation
 end findImageOrText
 
 to getRandomName
-	put "Testing" into name
-	put formattedTime("ddMMYYYYhhmmss",long time) into todayDate
-	put name&todayDate into RandomName
-	return RandomName
+	try
+		put "Testing" into name
+		put formattedTime("ddMMYYYYhhmmss",long time) into todayDate
+		put name&todayDate into RandomName
+		return RandomName
+	Catch theException
+		"commonUtilities/exceptionHandling".errorCapture theException
+	End try
 end getRandomName
+
+to getCurrentUrl
+	try
+		typetext controlKey,l
+		typetext controlKey,a,c
+		Put RemoteClipboard() into currentURL
+		typetext escapeKey
+		click [60,200]
+		return currentURL
+	Catch theException
+		"commonUtilities/exceptionHandling".errorCapture theException
+	End try
+end getCurrentUrl

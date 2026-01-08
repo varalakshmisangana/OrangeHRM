@@ -1,0 +1,48 @@
+{
+	"originalcapturelocation": [
+		1623,
+		683,
+		24,
+		24
+	],
+	"lastmodifieddate": 1766569646.543,
+	"createddate": 1766569646.543,
+	"name": "edit_Icon",
+	"lastfounddate": 1766576965.793,
+	"ocrcapturestring": "z",
+	"lastfoundlocation": [
+		1623,
+		683,
+		24,
+		24
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 3389,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[14,15]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"type": "Unknown RDP"
+				},
+				"name": "edit_Icon.png",
+				"connectionname": "SUT81",
+				"type": 1,
+				"connectionserverid": "192.168.1.81",
+				"capturerect": [
+					1623,
+					683,
+					24,
+					24
+				],
+				"connectiontype": "RDP",
+				"capturedocrtext": "z"
+			}
+	]
+}

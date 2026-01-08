@@ -1,7 +1,10 @@
 ﻿Script,Last Status,Runs,Fails,First Run,Last Run,Avg Time(Success)
-Testcases/TC_01_AddNewEmployeeInPMPModule,Success,14,9,2025-10-23 14:33:17 +0530,2025-10-31 12:05:38 +0530,0:02:36
 MobileTesting,Success,14,2,2025-11-03 15:10:28 +0530,2025-11-06 12:47:45 +0530,0:00:26
-commonUtilities/Core,Success,1,0,2025-11-03 15:00:51 +0530,2025-11-03 15:00:51 +0530,0:00:00
+ApplicationUtilities/EmployeeCreation,Success,4,0,2025-10-31 11:28:43 +0530,2025-12-22 14:39:37 +0530,0:00:00
+Testcases/TC_02_UserRolesAndAccessRights,Failure,3,3,2025-12-24 15:58:39 +0530,2026-01-08 12:54:02 +0530,0:00:00
+ExcelDropdowns,Success,1,0,2025-11-18 15:33:35 +0530,2025-11-18 15:33:35 +0530,0:01:12
 ApplicationUtilities/GnuCash,Success,3,0,2025-10-23 16:19:24 +0530,2025-10-23 16:59:57 +0530,0:00:00
-ApplicationUtilities/OrangeHRM,Success,2,0,2025-10-31 11:28:43 +0530,2025-11-05 12:28:07 +0530,0:00:00
-ApplicationUtilities/UserLogins,Success,2,0,2025-10-28 16:28:36 +0530,2025-10-28 16:30:13 +0530,0:00:00
+Testcases/TC_01_AddNewEmployeeInPMPModule,Failure,28,23,2025-10-23 14:33:17 +0530,2026-01-08 14:30:32 +0530,0:02:36
+ApplicationUtilities/OrangeHRM,Success,4,0,2025-10-31 11:28:43 +0530,2025-12-22 14:39:37 +0530,0:00:00
+ApplicationUtilities/UserLogins,Success,3,0,2025-10-28 16:28:36 +0530,2025-12-30 12:33:03 +0530,0:00:00
+commonUtilities/core,Success,1,0,2025-11-03 15:00:51 +0530,2025-11-03 15:00:51 +0530,0:00:00

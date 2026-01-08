@@ -5,7 +5,7 @@
 		72,
 		54
 	],
-	"lastmodifieddate": 1761802203.3829999,
+	"lastmodifieddate": 1766040108.74,
 	"createddate": 1761802203.3829999,
 	"name": "profilePhoto",
 	"lastfounddate": 1762324897.707,
@@ -19,6 +19,7 @@
 	"testlocationdata": [
 		{
 				"connectionportnum": 49894,
+				"deleted": true,
 				"properties": {
 					"CropRectangle": "[0,0,0,0]",
 					"Rotate": 0,
@@ -29,8 +30,8 @@
 					"SearchType": "Tolerant of Background"
 				},
 				"sutinfo": {
-					"epgw_path": "C:\\Program Files\\Eggplant\\Eggplant.app\\Resources\\epgw\\x64\\bin\\epgw.exe",
-					"Type": "Single System"
+					"Type": "Single System",
+					"epgw_path": "C:\\Program Files\\Eggplant\\Eggplant.app\\Resources\\epgw\\x64\\bin\\epgw.exe"
 				},
 				"name": "profilePhoto.png",
 				"connectionname": "Single System",
