@@ -1,5 +1,5 @@
 ﻿
-//LOG my branch
+Log "my branch"
 "ApplicationUtilities/InitialSetup".launchOrangeHRMApplication "TC_01_AddNewEmployeeInPMPModule"
 "ApplicationUtilities/UserLogins".loginGuestUser
 "ApplicationUtilities/EmployeeCreation".createNewEmployeeInPMPModule
