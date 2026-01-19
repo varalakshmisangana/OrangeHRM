@@ -17,3 +17,12 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+- task: eggplant-runner@2
+  inputs:
+    daiVersion: '25.4.0+3'
+    serverURL: 'http://localhost:8000/'
+    testConfig: 'ById'
+    testConfigID: 'd5a44c07-7b8f-4538-835a-689d54d20b72'
+    clientID: 'client:dai:api:integration:54458967-aea2-44c4-b0b2-3a18a0a539f3'
+    clientSecret: 'O9P6yuT3vZT4EOsexPI7ppmvdN38pAI2'
