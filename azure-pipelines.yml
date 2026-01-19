@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: MySelfHostedPool
+  name: MySelfHostedPool
 
 steps:
 - script: echo Hello, world!
