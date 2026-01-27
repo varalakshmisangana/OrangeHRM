@@ -21,7 +21,7 @@ steps:
 - task: eggplant-runner@2
   inputs:
     daiVersion: '25.4.0+3'
-    serverURL: 'http://http://varalakshmi:8000/'
+    serverURL: 'http://varalakshmi:8000/'
     testConfig: 'ById'
     testConfigID: '597b6b2d-f3c5-492d-aacc-bbc16abf5d91'
     clientID: 'client:dai:api:integration:54458967-aea2-44c4-b0b2-3a18a0a539f3'
