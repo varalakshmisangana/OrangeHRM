@@ -1,33 +1,32 @@
 @echo off
-setlocal EnableDelayedExpansion
- 
-set "SUITE_NAME=OrngeHRM.suite"
-set "SCRIPT_NAME=customFile.script"
- 
-echo Searching for %SUITE_NAME%...
- 
-for /f "delims=" %%A in ('where /r C:\ %SUITE_NAME% 2^>nul') do (
-    set "SUITE_PATH=%%A"
-    goto :FOUND
+setlocal
+
+echo Finding Git repository...
+
+for /f "delims=" %%G in ('git -C "%~dp0" rev-parse --show-toplevel 2^>nul') do set "GIT_ROOT=%%G"
+
+if not defined GIT_ROOT (
+    echo ERROR: Git repository not found.
+    exit /b 1
 )
- 
-echo ERROR: %SUITE_NAME% was not found.
-exit /b 1
- 
-:FOUND
- 
-echo Suite found:
-echo !SUITE_PATH!
- 
-set "SCRIPT_PATH=!SUITE_PATH!\Scripts\%SCRIPT_NAME%"
- 
-echo Running:
-echo !SCRIPT_PATH!
- 
-"C:\Program Files\Eggplant\runscript.bat" "!SCRIPT_PATH!"
- 
-set EXIT_CODE=%ERRORLEVEL%
- 
+
+echo Git repository: "%GIT_ROOT%"
+
+set "SCRIPT_PATH=%GIT_ROOT%\OrngeHRM.suite\Scripts\customFile.script"
+
+echo Script path: "%SCRIPT_PATH%"
+
+if not exist "%SCRIPT_PATH%" (
+    echo ERROR: Eggplant script not found.
+    exit /b 1
+)
+
+echo Running Eggplant script...
+
+"C:\Program Files\Eggplant\runscript.bat" "%SCRIPT_PATH%"
+
+set "EXIT_CODE=%ERRORLEVEL%"
+
 echo Eggplant execution completed with exit code %EXIT_CODE%
- 
+
 exit /b %EXIT_CODE%
