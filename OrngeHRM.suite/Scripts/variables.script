@@ -1,0 +1,15 @@
+﻿to handle setVariable
+	set universal quoteNumber to "9784395327"
+	return universal quoteNumber
+end setVariable
+
+to useVariable
+	params quoteNumber
+	log quoteNumber
+end useVariable
+
+to checkListOfVariables list
+	repeat with each item of list
+		log it
+	end repeat
+end checkListOfVariables

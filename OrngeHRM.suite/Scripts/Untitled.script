@@ -99,3 +99,9 @@ put file "c:\Users\varalakshmi.sangana\Documents\SomeFile.txt"
 set the shellCommand to "ShellExecute"
 shell "c:\windows\system32\cmd.exe", <</c "C:\Program Files\Eggplant\Eggplant.app\Resources\epgw\x64\bin" >> && "adb devices" && "> someFile.txt 2>&1"
 put file "c:\Users\varalakshmi.sangana\Documents\SomeFile.txt"
+
+
+
+set myexcelfile to workbook(ResourcePath("Book1.xlsx"))
+set myFile to worksheet(myexcelfile, "Sheet1")
+put Cell(myFile, "A1") into cellValue1
