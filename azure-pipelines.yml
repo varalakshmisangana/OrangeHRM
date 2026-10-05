@@ -1,0 +1,28 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  name: Default
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+
+- task: eggplant-runner@2
+  inputs:
+    daiVersion: '25.4.0+3'
+    serverURL: 'http://varalakshmi:8000/'
+    testConfig: 'ById'
+    testConfigID: '597b6b2d-f3c5-492d-aacc-bbc16abf5d91'
+    clientID: 'client:dai:api:integration:54458967-aea2-44c4-b0b2-3a18a0a539f3'
+    clientSecret: 'O9P6yuT3vZT4EOsexPI7ppmvdN38pAI2'
