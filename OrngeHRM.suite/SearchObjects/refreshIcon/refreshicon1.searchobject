@@ -8,7 +8,7 @@
 	"lastmodifieddate": 1762323144.471,
 	"createddate": 1762323144.471,
 	"name": "refreshIcon/refreshicon1",
-	"lastfounddate": 1762323702.484,
+	"lastfounddate": 1767866684.365,
 	"ocrcapturestring": "2",
 	"lastfoundlocation": [
 		123,
@@ -29,8 +29,8 @@
 					"SearchType": "Tolerant of Background"
 				},
 				"sutinfo": {
-					"Type": "Single System",
-					"epgw_path": "C:\\Program Files\\Eggplant\\Eggplant.app\\Resources\\epgw\\x64\\bin\\epgw.exe"
+					"epgw_path": "C:\\Program Files\\Eggplant\\Eggplant.app\\Resources\\epgw\\x64\\bin\\epgw.exe",
+					"Type": "Single System"
 				},
 				"name": "refreshIcon/refreshicon1.png",
 				"connectionname": "Single System",

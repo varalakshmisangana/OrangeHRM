@@ -74,12 +74,10 @@ to getQuote
 end getQuote
 
 to attemptRecovery given theException, theCommand, theParams
-	typetext escape
-	return yes
-	(*If ImageFound(text:"Select a Configuration")
+	If ImageFound(text:"Select a Configuration")
 		Click text: "Cancel"
 		Return yes
 	Else
 		Return no
-	End If*)
+	End If
 end attemptRecovery

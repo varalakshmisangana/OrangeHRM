@@ -1,0 +1,17 @@
+﻿"ApplicationUtilities/InitialSetup".launchOrangeHRMApplication "TC_02_UserRolesAndAccessRights"
+"ApplicationUtilities/UserLogins".loginGuestUser
+"ApplicationUtilities/EmployeeCreation".createNewEmployeeInPMPModule
+"ApplicationUtilities/EmployeeCreation".enableCreateLoginCredentials
+"ApplicationUtilities/EmployeeCreation".fillContactDetails
+"ApplicationUtilities/userRolesAndAccessRights".createAdminRole
+"ApplicationUtilities/userRolesAndAccessRights".searchAndValidateAdminRole
+"ApplicationUtilities/UserLogins".logoutUser
+"ApplicationUtilities/UserLogins".loginAdminUser
+"ApplicationUtilities/UserLogins".logoutUser
+"ApplicationUtilities/UserLogins".loginGuestUser
+"ApplicationUtilities/userRolesAndAccessRights".searchAndValidateAdminRole
+"ApplicationUtilities/userRolesAndAccessRights".editAdminUser
+"ApplicationUtilities/UserLogins".logoutUser
+"ApplicationUtilities/UserLogins".loginDisabledAdminUser
+
+

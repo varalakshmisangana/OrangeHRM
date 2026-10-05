@@ -1,0 +1,555 @@
+﻿to handle userFriendlymessage
+	params errorMessage
+	put errorMessage into Global ErrorMessage
+	if Global ErrorMessage contains ...
+	
+		"No Such Command":handlerNotFound(Global ErrorMessage)
+		
+		"AssertionFailed":validationFailed()
+		
+		"InvalidParameters":passingParametersIssue()
+		
+		"File Not Found":imageNotExistInSuite(Global ErrorMessage)
+		
+		"No Image Found On Screen":noImageFoundOnScreen(Global ErrorMessage)
+		
+		"No Text Found On Screen":noTextFoundOnScreen(Global ErrorMessage)
+		
+		"Unable To Find Any Image On Screen":unableToFindImageOrTextWithInTime(Global ErrorMessage)
+		
+		"imagerectangle Error - Unable To Find Image":unableToFindImage(Global ErrorMessage)
+		
+		"Image Property List did not contain":imageNamePropertyError(Global ErrorMessage)
+		
+		"No Remote Connection":sutConnectionError()
+		
+		"Connection Failed - Unable to connect":connectingSUTError()
+		
+		"Unable To Capture Screen":capturingScreenError()
+		
+		"STMaxCallDepthExceeded":maxDepthError()
+		
+		"waitforall Error":waitForAllError()
+		
+		"Unable To Find Image":textOrImageIsNotFound(Global ErrorMessage)
+		
+		"Pasteboard inaccessible on remote machine":copyInaccessible()
+		
+		else
+			scriptError(Global ErrorMessage)		
+	end if
+end userFriendlymessage
+
+to handle textOrImageIsNotFound
+	split Global ErrorMessage by "-"
+	put item 3 of Global ErrorMessage into temp
+	split temp by ":"
+	if item 1 of temp contains "Text" then
+		put item 2 of temp into target
+		set targetType to "Text"
+	else
+		put temp into target
+		set targetType to "Image"
+	end if
+	if target contains "Restricted" then
+		split target by "Restricted"
+		put item 1 of target into target
+	end if
+	if targetType is "Image" then
+		split target by "Image"
+		put item 2 of target into target
+	else
+		delete quote from target
+		delete ")" from target
+	end if
+	split target by "."
+	put item 1 of target into target
+	delete quote from target
+	delete ")" from target
+	delete space from target
+	put (quote & target & quote && targetType & " is not found on screen to perform Click operation") into global error
+	LogError targetType && "is not found on screen to perform Click operation on" && quote & target & quote
+end textOrImageIsNotFound
+
+to handle maxDepthError
+	put ("Calling a handler which is having same name as Script itself") into global error
+	
+	LogError "Calling a handler which is having same name as Script itself"
+end maxDepthError
+
+to handle waitForAllError
+	split Global ErrorMessage  by ","
+	put ("waitforAll Error--"&item 10 of Global ErrorMessage&&"is not found") into global error
+	
+	Logerror "waitforAll Error--"&item 10 of Global ErrorMessage&&"is not found"
+	
+end waitForAllError
+
+to handle handlerNotFound
+	split Global ErrorMessage by "-"
+	put item 2 of Global ErrorMessage into temp 
+	split temp by ":"
+	put item 3 of temp into temp2	
+	put (temp2&&"command is not found") into global error
+	
+	LogError temp2&&"command is not found"
+end handlerNotFound
+
+to validationFailed
+	put "AssertionFailed validation has Failed" into global error
+	LogError "AssertionFailed validation has Failed"
+end validationFailed
+
+to passingParametersIssue
+	put "Invalid Properties are given" into global error
+	
+	LogError "Invalid Properties are given"
+end passingParametersIssue
+
+to handle imageNotExistInSuite
+	split Global ErrorMessage by "-"
+	put item 3 of Global ErrorMessage into temp
+	split temp by ":"
+	delete space from item 2 of temp
+	put (quote&item 2 of temp&quote&&"Image is not found in captured Images") into global error
+	LogError  Universal pageName  &&"Page"&":"&&"Image is not found in captured Images"&& quote&item 2 of temp&quote
+end imageNotExistInSuite
+
+to handle noImageFoundOnScreen
+	split Global ErrorMessage by "-"
+	put item 3 of Global ErrorMessage into temp
+	split temp by ":"
+	put item 2 of temp into temp2
+	if temp2 contains "Restricted" then 
+		split temp2 by "Restricted"
+		put item 1 of temp2 into temp3 
+		delete quote from temp3
+		delete space from temp3
+		put (quote&temp3&quote&&"Image is not found on screen to perform click operation") into global error
+		LogError  Universal pageName  &&"Page"&":"&&"Image is not found on screen to perform click operation on"&& quote&temp3&quote
+		
+	else
+		delete quote from temp2
+		delete space from temp2
+		put (quote&temp2&quote&&"Image is not found on screen to perform click operation") into global error
+		LogError  Universal pageName  &&"Page" &":"&&"Image is not found on screen to perform click operation on"&&quote&temp2&quote
+	end if
+end noImageFoundOnScreen
+
+to handle noTextFoundOnScreen
+	split Global ErrorMessage by "-"
+	put item 3 of Global ErrorMessage into temp
+	split temp by ":"
+	put item 3 of temp into temp2
+	delete quote from temp2
+	if temp2 contains "." then 
+		split temp2 by "."
+	end if
+	delete ")" from item 1 of temp2
+	put (quote&item 1 of temp2&quote&&"Text is not found on screen to perform click operation") into global error
+	LogError  Universal pageName  &&"Page"&":"&&"Text is not found on screen to perform click operation on"&&quote&item 1 of temp2&quote
+end noTextFoundOnScreen
+
+to handle unableToFindImageOrTextWithInTime
+	split Global ErrorMessage by "-"
+	put item 3 of Global ErrorMessage into temp1
+	split temp1 by "Screen"
+	put item 2 of temp1 into temp2 
+	split temp2 by "within"
+	if item 1 of temp2 contains "TEXT" then 
+		put  item 1 of temp2 into temp3
+		split temp3 by ":"
+		delete "(" from temp3
+		delete ")" from temp3
+		delete quote from temp3
+		put (quote&item 2 of temp3&quote&&"Text is not found on screen within the given time.") into global error
+		
+		LogError  Universal pageName  &&"Page"&":"&&"Text is not found on screen within the given time "&& quote&item 2 of temp3&quote
+	else
+		put ( item 1 of temp2&&"Image is not found on screen within the given time.") into global error
+		
+		LogError  Universal pageName  &&"Page" &":"&&"Image is not found on screen within the given time "&& item 1 of temp2
+	end if
+end unableToFindImageOrTextWithInTime
+
+to handle unableToFindImage
+	split Global ErrorMessage by "-"
+	put item 3 of Global ErrorMessage into temp
+	split temp by ":"
+	if item 1 of temp contains "Text" then 
+		put item 2 of temp into temp2
+		if temp2 contains "Restricted" then 
+			split temp2 by "Restricted"
+			put item 1 of temp2 into temp3 
+			split temp3 by "." 
+			put item 1 of temp3 into temp4
+			delete quote from temp4
+			delete ")" from temp4
+			put (quote&temp4&quote&&"Text is not found in the given rectangle area") into global error
+			LogError  Universal pageName &&"Page"&":"&&"Text is not found in the given rectangle area"&&quote&temp4&quote
+		else
+			delete quote from temp2
+			delete ")" from temp2
+			split temp2 by "."
+			put item 1 of temp2 into temp5
+			put (quote&temp5&quote&&"Text is not found in the given rectangle area") into global error
+			LogError  Universal pageName &&"Page"&":"&&"Text is not found in the given rectangle area"&&quote&temp5&quote
+		end if
+	else
+		put item 3 of Global ErrorMessage into temp
+		if temp contains "Restricted" then 
+			split temp by "Restricted"
+			put item 1 of temp into temp3 
+			split temp3 by "Image" 
+			put item 2 of temp3 into temp4
+			delete quote from temp4
+			delete ")" from temp4
+			delete space from temp4
+			put (quote&temp4&quote&&"Image is not found in the given rectangle area") into global error
+			LogError  Universal pageName &&"Page" &":"&&"Image is not found in the given rectangle area"&&quote&temp4&quote
+		else
+			split temp by "Restricted"
+			put item 1 of temp into temp3 
+			
+			split temp3 by "Image" 
+			put item 2 of temp3 into temp5
+			delete quote from temp5
+			delete ")" from temp5
+			delete space from temp5
+			put (quote&temp5&quote&&"Image is not found in the given rectangle area") into global error
+			LogError  Universal pageName  &&"Page"&":"&&"Image is not found in the given rectangle area"&&quote&temp5&quote
+		end if
+	end if 
+end unableToFindImage
+
+to handle imageNamePropertyError
+	put  ("ImageName Property is Missing.") into global error
+	LogError "ImageName Property is Missing."
+end imageNamePropertyError
+
+to handle sutConnectionError
+	put  ("There is No SUT to perform operations.") into global error
+	LogError "There is No SUT to perform operations."
+end sutConnectionError
+
+to handle connectingSUTError
+	put  ("Unable to connect SUT.") into global error
+	LogError "Unable to connect SUT."
+end connectingSUTError
+
+to copyInaccessible
+	put "Pasteboard inaccessible on remote machine" into global error
+	LogError "Pasteboard inaccessible on remote machine"
+end copyInaccessible
+
+to handle capturingScreenError
+	put "Error with Capturing the screen " into global error
+	LogError "Error with Capturing the screen "
+end capturingScreenError
+
+to handle scriptError
+	put "Technical Error:"&&Global ErrorMessage into global error
+	LogError "Technical Error:"&&Global ErrorMessage
+end scriptError
+to handle userFriendlymessage
+	params errorMessage
+	put errorMessage into Global ErrorMessage
+	if Global ErrorMessage contains ...
+	
+		"No Such Command":handlerNotFound(Global ErrorMessage)
+		
+		"AssertionFailed":validationFailed()
+		
+		"InvalidParameters":passingParametersIssue()
+		
+		"File Not Found":imageNotExistInSuite(Global ErrorMessage)
+		
+		"No Image Found On Screen":noImageFoundOnScreen(Global ErrorMessage)
+		
+		"No Text Found On Screen":noTextFoundOnScreen(Global ErrorMessage)
+		
+		"Unable To Find Any Image On Screen":unableToFindImageOrTextWithInTime(Global ErrorMessage)
+		
+		"imagerectangle Error - Unable To Find Image":unableToFindImage(Global ErrorMessage)
+		
+		"Image Property List did not contain":imageNamePropertyError(Global ErrorMessage)
+		
+		"No Remote Connection":sutConnectionError()
+		
+		"Connection Failed - Unable to connect":connectingSUTError()
+		
+		"Unable To Capture Screen":capturingScreenError()
+		
+		"STMaxCallDepthExceeded":maxDepthError()
+		
+		"waitforall Error":waitForAllError()
+		
+		"Unable To Find Image":textOrImageIsNotFound(Global ErrorMessage)
+		
+		"Pasteboard inaccessible on remote machine":copyInaccessible()
+		
+		else
+			scriptError(Global ErrorMessage)		
+	end if
+end userFriendlymessage
+
+to handle textOrImageIsNotFound
+	split Global ErrorMessage by "-"
+	put item 3 of Global ErrorMessage into temp
+	split temp by ":"
+	if item 1 of temp contains "Text" then
+		put item 2 of temp into target
+		set targetType to "Text"
+	else
+		put temp into target
+		set targetType to "Image"
+	end if
+	if target contains "Restricted" then
+		split target by "Restricted"
+		put item 1 of target into target
+	end if
+	if targetType is "Image" then
+		split target by "Image"
+		put item 2 of target into target
+	else
+		delete quote from target
+		delete ")" from target
+	end if
+	split target by "."
+	put item 1 of target into target
+	delete quote from target
+	delete ")" from target
+	delete space from target
+	put (quote & target & quote && targetType & " is not found on screen to perform Click operation") into global error
+	LogError targetType && "is not found on screen to perform Click operation on" && quote & target & quote
+end textOrImageIsNotFound
+
+to handle maxDepthError
+	put ("Calling a handler which is having same name as Script itself") into global error
+	
+	LogError "Calling a handler which is having same name as Script itself"
+end maxDepthError
+
+to handle waitForAllError
+	split Global ErrorMessage  by ","
+	put ("waitforAll Error--"&item 10 of Global ErrorMessage&&"is not found") into global error
+	
+	Logerror "waitforAll Error--"&item 10 of Global ErrorMessage&&"is not found"
+	
+end waitForAllError
+
+to handle handlerNotFound
+	split Global ErrorMessage by "-"
+	put item 2 of Global ErrorMessage into temp 
+	split temp by ":"
+	put item 3 of temp into temp2	
+	put (temp2&&"command is not found") into global error
+	
+	LogError temp2&&"command is not found"
+end handlerNotFound
+
+to validationFailed
+	put "AssertionFailed validation has Failed" into global error
+	LogError "AssertionFailed validation has Failed"
+end validationFailed
+
+to passingParametersIssue
+	put "Invalid Properties are given" into global error
+	
+	LogError "Invalid Properties are given"
+end passingParametersIssue
+
+to handle imageNotExistInSuite
+	split Global ErrorMessage by "-"
+	put item 3 of Global ErrorMessage into temp
+	split temp by ":"
+	delete space from item 2 of temp
+	put (quote&item 2 of temp&quote&&"Image is not found in captured Images") into global error
+	LogError  Universal pageName  &&"Page"&":"&&"Image is not found in captured Images"&& quote&item 2 of temp&quote
+end imageNotExistInSuite
+
+to handle noImageFoundOnScreen
+	split Global ErrorMessage by "-"
+	put item 3 of Global ErrorMessage into temp
+	split temp by ":"
+	put item 2 of temp into temp2
+	if temp2 contains "Restricted" then 
+		split temp2 by "Restricted"
+		put item 1 of temp2 into temp3 
+		delete quote from temp3
+		delete space from temp3
+		put (quote&temp3&quote&&"Image is not found on screen to perform click operation") into global error
+		LogError  Universal pageName  &&"Page"&":"&&"Image is not found on screen to perform click operation on"&& quote&temp3&quote
+		
+	else
+		delete quote from temp2
+		delete space from temp2
+		put (quote&temp2&quote&&"Image is not found on screen to perform click operation") into global error
+		LogError  Universal pageName  &&"Page" &":"&&"Image is not found on screen to perform click operation on"&&quote&temp2&quote
+	end if
+end noImageFoundOnScreen
+
+to handle noTextFoundOnScreen
+	split Global ErrorMessage by "-"
+	put item 3 of Global ErrorMessage into temp
+	split temp by ":"
+	put item 3 of temp into temp2
+	delete quote from temp2
+	if temp2 contains "." then 
+		split temp2 by "."
+	end if
+	delete ")" from item 1 of temp2
+	put (quote&item 1 of temp2&quote&&"Text is not found on screen to perform click operation") into global error
+	LogError  Universal pageName  &&"Page"&":"&&"Text is not found on screen to perform click operation on"&&quote&item 1 of temp2&quote
+end noTextFoundOnScreen
+
+to handle unableToFindImageOrTextWithInTime
+	split Global ErrorMessage by "-"
+	put item 3 of Global ErrorMessage into temp1
+	split temp1 by "Screen"
+	put item 2 of temp1 into temp2 
+	split temp2 by "within"
+	if item 1 of temp2 contains "TEXT" then 
+		put  item 1 of temp2 into temp3
+		split temp3 by ":"
+		delete "(" from temp3
+		delete ")" from temp3
+		delete quote from temp3
+		put (quote&item 2 of temp3&quote&&"Text is not found on screen within the given time.") into global error
+		
+		LogError  Universal pageName  &&"Page"&":"&&"Text is not found on screen within the given time "&& quote&item 2 of temp3&quote
+	else
+		put ( item 1 of temp2&&"Image is not found on screen within the given time.") into global error
+		
+		LogError  Universal pageName  &&"Page" &":"&&"Image is not found on screen within the given time "&& item 1 of temp2
+	end if
+end unableToFindImageOrTextWithInTime
+
+
+
+to handle unableToFindImage
+	split Global ErrorMessage by "-"
+	put item 3 of Global ErrorMessage into temp
+	split temp by ":"
+	if item 1 of temp contains "Text" then 
+		put item 2 of temp into temp2
+		if temp2 contains "Restricted" then 
+			split temp2 by "Restricted"
+			put item 1 of temp2 into temp3 
+			split temp3 by "." 
+			put item 1 of temp3 into temp4
+			delete quote from temp4
+			delete ")" from temp4
+			put (quote&temp4&quote&&"Text is not found in the given rectangle area") into global error
+			LogError  Universal pageName &&"Page"&":"&&"Text is not found in the given rectangle area"&&quote&temp4&quote
+		else
+			delete quote from temp2
+			delete ")" from temp2
+			split temp2 by "."
+			put item 1 of temp2 into temp5
+			put (quote&temp5&quote&&"Text is not found in the given rectangle area") into global error
+			LogError  Universal pageName &&"Page"&":"&&"Text is not found in the given rectangle area"&&quote&temp5&quote
+		end if
+	else
+		put item 3 of Global ErrorMessage into temp
+		if temp contains "Restricted" then 
+			split temp by "Restricted"
+			put item 1 of temp into temp3 
+			split temp3 by "Image" 
+			put item 2 of temp3 into temp4
+			delete quote from temp4
+			delete ")" from temp4
+			delete space from temp4
+			put (quote&temp4&quote&&"Image is not found in the given rectangle area") into global error
+			LogError  Universal pageName &&"Page" &":"&&"Image is not found in the given rectangle area"&&quote&temp4&quote
+		else
+			split temp by "Restricted"
+			put item 1 of temp into temp3 
+			
+			split temp3 by "Image" 
+			put item 2 of temp3 into temp5
+			delete quote from temp5
+			delete ")" from temp5
+			delete space from temp5
+			put (quote&temp5&quote&&"Image is not found in the given rectangle area") into global error
+			LogError  Universal pageName  &&"Page"&":"&&"Image is not found in the given rectangle area"&&quote&temp5&quote
+		end if
+	end if 
+end unableToFindImage
+
+to handle imageNamePropertyError
+	put  ("ImageName Property is Missing.") into global error
+	
+	LogError "ImageName Property is Missing."
+end imageNamePropertyError
+
+to handle sutConnectionError
+
+	put  ("There is No SUT to perform operations.") into global error
+	
+	LogError "There is No SUT to perform operations."
+end sutConnectionError
+
+to handle connectingSUTError
+	put  ("Unable to connect SUT.") into global error
+	LogError "Unable to connect SUT."
+end connectingSUTError
+
+to copyInaccessible
+	put "Pasteboard inaccessible on remote machine" into global error
+	LogError "Pasteboard inaccessible on remote machine"
+end copyInaccessible
+
+to handle capturingScreenError
+	put "Error with Capturing the screen " into global error
+	LogError "Error with Capturing the screen "
+end capturingScreenError
+
+to handle scriptError
+	put "Technical Error:"&&Global ErrorMessage into global error
+	
+	LogError "Technical Error:"&&Global ErrorMessage
+end scriptError
+
+(**
+@HandlerName: statusCodeError: The statusCodeError handler checks for known exceptions displayed on the application's screen. It reads a list of predefined error messages from a JSON file (exceptions.json) and captures screen text from a specific region using OCR. It then compares the screen content against the exception list. If a match is found, it returns the matched exception message; if the screen is blank, it returns "Blank Page" as an exception.
+@Recent_Modified_Author: Ambika Mitta
+@Version : 0.1
+@Modified Reason (if):
+handling the Exception details through JSON file
+**)
+function statusCodeError
+	put ResourcePath("exceptions.json") into jsonFilePath
+	set jsonData to  JSONValue(file jsonFilePath)
+	put jsonData into myJson
+	put the values of myJson.exceptions into valueList
+	put ReadText([0,59,1905,1010]) into screen
+	repeat with each value of valueList
+		if screen contains value
+			return "Exception Found on screen: " & value
+		else if screen is empty
+			return "Exception Found on screen: " &&"Blank Page"
+		end if			
+	end repeat
+end statusCodeError
+
+to handle errorCapture errorMessage
+	set x = errorMessage
+	set errorMessage to statusCodeError()
+	if errorMessage is empty then set errorMessage to x
+	if errorMessage contains "Runtime"
+		CaptureScreen {Name: universal screenshotPath & "errorScreen" && the hour && the minute }
+		userFriendlyMessage errorMessage
+		delete all <punctuation character> from global error
+		Set FailedStepURL to "CommonUtilities/core".getCurrentUrl
+		log "FailedStepURL:"&FailedStepURL
+		exit all
+	else
+		CaptureScreen {Name: universal screenshotPath & "errorScreen" && the hour && the minute }
+		LogError errorMessage
+		delete all <punctuation character> from global error
+		Set FailedStepURL to "CommonUtilities/core".getCurrentUrl
+		log "FailedStepURL:"&FailedStepURL
+	End if
+	exit all
+end errorCapture

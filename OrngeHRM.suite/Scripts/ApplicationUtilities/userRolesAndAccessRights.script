@@ -1,0 +1,32 @@
+﻿to createAdminRole
+	"commonUtilities/core".mouseAction "Admin", "User Management", "LHLH", "TLQ"
+	"commonUtilities/core".mouseAction "Add", "Add User", "LHLH", "TLQ"
+	"commonUtilities/Core".selectDropDownElementNotEditable "User Role", universal data."uerRole", "HM",[10,50]
+	"commonUtilities/Core".selectDropDownElement "Employee Name", universal data."firstName"&&universal data."middleName"&&universal data."lastName", "RH",[10,50]
+	"commonUtilities/Core".selectDropDownElementNotEditable "Status", universal data."status", "LH",[10,50]
+	put "commonUtilities/Core".getRandomName into universal adminUserName
+	"commonUtilities/Core".textEntry "Username", universal adminUserName, "RH",[10,50]
+	wait 1
+	"commonUtilities/Core".textEntry "Password", universal data."adminPassword", "LH",[10,50]
+	"commonUtilities/Core".textEntry "Confirm Password", universal data."adminPassword", "RH",[10,50]
+	CaptureScreen {Name: universal screenshotPath & "DependentDetails" && the hour && the minute }
+	"commonUtilities/Core".mouseAction "Save", "Success", "RHRH", "BLQ"
+	if ImageFound(text:"Save Password", waitFor:universal meanWaitTime,SearchRectangle:"commonUtilities/screenPart"().SUT.("TH") )
+		"commonUtilities/Core".mouseAction "Not now", "", "TH"
+	end if
+end createAdminRole
+
+to searchAndValidateAdminRole
+	"commonUtilities/core".mouseAction "Admin", "User Management", "LHLH", "TLQ"
+	"commonUtilities/Core".textEntry "Username", universal adminUserName, "TH",[10,50], "Yes"
+	"commonUtilities/core".validateElement "(1) Record Found", "LH"
+	"commonUtilities/core".validateElement universal adminUserName, "BH"
+	"commonUtilities/core".validateElement universal data."uerRole", "BH"
+end searchAndValidateAdminRole
+
+to editAdminUser
+	"commonUtilities/core".mouseAction "edit_Icon", "Edit User", "RH", "TLQ"
+	"commonUtilities/Core".selectDropDownElementNotEditable "Status","Disabled", "LH",[10,50]
+	"commonUtilities/Core".mouseAction "Save", "Success", "RHRH", "BLQ"
+end editAdminUser
+

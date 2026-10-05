@@ -1,0 +1,23 @@
+﻿
+to handle that_the_Calculator_app_is_running_and_in_focus
+	(*Typetext windowsKey
+	typetext "Calculator", return *)
+	WaitFor 180, text:"Standard"	
+end that_the_Calculator_app_is_running_and_in_focus
+
+to handle there_is_no_current_value_in_the_calculator
+	waitfor 10, text: 0 	
+end there_is_no_current_value_in_the_calculator
+
+to handle you_add_NUM_and_NUM
+	params num1, num2
+	typetext num1
+	click text:"+"
+	typetext text: num2
+	typetext return
+end you_add_NUM_and_NUM
+
+to handle the_value_displayed_should_be_NUM
+	params num1
+	WaitFor 10, text:num1
+end the_value_displayed_should_be_NUM

@@ -1,0 +1,49 @@
+{
+	"originalcapturelocation": [
+		488,
+		424,
+		85,
+		70
+	],
+	"lastmodifieddate": 1766040147.773,
+	"createddate": 1766040147.773,
+	"name": "profilePhoto2",
+	"lastfounddate": 1766378338.632,
+	"ocrcapturestring": "% A",
+	"lastfoundlocation": [
+		488,
+		352,
+		85,
+		70
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 52941,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[42,35]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"epgw_path": "C:\\Program Files\\Eggplant\\Eggplant.app\\Resources\\epgw\\x64\\bin\\epgw.exe",
+					"Type": "Single System"
+				},
+				"name": "profilePhoto.png",
+				"connectionname": "Single System",
+				"type": 1,
+				"connectionserverid": "127.0.0.1",
+				"capturerect": [
+					488,
+					424,
+					85,
+					70
+				],
+				"connectiontype": "Single System",
+				"capturedocrtext": "% A"
+			}
+	]
+}

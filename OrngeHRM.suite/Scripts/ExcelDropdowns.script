@@ -1,0 +1,45 @@
+﻿set ExcelPath to "C:\Users\varalakshmi.sangana\Documents\EggplantAutomation\DropdownValidation.xlsx"
+
+openExcelFile ExcelPath
+validateCellDropDownValues "B1", "TC2"
+validateCellDropDownValues "B8", "RC2"
+closeExcel
+
+
+to openExcelFile ExcelPath
+	TypeText windowsKey, r
+	WaitFor 10, text:"type the"
+	Wait 1
+	TypeText ExcelPath, Return
+	WaitFor 10, text:"File", SearchRectangle:[0,0,582,185]
+end openExcelFile
+
+to validateCellDropDownValues cellValue, DropDownValue
+	click text:"Home", waitFor:5, SearchRectangle:[0,0,582,185]
+	click text:"Clipboard", waitFor:5, SearchRectangle:[0,0,582,185], hotspot:[-10,30]
+	
+	TypeText controlKey, a
+	TypeText cellValue, return
+	
+	WaitFor 10, imageName:"dropdownicon", SearchRectangle:[24,196,1903,978]
+	Click imageName:"dropdownicon", SearchRectangle:[24,196,1903,978], waitFor:5
+	
+	put ImageRectangle(imageName:"dropdownicon", waitFor:2) into dropDown
+	set dropdownSR to [[dropDown.x - 90, dropDown.y + 15], [dropDown.x + 0, dropDown.y + 100]]
+	
+	wait 1
+	click text:DropDownValue, waitFor:3, SearchRectangle:dropdownSR, properties:{DPI:144}
+	
+	put ImageRectangle(imageName:"dropdownicon", waitFor:2) into dropDown
+	set cellSR to [[dropDown.x - 90, dropDown.y - 7], [dropDown.x + 0, dropDown.y + 20]]
+	
+	wait 1
+	WaitFor 10, text:DropDownValue, waitFor:3, SearchRectangle:cellSR
+end validateCellDropDownValues
+
+to closeExcel
+	TypeText AltKey, f4
+	wait 1
+	TypeText n
+end closeExcel
+
