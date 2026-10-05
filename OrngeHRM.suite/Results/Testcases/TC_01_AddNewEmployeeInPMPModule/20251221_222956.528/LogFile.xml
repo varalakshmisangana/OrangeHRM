@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_01_AddNewEmployeeInPMPModule_script" package="OrngeHRM.suite" timestamp="2025-12-21 22:29:56.528 +0530"
+ tests="1"  failures="3" errors="1" time="39945.236000">
+  <properties>
+   <property name="RunDate" value="2025-12-21 22:29:56.528 +0530"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="Testcases/TC_01_AddNewEmployeeInPMPModule.script" assertions="6" status="error"  time="39945.223">
+    <failure type="LogError" message="Element not found ( Login )" />
+    <failure type="LogError" message="Element not found ( Login )" />
+    <failure type="FAILURE" message="Image Not Found: WaitFor Error - Unable To Find Any Image On Screen &quot;(TEXT:&quot;Login&quot;)&quot; within 30.00 seconds. Text not found.  Restricted Search Rectangle ((0,540),(1920,1080))\n -- Execution Time 11:05:45 Testcases/TC_01_AddNewEmployeeInPMPModule.script" />
+    <error type="Exception" message="Unable To Find Any Image On Screen &quot;(TEXT:&quot;Login&quot;)&quot; within 30.00 seconds. Text not found." />
+  </testcase>
+ </testsuite>
+</testsuites>

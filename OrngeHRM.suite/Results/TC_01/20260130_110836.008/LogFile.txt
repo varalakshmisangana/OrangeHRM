@@ -1,0 +1,6 @@
+﻿2026-01-30 11:08:36.020 +0530	START		Running TC_01.script
+2026-01-30 11:08:36.663 +0530	Log		34465A	3	on_checklistofvariables	variables.script
+2026-01-30 11:08:36.663 +0530	Log		N9020B	3	on_checklistofvariables	variables.script
+2026-01-30 11:08:36.686 +0530	Log		AP500A	3	on_checklistofvariables	variables.script
+2026-01-30 11:08:36.724 +0530	EndTestCase		(Duration:"0.693", Errors:"0", Exceptions:"0", StartTime:"2026-01-30 11:08:36 +0530", Successes:"1", TestCase:"TC_01.script", Warnings:"0")
+2026-01-30 11:08:36.822 +0530	SUCCESS		Execution Time 0:00:00 TC_01.script

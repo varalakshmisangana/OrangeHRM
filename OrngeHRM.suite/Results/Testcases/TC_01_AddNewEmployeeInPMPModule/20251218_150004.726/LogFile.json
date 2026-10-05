@@ -1,0 +1,922 @@
+{
+	"entries": [
+		{
+				"message": "Running Testcases/TC_01_AddNewEmployeeInPMPModule.script",
+				"identifier": "START",
+				"timestamp": "2025-12-18 15:00:04.741 +0530"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-12-18 15:00:18.242 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Type the name\"). Text not found.",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-12-18 15:00:18.320 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-12-18 15:00:24.251 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (117, 875)",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:00:24.578 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:00:25.496 +0530",
+				"message": "Firefox",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:00:26.278 +0530",
+				"message": "[return]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 8,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:00:46.821 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (135, 61)",
+				"image": "refreshIcon",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:00:46.841 +0530",
+				"message": "Element found ( refreshIcon ) at  [135,61]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:00:47.430 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "refreshIcon_0001.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearcache",
+				"timestamp": "2025-12-18 15:00:49.609 +0530",
+				"message": "[controlKey][shiftKey][deleteKey]",
+				"scriptName": "commonUtilities/browser.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:00:56.940 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (850, 134)",
+				"image": "(TEXT:\"browsing data\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:00:57.094 +0530",
+				"message": "Element found ( browsing data ) at  [850,134]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:00:57.573 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "browsing data_0001.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearcache",
+				"timestamp": "2025-12-18 15:01:18.148 +0530",
+				"scriptName": "commonUtilities/browser.script",
+				"message": "Unable to Find Image (TEXT:\"Advanced\"). Text not found.",
+				"image": "(TEXT:\"Advanced\")",
+				"handlerLine": 5,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2025-12-18 15:01:36.696 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Delete data\"). Text not found.",
+				"image": "(TEXT:\"Delete data\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2025-12-18 15:01:57.780 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Delete from this device\"). Text not found.",
+				"image": "(TEXT:\"Delete from this device\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2025-12-18 15:01:59.058 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1026, 639)",
+				"image": "(TEXT:\"Clear\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2025-12-18 15:01:59.363 +0530",
+				"message": "at (1026, 639)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 4,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-12-18 15:01:59.932 +0530",
+				"message": "waiting until Cancel is on screen",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2025-12-18 15:02:18.869 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Cancel\"). Text not found.",
+				"image": "(TEXT:\"Cancel\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_launchapplication",
+				"timestamp": "2025-12-18 15:02:19.015 +0530",
+				"message": "[controlKey]l",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 9,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:02:19.779 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:02:21.817 +0530",
+				"message": "https://opensource-demo.orangehrmlive.com/",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:02:22.565 +0530",
+				"message": "[return]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 8,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:02:33.124 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (767, 403)",
+				"image": "(TEXT:\"Login\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:02:33.290 +0530",
+				"message": "Element found ( Login ) at  [767,403]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:02:33.633 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Login_0001.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:02:34.449 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (767, 403)",
+				"image": "(TEXT:\"Login\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:02:34.490 +0530",
+				"message": "Element found ( Login ) at  [767,403]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:02:34.945 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Login_0002.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_setcustomrectangle",
+				"timestamp": "2025-12-18 15:02:35.716 +0530",
+				"message": "(null) is not a recognized Language.",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 2,
+				"identifier": "LogWarning"
+			},
+		{
+				"handlerName": "on_setcustomrectangle",
+				"timestamp": "2025-12-18 15:02:35.723 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "at [736,391,799,415]",
+				"image": "(TEXT:\"Login\")",
+				"handlerLine": 2,
+				"identifier": "imagerectangle"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:02:36.533 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (572, 556)",
+				"image": "(TEXT:\"Username\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:02:36.850 +0530",
+				"message": "at (572, 606)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:02:37.599 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:02:38.487 +0530",
+				"message": "Admin",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:02:39.064 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (572, 643)",
+				"image": "(TEXT:\"Password\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:02:39.362 +0530",
+				"message": "at (572, 693)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:02:40.122 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:02:41.085 +0530",
+				"message": "admin123",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:02:42.099 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (767, 757)",
+				"image": "(TEXT:\"Login\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:02:42.260 +0530",
+				"message": "Element found ( Login ) at  [767,757]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:02:42.552 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Login_0003.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:02:43.623 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (767, 757)",
+				"image": "(TEXT:\"Login\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:02:43.936 +0530",
+				"message": "at (767, 757)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:02:45.757 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (135, 61)",
+				"image": "refreshIcon",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:02:45.894 +0530",
+				"message": "Element found ( refreshIcon ) at  [135,61]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:02:46.784 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "refreshIcon_0002.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_loginuser",
+				"timestamp": "2025-12-18 15:02:52.212 +0530",
+				"scriptName": "ApplicationUtilities/UserLogins.script",
+				"message": "found at (381, 104)",
+				"image": "(TEXT:\"Save password\")",
+				"handlerLine": 8,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2025-12-18 15:03:13.747 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Never\"). Text not found.",
+				"image": "(TEXT:\"Never\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2025-12-18 15:03:16.355 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (618, 268)",
+				"image": "(TEXT:\"Not now\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2025-12-18 15:03:16.674 +0530",
+				"message": "at (618, 268)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 4,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:03:18.940 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (72, 298)",
+				"image": "(TEXT:\"PIM\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:03:19.391 +0530",
+				"message": "at (72, 298)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:03:24.840 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (400, 278)",
+				"image": "(TEXT:\"Employee Information\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:03:25.070 +0530",
+				"message": "Element found ( Employee Information ) at  [400,278]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:03:25.859 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Employee Information_0001.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:03:30.602 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (391, 605)",
+				"image": "(TEXT:\"Add\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:03:31.207 +0530",
+				"message": "at (391, 605)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:03:37.089 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (789, 313)",
+				"image": "(TEXT:\"Employee Full Name\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:03:37.296 +0530",
+				"message": "Element found ( Employee Full Name ) at  [789,313]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:03:37.660 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Employee Full Name_0001.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:03:40.706 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (772, 355)",
+				"image": "(TEXT:\"First Name\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:03:41.065 +0530",
+				"message": "at (972, 355)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:03:41.815 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:03:42.672 +0530",
+				"message": "Vara",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:03:49.256 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1148, 355)",
+				"image": "(TEXT:\"Middle Name\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:03:49.638 +0530",
+				"message": "at (1348, 355)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:03:50.402 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:03:51.351 +0530",
+				"message": "Lakshmi",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:03:55.476 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1512, 355)",
+				"image": "(TEXT:\"Last Name\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:03:55.811 +0530",
+				"message": "at (1712, 355)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:03:56.558 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:03:57.511 +0530",
+				"message": "Sangana",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:03:58.244 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (576, 437)",
+				"image": "uploadProfileIcon",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:03:58.662 +0530",
+				"message": "at (576, 437)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:04:07.999 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (163, 470)",
+				"image": "(TEXT:\"File name\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:04:08.295 +0530",
+				"message": "Element found ( File name ) at  [163,470]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:04:08.794 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "File name_0001.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:13.568 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (163, 470)",
+				"image": "(TEXT:\"File name\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:13.877 +0530",
+				"message": "at (363, 470)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:04:14.628 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:04:17.303 +0530",
+				"message": "C:\\Users\\varalakshmi.sangana\\Documents\\OrangeHRMProfile.png",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:19.285 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (789, 502)",
+				"image": "(TEXT:\"Open\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:19.642 +0530",
+				"message": "at (789, 502)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:04:20.336 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (530, 387)",
+				"image": "profilePhoto",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:04:20.692 +0530",
+				"message": "Element found ( profilePhoto ) at  [530,387]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:04:21.345 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "profilePhoto_0001.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:25.071 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (790, 519)",
+				"image": "(TEXT:\"Create Login Details\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:25.616 +0530",
+				"message": "at (890, 519)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:04:27.808 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1354, 585)",
+				"image": "(TEXT:\"Enabled\")",
+				"handlerLine": 2,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:04:28.009 +0530",
+				"message": "Element found ( Enabled ) at  [1354,585]",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 3,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:04:28.475 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"image": "Enabled_0001.png",
+				"handlerLine": 7,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:33.825 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (762, 552)",
+				"image": "(TEXT:\"Username\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:34.337 +0530",
+				"message": "at (772, 602)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:04:35.092 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:04:36.470 +0530",
+				"message": "Testing18122025030428",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:43.427 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (771, 646)",
+				"image": "(TEXT:\"Password\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:44.028 +0530",
+				"message": "at (781, 696)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:04:44.786 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:04:45.885 +0530",
+				"message": "Testing@123",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:48.773 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1351, 646)",
+				"image": "(TEXT:\"Confirm password\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:49.640 +0530",
+				"message": "at (1361, 696)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:04:50.389 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2025-12-18 15:04:51.478 +0530",
+				"message": "Testing@123",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:53.845 +0530",
+				"scriptName": "commonUtilities/Core.script",
+				"message": "found at (1796, 796)",
+				"image": "(TEXT:\"Save\")",
+				"handlerLine": 2,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2025-12-18 15:04:54.445 +0530",
+				"message": "at (1796, 796)",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2025-12-18 15:05:25.710 +0530",
+				"message": "Searching For Image: OCR Error: Operation was aborted",
+				"scriptName": "commonUtilities/Core.script",
+				"handlerLine": 2,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"321.134\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2025-12-18 15:00:04 +0530\", Successes:\"11\", TestCase:\"Testcases/TC_01_AddNewEmployeeInPMPModule.script\", Warnings:\"1\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-12-18 15:05:25.883 +0530"
+			},
+		{
+				"message": "Execution Time 0:05:21 Testcases/TC_01_AddNewEmployeeInPMPModule.script",
+				"identifier": "ABORTED",
+				"timestamp": "2025-12-18 15:05:25.923 +0530"
+			}
+	],
+	"createdTimestamp": "2025-12-18 15:00:04.746 +0530"
+}

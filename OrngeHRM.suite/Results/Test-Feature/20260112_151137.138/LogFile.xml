@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Test_feature" package="OrngeHRM.suite" timestamp="2026-01-12 15:11:37.138 +0530"
+ tests="5"  failures="2" errors="1" time="95.427000">
+  <properties>
+   <property name="RunDate" value="2026-01-12 15:11:37.138 +0530"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="that the Calculator app is running and in focus" assertions="1" status="(null)"  time="1.315">
+  </testcase>
+  <testcase name="there is no current value in the calculator" assertions="1" status="(null)"  time="1.524">
+  </testcase>
+  <testcase name="you add 3 and 5" assertions="1" status="(null)"  time="89.073">
+  </testcase>
+  <testcase name="the value displayed should be 8" assertions="1" status="(null)"  time="3.428">
+  </testcase>
+  <testcase name="Test.feature" assertions="5" status="error"  time="95.418">
+    <failure type="LogError" message="Error at step: you add 3 and 5" />
+    <failure type="FAILURE" message="1 scenarios (1 failed, 0 passed) 4 steps (1 failed, 0 skipped, 3 passed) Execution Time 0:01:35" />
+    <error type="Exception" message="No Text Found On Screen: &quot;(TEXT:&quot;=&quot;)&quot;. Text not found." />
+  </testcase>
+ </testsuite>
+</testsuites>

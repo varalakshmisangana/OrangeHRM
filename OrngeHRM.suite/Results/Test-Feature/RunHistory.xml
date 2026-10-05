@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="Test-Feature">
+ <run>
+  <RunDate>2026-01-12 14:57:14.524 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.125000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20260112_145714.524/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Gherkin compile error -- Parser errors:
+(1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;Scenario: Add two numbers on the Calculator app&#x27;
+(2:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;Given that the Calculator app is running and in focus&#x27;
+(3:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;And there is no current value in the calculator&#x27;
+(4:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;When you add 3 and 5&#x27;
+(5:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;Then the value displayed should be 8&#x27;</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2026-01-12 14:58:09.601 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.174000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20260112_145809.601/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Gherkin compile error -- Parser errors:
+(1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;Scenario: Add two numbers on the Calculator app&#x27;
+(2:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;Given that the Calculator app is running and in focus&#x27;
+(3:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;And there is no current value in the calculator&#x27;
+(4:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;When you add 3 and 5&#x27;
+(5:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;Then the value displayed should be 8&#x27;</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2026-01-12 14:58:37.539 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.314000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20260112_145837.539/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Gherkin compile error -- Parser errors:
+(1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;Scenario: Add two numbers on the Calculator app&#x27;
+(2:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;Given that the Calculator app is running and in focus&#x27;
+(3:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;And there is no current value in the calculator&#x27;
+(4:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;When you add 3 and 5&#x27;
+(5:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;Then the value displayed should be 8&#x27;</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2026-01-12 14:59:16.906 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>2.190000</Duration>
+  <Errors>5</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>4</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20260112_145916.906/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>No Remote Connection -- WaitFor Error - Remote Connection Unavailable</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2026-01-12 15:05:29.828 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.023000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20260112_150529.828/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Gherkin compile error -- Parser errors:
+(1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;Scenario: Add two numbers on the Calculator app&#x27;
+(2:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;Given that the Calculator app is running and in focus&#x27;
+(3:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;And there is no current value in the calculator&#x27;
+(4:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;When you add 3 and 5&#x27;
+(5:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got &#x27;Then the value displayed should be 8&#x27;</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2026-01-12 15:05:46.355 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>14.721000</Duration>
+  <Errors>3</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20260112_150546.355/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2026-01-12 15:07:15.927 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>136.429000</Duration>
+  <Errors>4</Errors>
+  <Warnings>1</Warnings>
+  <Exceptions>2</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20260112_150715.927/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2026-01-12 15:11:37.138 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>95.427000</Duration>
+  <Errors>2</Errors>
+  <Warnings>1</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>3</Successes>
+  <LogFile>20260112_151137.138/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;=&quot;)&quot;. Text not found.</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2026-01-12 15:13:35.456 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>15.773000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>4</Successes>
+  <LogFile>20260112_151335.456/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

@@ -1,0 +1,71 @@
+﻿2026-01-08 12:32:22.275 +0530	START		Running Testcases/TC_02_UserRolesAndAccessRights.script
+2026-01-08 12:32:22.580 +0530	Log		{adminPassword:"Testing@123", firstName:"Lakshmi", lastName:"Sangana", loginPassword:"Testing@123", middleName:"Vara", status:"Enabled", testcaseName:"TC_02_UserRolesAndAccessRights", uerRole:"Admin"}	10	on_readjsontestdata	ApplicationUtilities/InitialSetup.script
+2026-01-08 12:32:22.760 +0530	typetext		[windowsKey]r	3	on_openrunwindow	commonUtilities/core.script
+2026-01-08 12:32:24.040 +0530	imagefound	(TEXT:"Type the name")	found at (117, 875)	4	on_openrunwindow	commonUtilities/core.script
+2026-01-08 12:32:24.296 +0530	typetext		[controlKey]a	6	on_textentry	commonUtilities/core.script
+2026-01-08 12:32:25.247 +0530	typetext		Firefox	7	on_textentry	commonUtilities/core.script
+2026-01-08 12:32:25.993 +0530	typetext		[return]	9	on_textentry	commonUtilities/core.script
+2026-01-08 12:32:36.312 +0530	imagefound	refreshIcon	found at (135, 61)	3	on_validateelement	commonUtilities/core.script
+2026-01-08 12:32:36.400 +0530	LogSuccess		Element found ( refreshIcon ) at  [135,61]	4	on_validateelement	commonUtilities/core.script
+2026-01-08 12:32:37.000 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/refreshIcon 12 32.png	UserCapturedScreenshot	7695C999-E25E-5505-7A51-1FF61672A764	8	on_validateelement	commonUtilities/core.script
+2026-01-08 12:32:39.164 +0530	typetext		[controlKey][shiftKey][deleteKey]	3	on_clearcache	commonUtilities/browser.script
+2026-01-08 12:32:47.665 +0530	imagefound	(TEXT:"browsing data")	found at (850, 134)	3	on_validateelement	commonUtilities/core.script
+2026-01-08 12:32:47.784 +0530	LogSuccess		Element found ( browsing data ) at  [850,134]	4	on_validateelement	commonUtilities/core.script
+2026-01-08 12:32:48.295 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/browsing data 12 32.png	UserCapturedScreenshot	04C96695-8830-AE0E-43A5-D3E138946E13	8	on_validateelement	commonUtilities/core.script
+2026-01-08 12:33:06.511 +0530	imagefound	(TEXT:"Advanced")	Unable to Find Image (TEXT:"Advanced"). Text not found.	5	on_clearcache	commonUtilities/browser.script
+2026-01-08 12:33:20.270 +0530	imagefound	(TEXT:"Delete data")	Unable to Find Image (TEXT:"Delete data"). Text not found.	4	on_clickfrommultipleelements	commonUtilities/core.script
+2026-01-08 12:33:45.186 +0530	imagefound	(TEXT:"Delete from this device")	Unable to Find Image (TEXT:"Delete from this device"). Text not found.	4	on_clickfrommultipleelements	commonUtilities/core.script
+2026-01-08 12:33:47.354 +0530	imagefound	(TEXT:"Clear")	found at (1026, 639)	4	on_clickfrommultipleelements	commonUtilities/core.script
+2026-01-08 12:33:47.681 +0530	click		at (1026, 639)	5	on_clickfrommultipleelements	commonUtilities/core.script
+2026-01-08 12:33:49.754 +0530	Log		waiting until Cancel is on screen	3	on_waituntilelementonscreen	commonUtilities/core.script
+2026-01-08 12:34:09.879 +0530	imagefound	(TEXT:"Cancel")	Unable to Find Image (TEXT:"Cancel"). Text not found.	5	on_waituntilelementonscreen	commonUtilities/core.script
+2026-01-08 12:34:10.106 +0530	typetext		[controlKey]l	9	on_launchapplication	commonUtilities/core.script
+2026-01-08 12:34:10.857 +0530	typetext		[controlKey]a	6	on_textentry	commonUtilities/core.script
+2026-01-08 12:34:12.783 +0530	typetext		https://opensource-demo.orangehrmlive.com/	7	on_textentry	commonUtilities/core.script
+2026-01-08 12:34:13.519 +0530	typetext		[return]	9	on_textentry	commonUtilities/core.script
+2026-01-08 12:34:22.916 +0530	imagefound	(TEXT:"Login")	found at (767, 403)	3	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:23.233 +0530	LogSuccess		Element found ( Login ) at  [767,403]	4	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:23.694 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/Login 12 34.png	UserCapturedScreenshot	8E7C0B16-C481-D505-6612-6813BFA68256	8	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:25.814 +0530	imagefound	(TEXT:"Login")	found at (767, 403)	3	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:26.069 +0530	LogSuccess		Element found ( Login ) at  [767,403]	4	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:26.558 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/Login 12 34.png	UserCapturedScreenshot	8A281049-2049-3A0A-7521-84DAEEE63EDF	8	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:28.442 +0530	LogWarning		(null) is not a recognized Language.	3	on_setcustomrectangle	commonUtilities/core.script
+2026-01-08 12:34:28.456 +0530	imagerectangle	(TEXT:"Login")	at [736,391,799,415]	3	on_setcustomrectangle	commonUtilities/core.script
+2026-01-08 12:34:30.061 +0530	waitfor	(TEXT:"Username")	found at (572, 556)	3	on_mouseaction	commonUtilities/core.script
+2026-01-08 12:34:30.734 +0530	click		at (572, 606)	1	on_mouseaction	commonUtilities/core.script
+2026-01-08 12:34:31.486 +0530	typetext		[controlKey]a	6	on_textentry	commonUtilities/core.script
+2026-01-08 12:34:32.356 +0530	typetext		Admin	7	on_textentry	commonUtilities/core.script
+2026-01-08 12:34:34.496 +0530	waitfor	(TEXT:"Password")	found at (572, 643)	3	on_mouseaction	commonUtilities/core.script
+2026-01-08 12:34:34.982 +0530	click		at (572, 693)	1	on_mouseaction	commonUtilities/core.script
+2026-01-08 12:34:35.720 +0530	typetext		[controlKey]a	6	on_textentry	commonUtilities/core.script
+2026-01-08 12:34:36.698 +0530	typetext		admin123	7	on_textentry	commonUtilities/core.script
+2026-01-08 12:34:39.057 +0530	imagefound	(TEXT:"Login")	found at (767, 757)	3	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:39.322 +0530	LogSuccess		Element found ( Login ) at  [767,757]	4	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:39.742 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/Login 12 34.png	UserCapturedScreenshot	59741A70-AC0D-2303-6410-2459D01AD7AD	8	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:39.846 +0530	set		TEXTSTYLE = {contrast:"On"}	7	on_loginuser	ApplicationUtilities/UserLogins.script
+2026-01-08 12:34:42.057 +0530	waitfor	(TEXT:"Login")	found at (767, 758)	3	on_mouseaction	commonUtilities/core.script
+2026-01-08 12:34:42.526 +0530	click		at (767, 758)	1	on_mouseaction	commonUtilities/core.script
+2026-01-08 12:34:45.383 +0530	imagefound	refreshIcon	found at (135, 61)	3	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:45.663 +0530	LogSuccess		Element found ( refreshIcon ) at  [135,61]	4	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:47.457 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/refreshIcon 12 34.png	UserCapturedScreenshot	C0DFE813-4939-9101-6FA7-4DB3EE6BF5CF	8	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:54.620 +0530	imagefound	(TEXT:"Dashboard")	found at (95, 527)	3	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:54.864 +0530	LogSuccess		Element found ( Dashboard ) at  [95,527]	4	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:55.422 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/Dashboard 12 34.png	UserCapturedScreenshot	49F88092-5527-9D0D-579F-DD960D90324C	8	on_validateelement	commonUtilities/core.script
+2026-01-08 12:34:58.916 +0530	imagefound	(TEXT:"Save password")	found at (382, 105)	11	on_loginuser	ApplicationUtilities/UserLogins.script
+2026-01-08 12:35:24.040 +0530	imagefound	(TEXT:"Never")	Unable to Find Image (TEXT:"Never"). Text not found.	4	on_clickfrommultipleelements	commonUtilities/core.script
+2026-01-08 12:35:28.114 +0530	imagefound	(TEXT:"Not now")	found at (618, 269)	4	on_clickfrommultipleelements	commonUtilities/core.script
+2026-01-08 12:35:28.445 +0530	click		at (618, 269)	5	on_clickfrommultipleelements	commonUtilities/core.script
+2026-01-08 12:35:28.595 +0530	Log		Admin successfully login into the application	14	on_loginuser	ApplicationUtilities/UserLogins.script
+2026-01-08 12:35:31.976 +0530	waitfor	(TEXT:"PIM")	found at (73, 299)	3	on_mouseaction	commonUtilities/core.script
+2026-01-08 12:35:32.430 +0530	click		at (73, 299)	1	on_mouseaction	commonUtilities/core.script
+2026-01-08 12:35:43.684 +0530	imagefound	(TEXT:"Employee Information")	found at (401, 279)	3	on_validateelement	commonUtilities/core.script
+2026-01-08 12:35:43.974 +0530	LogSuccess		Element found ( Employee Information ) at  [401,279]	4	on_validateelement	commonUtilities/core.script
+2026-01-08 12:35:44.546 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/Employee Information 12 35.png	UserCapturedScreenshot	3F1C16CD-A365-7303-7DF2-7FF1A830DC38	8	on_validateelement	commonUtilities/core.script
+2026-01-08 12:35:52.229 +0530	waitfor	(TEXT:"Add")	found at (391, 606)	3	on_mouseaction	commonUtilities/core.script
+2026-01-08 12:35:52.780 +0530	click		at (391, 606)	1	on_mouseaction	commonUtilities/core.script
+2026-01-08 12:36:51.932 +0530	imagefound	(TEXT:"Employee Full Name")	Unable to Find Image (TEXT:"Employee Full Name"). Text not found.	3	on_validateelement	commonUtilities/core.script
+2026-01-08 12:36:52.073 +0530	LogError		Element not found ( Employee Full Name )	6	on_validateelement	commonUtilities/core.script
+2026-01-08 12:36:52.594 +0530	capturescreen	C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/Employee Full Name 12 36.png	UserCapturedScreenshot	C78F0688-0EC4-4606-77FD-91978F1B8E8D	8	on_validateelement	commonUtilities/core.script
+2026-01-08 12:36:55.171 +0530	Exception		Searching For Image: OCR Error: Operation was aborted	3	on_mouseaction	commonUtilities/core.script
+2026-01-08 12:36:55.352 +0530	EndTestCase		(Duration:"273.069", Errors:"2", Exceptions:"1", StartTime:"2026-01-08 12:32:22 +0530", Successes:"8", TestCase:"Testcases/TC_02_UserRolesAndAccessRights.script", Warnings:"1")
+2026-01-08 12:36:55.391 +0530	ABORTED		Execution Time 0:04:33 Testcases/TC_02_UserRolesAndAccessRights.script

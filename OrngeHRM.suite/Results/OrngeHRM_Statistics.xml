@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<statistics>
+ <script name="ApplicationUtilities/GnuCash">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-10-23 16:19:24 +0530</FirstRun>
+  <LastRun>2025-10-23 16:59:57 +0530</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="commonUtilities/core">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-11-03 15:00:51 +0530</FirstRun>
+  <LastRun>2025-11-03 15:00:51 +0530</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="Test-Feature">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>7</NumberOfRuns>
+  <NumberOfFails>6</NumberOfFails>
+  <FirstRun>2026-01-12 14:57:14 +0530</FirstRun>
+  <LastRun>2026-01-12 15:13:35 +0530</LastRun>
+  <TotalTimeOnSuccess>15.773000</TotalTimeOnSuccess>
+ </script>
+ <script name="ApplicationUtilities/OrangeHRM">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>4</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-10-31 11:28:43 +0530</FirstRun>
+  <LastRun>2025-12-22 14:39:37 +0530</LastRun>
+  <TotalTimeOnSuccess>0.036000</TotalTimeOnSuccess>
+ </script>
+ <script name="TC_01">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>2</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2026-01-30 11:08:36 +0530</FirstRun>
+  <LastRun>2026-01-30 11:10:26 +0530</LastRun>
+  <TotalTimeOnSuccess>90.919000</TotalTimeOnSuccess>
+ </script>
+ <script name="Testcases/TC_02_UserRolesAndAccessRights">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>3</NumberOfFails>
+  <FirstRun>2025-12-24 15:58:39 +0530</FirstRun>
+  <LastRun>2026-01-08 12:54:02 +0530</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="Testcases/TC_01_AddNewEmployeeInPMPModule">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>28</NumberOfRuns>
+  <NumberOfFails>23</NumberOfFails>
+  <FirstRun>2025-10-23 14:33:17 +0530</FirstRun>
+  <LastRun>2026-01-08 14:30:32 +0530</LastRun>
+  <TotalTimeOnSuccess>780.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="ExcelDropdowns">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-11-18 15:33:35 +0530</FirstRun>
+  <LastRun>2025-11-18 15:33:35 +0530</LastRun>
+  <TotalTimeOnSuccess>72.044000</TotalTimeOnSuccess>
+ </script>
+ <script name="ApplicationUtilities/UserLogins">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-10-28 16:28:36 +0530</FirstRun>
+  <LastRun>2025-12-30 12:33:03 +0530</LastRun>
+  <TotalTimeOnSuccess>0.023000</TotalTimeOnSuccess>
+ </script>
+ <script name="ApplicationUtilities/EmployeeCreation">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>4</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-10-31 11:28:43 +0530</FirstRun>
+  <LastRun>2025-12-22 14:39:37 +0530</LastRun>
+  <TotalTimeOnSuccess>0.036000</TotalTimeOnSuccess>
+ </script>
+ <script name="MobileTesting">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>14</NumberOfRuns>
+  <NumberOfFails>2</NumberOfFails>
+  <FirstRun>2025-11-03 15:10:28 +0530</FirstRun>
+  <LastRun>2025-11-06 12:47:45 +0530</LastRun>
+  <TotalTimeOnSuccess>312.000000</TotalTimeOnSuccess>
+ </script>
+</statistics>

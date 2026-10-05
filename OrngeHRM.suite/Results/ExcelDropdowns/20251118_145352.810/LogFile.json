@@ -1,0 +1,20 @@
+{
+	"entries": [
+		{
+				"message": "Running ExcelDropdowns.script",
+				"identifier": "START",
+				"timestamp": "2025-11-18 14:53:52.816 +0530"
+			},
+		{
+				"message": "(Duration:\"0.205\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-11-18 14:53:52 +0530\", Successes:\"0\", TestCase:\"ExcelDropdowns.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-11-18 14:53:53.029 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:00 ExcelDropdowns.script",
+				"identifier": "ABORTED",
+				"timestamp": "2025-11-18 14:53:53.039 +0530"
+			}
+	],
+	"createdTimestamp": "2025-11-18 14:53:52.821 +0530"
+}

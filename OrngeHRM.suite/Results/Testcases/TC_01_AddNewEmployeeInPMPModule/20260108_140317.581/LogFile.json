@@ -1,0 +1,678 @@
+{
+	"entries": [
+		{
+				"message": "Running Testcases/TC_01_AddNewEmployeeInPMPModule.script",
+				"identifier": "START",
+				"timestamp": "2026-01-08 14:03:17.588 +0530"
+			},
+		{
+				"handlerName": "on_readjsontestdata",
+				"timestamp": "2026-01-08 14:03:17.741 +0530",
+				"message": "{Amount:\"40000\", city:\"Street2\", Currency:\"United States Dollar\", dependentDateOfBirth:\"2004-09-09\", dependentName:\"Radha\", dependentRelationship:\"Other\", educationLevel:\"Bachelor's Degree\", eligibleReviewDate:\"2025-11-09\", eligibleStatus:\"Yes\", emergencyContactName:\"Hymavathi\", emergencyContactRelationship:\"Mother\", employmentStatus:\"Full-Time Permanent\", endDate:\"2021-21-03\", expiryDate:\"2050-08-09\", firstName:\"Vara\", homeTelephone:\"1234567890\", Institute:\"Vikrama Simhapuri Univercity\", issueDate:\"2025-08-09\", jobCategory:\"Craft Workers\", jobTitle:\"Automaton Tester\", lastName:\"Sangana\", location:\"Texas\", loginPassword:\"Testing@123\", middleName:\"Lakshmi\", mobile:\"0987654321\", passportNumber:\"7368721647\", payFrequency:\"Monthly\", payGrade:\"Grade 2\", pleaseSpecifyRelationship:\"Sister\", reporterName:\"James Butler\", reportingMethod:\"Direct\", salaryComponent:\"Salary\", score:\"9.2\", Skill:\"Java\", specialization:\"Computers\", startDate:\"2018-12-06\", state:\"Telangana\", street1:\"Street1\", street2:\"Street2\", subUnit:\"Quality Assurance\", testcaseName:\"TC_01_AddNewEmployeeInPMPModule\", workTelephone:\"2186513654\", YearOfPassedOut:\"2021\", zip:\"500032\"}",
+				"scriptName": "ApplicationUtilities/InitialSetup.script",
+				"handlerLine": 10,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2026-01-08 14:03:17.868 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2026-01-08 14:03:19.235 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (117, 875)",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2026-01-08 14:03:19.444 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2026-01-08 14:03:20.386 +0530",
+				"message": "Firefox",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 7,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2026-01-08 14:03:21.133 +0530",
+				"message": "[return]",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 9,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:03:24.103 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (135, 61)",
+				"image": "refreshIcon",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:03:24.252 +0530",
+				"message": "Element found ( refreshIcon ) at  [135,61]",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 4,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:03:24.593 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "UserCapturedScreenshot",
+				"image": "C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/refreshIcon 14 3.png",
+				"handlerLine": 8,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearcache",
+				"timestamp": "2026-01-08 14:03:26.828 +0530",
+				"message": "[controlKey][shiftKey][deleteKey]",
+				"scriptName": "commonUtilities/browser.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:03:28.050 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (850, 134)",
+				"image": "(TEXT:\"browsing data\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:03:28.197 +0530",
+				"message": "Element found ( browsing data ) at  [850,134]",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 4,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:03:28.471 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "UserCapturedScreenshot",
+				"image": "C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/browsing data 14 3.png",
+				"handlerLine": 8,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearcache",
+				"timestamp": "2026-01-08 14:03:47.372 +0530",
+				"scriptName": "commonUtilities/browser.script",
+				"message": "Unable to Find Image (TEXT:\"Advanced\"). Text not found.",
+				"image": "(TEXT:\"Advanced\")",
+				"handlerLine": 5,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2026-01-08 14:03:59.356 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "Unable to Find Image (TEXT:\"Delete data\"). Text not found.",
+				"image": "(TEXT:\"Delete data\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2026-01-08 14:04:10.207 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "Unable to Find Image (TEXT:\"Delete from this device\"). Text not found.",
+				"image": "(TEXT:\"Delete from this device\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2026-01-08 14:04:13.863 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (1026, 639)",
+				"image": "(TEXT:\"Clear\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2026-01-08 14:04:14.412 +0530",
+				"message": "at (1026, 639)",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2026-01-08 14:04:16.608 +0530",
+				"message": "waiting until Cancel is on screen",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 3,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_waituntilelementonscreen",
+				"timestamp": "2026-01-08 14:04:45.039 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "Unable to Find Image (TEXT:\"Cancel\"). Text not found.",
+				"image": "(TEXT:\"Cancel\")",
+				"handlerLine": 5,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_launchapplication",
+				"timestamp": "2026-01-08 14:04:45.315 +0530",
+				"message": "[controlKey]l",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 9,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2026-01-08 14:04:46.083 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2026-01-08 14:04:48.049 +0530",
+				"message": "https://opensource-demo.orangehrmlive.com/",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 7,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2026-01-08 14:04:48.808 +0530",
+				"message": "[return]",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 9,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:06.496 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (798, 403)",
+				"image": "(TEXT:\"Login\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:06.871 +0530",
+				"message": "Element found ( Login ) at  [798,403]",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 4,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:07.232 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "UserCapturedScreenshot",
+				"image": "C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/Login 14 5.png",
+				"handlerLine": 8,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:08.952 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (798, 403)",
+				"image": "(TEXT:\"Login\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:09.479 +0530",
+				"message": "Element found ( Login ) at  [798,403]",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 4,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:09.922 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "UserCapturedScreenshot",
+				"image": "C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/Login 14 5.png",
+				"handlerLine": 8,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_setcustomrectangle",
+				"timestamp": "2026-01-08 14:05:12.143 +0530",
+				"message": "(null) is not a recognized Language.",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 3,
+				"identifier": "LogWarning"
+			},
+		{
+				"handlerName": "on_setcustomrectangle",
+				"timestamp": "2026-01-08 14:05:12.157 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "at [767,392,829,415]",
+				"image": "(TEXT:\"Login\")",
+				"handlerLine": 3,
+				"identifier": "imagerectangle"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2026-01-08 14:05:13.706 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (603, 556)",
+				"image": "(TEXT:\"Username\")",
+				"handlerLine": 3,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2026-01-08 14:05:14.401 +0530",
+				"message": "at (603, 606)",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2026-01-08 14:05:15.235 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2026-01-08 14:05:16.079 +0530",
+				"message": "Admin",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 7,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2026-01-08 14:05:16.876 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (602, 643)",
+				"image": "(TEXT:\"Password\")",
+				"handlerLine": 3,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2026-01-08 14:05:17.365 +0530",
+				"message": "at (602, 693)",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2026-01-08 14:05:18.114 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2026-01-08 14:05:19.044 +0530",
+				"message": "admin123",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 7,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:20.787 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (798, 757)",
+				"image": "(TEXT:\"Login\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:21.053 +0530",
+				"message": "Element found ( Login ) at  [798,757]",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 4,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:21.310 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "UserCapturedScreenshot",
+				"image": "C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/Login 14 5.png",
+				"handlerLine": 8,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_loginuser",
+				"timestamp": "2026-01-08 14:05:21.386 +0530",
+				"message": "TEXTSTYLE = {contrast:\"On\"}",
+				"scriptName": "ApplicationUtilities/UserLogins.script",
+				"handlerLine": 7,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2026-01-08 14:05:22.916 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (798, 758)",
+				"image": "(TEXT:\"Login\")",
+				"handlerLine": 3,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2026-01-08 14:05:23.398 +0530",
+				"message": "at (798, 758)",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:26.853 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (135, 61)",
+				"image": "refreshIcon",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:26.895 +0530",
+				"message": "Element found ( refreshIcon ) at  [135,61]",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 4,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:27.551 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "UserCapturedScreenshot",
+				"image": "C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/refreshIcon 14 5.png",
+				"handlerLine": 8,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:31.709 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (146, 527)",
+				"image": "(TEXT:\"Dashboard\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:32.017 +0530",
+				"message": "Element found ( Dashboard ) at  [146,527]",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 4,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:05:32.458 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "UserCapturedScreenshot",
+				"image": "C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/Dashboard 14 5.png",
+				"handlerLine": 8,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_loginuser",
+				"timestamp": "2026-01-08 14:05:38.689 +0530",
+				"scriptName": "ApplicationUtilities/UserLogins.script",
+				"message": "found at (382, 105)",
+				"image": "(TEXT:\"Save password\")",
+				"handlerLine": 11,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2026-01-08 14:06:07.183 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "Unable to Find Image (TEXT:\"Never\"). Text not found.",
+				"image": "(TEXT:\"Never\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2026-01-08 14:06:15.635 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (618, 269)",
+				"image": "(TEXT:\"Not now\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickfrommultipleelements",
+				"timestamp": "2026-01-08 14:06:16.053 +0530",
+				"message": "at (618, 269)",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_loginuser",
+				"timestamp": "2026-01-08 14:06:16.127 +0530",
+				"message": "Admin successfully login into the application",
+				"scriptName": "ApplicationUtilities/UserLogins.script",
+				"handlerLine": 14,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2026-01-08 14:06:18.936 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (124, 299)",
+				"image": "(TEXT:\"PIM\")",
+				"handlerLine": 3,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2026-01-08 14:06:19.388 +0530",
+				"message": "at (124, 299)",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:06:48.450 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (452, 279)",
+				"image": "(TEXT:\"Employee Information\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:06:48.833 +0530",
+				"message": "Element found ( Employee Information ) at  [452,279]",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 4,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:06:49.318 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "UserCapturedScreenshot",
+				"image": "C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/Employee Information 14 6.png",
+				"handlerLine": 8,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2026-01-08 14:07:10.912 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (442, 606)",
+				"image": "(TEXT:\"Add\")",
+				"handlerLine": 3,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2026-01-08 14:07:13.144 +0530",
+				"message": "at (442, 606)",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 1,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:07:32.055 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (828, 314)",
+				"image": "(TEXT:\"Employee Full Name\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:07:32.430 +0530",
+				"message": "Element found ( Employee Full Name ) at  [828,314]",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 4,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 14:07:32.894 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "UserCapturedScreenshot",
+				"image": "C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/Employee Full Name 14 7.png",
+				"handlerLine": 8,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2026-01-08 14:08:28.160 +0530",
+				"message": "Unable to Find Text: First Name -- AutoUpdate engaged",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 3,
+				"identifier": "LogWarning"
+			},
+		{
+				"handlerName": "on_mouseaction",
+				"timestamp": "2026-01-08 14:08:52.728 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "Unable To Find Any Image On Screen \"(TEXT:\"First Name\")\" within 30.00 seconds. Text not found.",
+				"image": "(TEXT:\"First Name\")",
+				"handlerLine": 3,
+				"identifier": "Exception"
+			},
+		{
+				"handlerName": "function_statuscodeerror",
+				"timestamp": "2026-01-08 14:08:59.204 +0530",
+				"message": "(0,59,1905,1010)",
+				"scriptName": "commonUtilities/exceptionHandling.script",
+				"handlerLine": 6,
+				"identifier": "readtext"
+			},
+		{
+				"handlerName": "on_errorcapture",
+				"timestamp": "2026-01-08 14:09:00.243 +0530",
+				"scriptName": "commonUtilities/exceptionHandling.script",
+				"message": "UserCapturedScreenshot",
+				"image": "C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/errorScreen 14 8.png",
+				"handlerLine": 6,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_unabletofindimageortextwithintime",
+				"timestamp": "2026-01-08 14:09:00.849 +0530",
+				"message": " Page: Text is not found on screen within the given time  \"First Name \"",
+				"scriptName": "commonUtilities/exceptionHandling.script",
+				"handlerLine": 15,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "function_getcurrenturl",
+				"timestamp": "2026-01-08 14:09:01.142 +0530",
+				"message": "[controlKey]l",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "function_getcurrenturl",
+				"timestamp": "2026-01-08 14:09:01.935 +0530",
+				"message": "[controlKey]ac",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 4,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "function_getcurrenturl",
+				"timestamp": "2026-01-08 14:09:02.683 +0530",
+				"message": "[escape]",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "function_getcurrenturl",
+				"timestamp": "2026-01-08 14:09:03.514 +0530",
+				"message": "at (60, 200)",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 7,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_errorcapture",
+				"timestamp": "2026-01-08 14:09:03.709 +0530",
+				"message": "FailedStepURL:https://opensource-demo.orangehrmlive.com/web/index.php/pim/addEmployee",
+				"scriptName": "commonUtilities/exceptionHandling.script",
+				"handlerLine": 10,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"346.356\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2026-01-08 14:03:17 +0530\", Successes:\"9\", TestCase:\"Testcases/TC_01_AddNewEmployeeInPMPModule.script\", Warnings:\"2\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2026-01-08 14:09:03.949 +0530"
+			},
+		{
+				"image": "C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Results/Testcases/TC_01_AddNewEmployeeInPMPModule/20260108_140317.581/Screen_Error.png",
+				"message": "CapturedErrorScreenshot",
+				"identifier": "Error Screen",
+				"timestamp": "2026-01-08 14:09:04.464 +0530"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Script Error: Number of Errors logged: 1 -- Execution Time 0:05:46 Testcases/TC_01_AddNewEmployeeInPMPModule.script",
+				"identifier": "FAILURE",
+				"timestamp": "2026-01-08 14:09:04.475 +0530"
+			}
+	],
+	"createdTimestamp": "2026-01-08 14:03:17.591 +0530"
+}

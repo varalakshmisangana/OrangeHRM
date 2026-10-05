@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_01_AddNewEmployeeInPMPModule_script" package="OrngeHRM.suite" timestamp="2026-01-08 14:03:17.581 +0530"
+ tests="1"  failures="2" errors="1" time="346.366000">
+  <properties>
+   <property name="RunDate" value="2026-01-08 14:03:17.581 +0530"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="Testcases/TC_01_AddNewEmployeeInPMPModule.script" assertions="10" status="error"  time="346.356">
+    <failure type="LogError" message=" Page: Text is not found on screen within the given time  &quot;First Name &quot;" />
+    <failure type="FAILURE" message="Script Error: Number of Errors logged: 1 -- Execution Time 0:05:46 Testcases/TC_01_AddNewEmployeeInPMPModule.script" />
+    <error type="Exception" message="Unable To Find Any Image On Screen &quot;(TEXT:&quot;First Name&quot;)&quot; within 30.00 seconds. Text not found." />
+  </testcase>
+ </testsuite>
+</testsuites>

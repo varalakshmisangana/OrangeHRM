@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_02_UserRolesAndAccessRights_script" package="OrngeHRM.suite" timestamp="2025-12-24 15:58:39.572 +0530"
+ tests="1"  failures="2" errors="0" time="656.161000">
+  <properties>
+   <property name="RunDate" value="2025-12-24 15:58:39.572 +0530"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="Testcases/TC_02_UserRolesAndAccessRights.script" assertions="48" status="failure"  time="656.141">
+    <failure type="LogError" message="Element not found ( Account disabled )" />
+    <failure type="FAILURE" message="Script Error: Number of Errors logged: 1 -- Execution Time 0:10:56 Testcases/TC_02_UserRolesAndAccessRights.script" />
+  </testcase>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_01_AddNewEmployeeInPMPModule_script" package="OrngeHRM.suite" timestamp="2025-12-18 14:04:30.747 +0530"
+ tests="1"  failures="0" errors="0" time="265.295000">
+  <properties>
+   <property name="RunDate" value="2025-12-18 14:04:30.747 +0530"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="Testcases/TC_01_AddNewEmployeeInPMPModule.script" assertions="10" status="failure"  time="265.284">
+    <failure type="FAILURE" message="See main script" />
+  </testcase>
+ </testsuite>
+</testsuites>

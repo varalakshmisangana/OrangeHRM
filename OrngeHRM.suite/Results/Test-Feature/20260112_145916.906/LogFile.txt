@@ -1,0 +1,25 @@
+﻿2026-01-12 14:59:17.011 +0530	START		Running Test.feature
+2026-01-12 14:59:17.089 +0530	BeginScenario		
+2026-01-12 14:59:17.171 +0530	BeginStep		Given: that the Calculator app is running and in focus
+2026-01-12 14:59:17.442 +0530	Exception		Remote Connection Unavailable	2	on_that_the_calculator_app_is_running_and_in_focus	Test.script<SOURCE>
+2026-01-12 14:59:17.501 +0530	LogError		Error at step: that the Calculator app is running and in focus	3	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 14:59:17.562 +0530	EndTestCase		(Duration:"0.27", Errors:"1", Exceptions:"1", StartTime:"2026-01-12 14:59:17 +0530", Successes:"0", TestCase:"that the Calculator app is running and in focus", Warnings:"0")
+2026-01-12 14:59:17.623 +0530	EndStep		Given: that the Calculator app is running and in focus
+2026-01-12 14:59:17.712 +0530	BeginStep		And: there is no current value in the calculator
+2026-01-12 14:59:17.897 +0530	Exception		Remote Connection Unavailable	2	on_there_is_no_current_value_in_the_calculator	Test.script<SOURCE>
+2026-01-12 14:59:17.935 +0530	LogError		Error at step: there is no current value in the calculator	4	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 14:59:17.999 +0530	EndTestCase		(Duration:"0.209", Errors:"1", Exceptions:"1", StartTime:"2026-01-12 14:59:17 +0530", Successes:"0", TestCase:"there is no current value in the calculator", Warnings:"0")
+2026-01-12 14:59:18.068 +0530	EndStep		And: there is no current value in the calculator
+2026-01-12 14:59:18.103 +0530	BeginStep		When: you add 3 and 5
+2026-01-12 14:59:18.220 +0530	Exception		Remote Connection Unavailable	3	on_you_add_num_and_num	Test.script<SOURCE>
+2026-01-12 14:59:18.291 +0530	LogError		Error at step: you add 3 and 5	5	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 14:59:18.369 +0530	EndTestCase		(Duration:"0.22", Errors:"1", Exceptions:"1", StartTime:"2026-01-12 14:59:18 +0530", Successes:"0", TestCase:"you add 3 and 5", Warnings:"0")
+2026-01-12 14:59:18.415 +0530	EndStep		When: you add 3 and 5
+2026-01-12 14:59:18.454 +0530	BeginStep		Then: the value displayed should be 8
+2026-01-12 14:59:18.727 +0530	Exception		Remote Connection Unavailable	3	on_the_value_displayed_should_be_num	Test.script<SOURCE>
+2026-01-12 14:59:18.787 +0530	LogError		Error at step: the value displayed should be 8	6	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 14:59:18.883 +0530	EndTestCase		(Duration:"0.351", Errors:"1", Exceptions:"1", StartTime:"2026-01-12 14:59:18 +0530", Successes:"0", TestCase:"the value displayed should be 8", Warnings:"0")
+2026-01-12 14:59:18.940 +0530	EndStep		Then: the value displayed should be 8
+2026-01-12 14:59:19.043 +0530	EndScenario		
+2026-01-12 14:59:19.114 +0530	EndTestCase		(Duration:"2.039", Errors:"5", Exceptions:"4", StartTime:"2026-01-12 14:59:17 +0530", Successes:"0", TestCase:"Test.feature", Warnings:"0")
+2026-01-12 14:59:20.009 +0530	FAILURE		1 scenarios (1 failed, 0 passed) 4 steps (4 failed, 0 skipped, 0 passed) Execution Time 0:00:02

@@ -1,0 +1,15 @@
+﻿2026-01-12 15:05:46.370 +0530	START		Running Test.feature
+2026-01-12 15:05:46.381 +0530	BeginScenario		
+2026-01-12 15:05:46.387 +0530	BeginStep		Given: that the Calculator app is running and in focus
+2026-01-12 15:05:46.590 +0530	typetext		[windowsKey]	2	on_that_the_calculator_app_is_running_and_in_focus	Test.script<SOURCE>
+2026-01-12 15:05:47.673 +0530	typetext		Calculator[return]	3	on_that_the_calculator_app_is_running_and_in_focus	Test.script<SOURCE>
+2026-01-12 15:06:00.959 +0530	Exception		Searching For Image: OCR Error: Operation was aborted	4	on_that_the_calculator_app_is_running_and_in_focus	Test.script<SOURCE>
+2026-01-12 15:06:00.976 +0530	LogError		Error at step: that the Calculator app is running and in focus	3	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:06:00.992 +0530	EndTestCase		(Duration:"14.59", Errors:"1", Exceptions:"1", StartTime:"2026-01-12 15:05:46 +0530", Successes:"0", TestCase:"that the Calculator app is running and in focus", Warnings:"0")
+2026-01-12 15:06:01.000 +0530	EndStep		Given: that the Calculator app is running and in focus
+2026-01-12 15:06:01.008 +0530	BeginStep		And: there is no current value in the calculator
+2026-01-12 15:06:01.052 +0530	LogError		Error at step: there is no current value in the calculator	4	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:06:01.062 +0530	EndTestCase		(Duration:"0.043", Errors:"1", Exceptions:"0", StartTime:"2026-01-12 15:06:01 +0530", Successes:"0", TestCase:"there is no current value in the calculator", Warnings:"0")
+2026-01-12 15:06:01.068 +0530	EndScenario		
+2026-01-12 15:06:01.082 +0530	EndTestCase		(Duration:"14.697", Errors:"3", Exceptions:"1", StartTime:"2026-01-12 15:05:46 +0530", Successes:"0", TestCase:"Test.feature", Warnings:"0")
+2026-01-12 15:06:01.119 +0530	ABORTED		1 scenarios (1 failed, 0 passed) 2 steps (2 failed, 0 skipped, 0 passed) Execution Time 0:00:14

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="ExcelDropdowns_script" package="OrngeHRM.suite" timestamp="2025-11-18 14:53:52.810 +0530"
+ tests="1"  failures="0" errors="0" time="0.216000">
+  <properties>
+   <property name="RunDate" value="2025-11-18 14:53:52.810 +0530"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="ExcelDropdowns.script" assertions="1" status="failure"  time="0.205">
+    <failure type="FAILURE" message="See main script" />
+  </testcase>
+ </testsuite>
+</testsuites>

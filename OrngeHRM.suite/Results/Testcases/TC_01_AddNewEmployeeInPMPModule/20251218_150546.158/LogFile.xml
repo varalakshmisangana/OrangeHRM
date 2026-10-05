@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_01_AddNewEmployeeInPMPModule_script" package="OrngeHRM.suite" timestamp="2025-12-18 15:05:46.158 +0530"
+ tests="1"  failures="3" errors="0" time="795.519000">
+  <properties>
+   <property name="RunDate" value="2025-12-18 15:05:46.158 +0530"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="Testcases/TC_01_AddNewEmployeeInPMPModule.script" assertions="21" status="failure"  time="795.488">
+    <failure type="LogError" message="Element not found ( Success )" />
+    <failure type="LogError" message="Element not found ( Success )" />
+    <failure type="FAILURE" message="Script Error: Number of Errors logged: 2 -- Execution Time 0:13:15 Testcases/TC_01_AddNewEmployeeInPMPModule.script" />
+  </testcase>
+ </testsuite>
+</testsuites>

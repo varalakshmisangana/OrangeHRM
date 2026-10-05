@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Test_feature" package="OrngeHRM.suite" timestamp="2026-01-12 15:13:35.456 +0530"
+ tests="5"  failures="0" errors="0" time="15.773000">
+  <properties>
+   <property name="RunDate" value="2026-01-12 15:13:35.456 +0530"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="that the Calculator app is running and in focus" assertions="1" status="(null)"  time="1.606">
+  </testcase>
+  <testcase name="there is no current value in the calculator" assertions="1" status="(null)"  time="2.226">
+  </testcase>
+  <testcase name="you add 3 and 5" assertions="1" status="(null)"  time="6.917">
+  </testcase>
+  <testcase name="the value displayed should be 8" assertions="1" status="(null)"  time="4.918">
+  </testcase>
+  <testcase name="Test.feature" assertions="4" status="success"  time="15.764">
+  </testcase>
+ </testsuite>
+</testsuites>

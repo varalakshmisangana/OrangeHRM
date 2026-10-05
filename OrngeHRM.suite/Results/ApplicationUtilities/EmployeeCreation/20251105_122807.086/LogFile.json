@@ -1,0 +1,20 @@
+{
+	"entries": [
+		{
+				"message": "Running ApplicationUtilities/OrangeHRM.script",
+				"identifier": "START",
+				"timestamp": "2025-11-05 12:28:07.111 +0530"
+			},
+		{
+				"message": "(Duration:\"0.001\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-11-05 12:28:07 +0530\", Successes:\"1\", TestCase:\"ApplicationUtilities/OrangeHRM.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-11-05 12:28:07.121 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:00 ApplicationUtilities/OrangeHRM.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-11-05 12:28:07.309 +0530"
+			}
+	],
+	"createdTimestamp": "2025-11-05 12:28:07.119 +0530"
+}

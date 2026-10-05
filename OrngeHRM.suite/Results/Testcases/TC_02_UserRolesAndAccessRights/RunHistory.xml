@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="Testcases/TC_02_UserRolesAndAccessRights">
+ <run>
+  <RunDate>2025-12-24 15:37:53.183 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>169.660000</Duration>
+  <Errors>1</Errors>
+  <Warnings>1</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>11</Successes>
+  <LogFile>20251224_153753.183/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-12-24 15:58:39.572 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>656.161000</Duration>
+  <Errors>1</Errors>
+  <Warnings>4</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>47</Successes>
+  <LogFile>20251224_155839.572/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Script Error -- Number of Errors logged: 1</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2026-01-08 11:56:00.727 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>91.237000</Duration>
+  <Errors>2</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20260108_115600.727/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2026-01-08 11:57:49.995 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>568.275000</Duration>
+  <Errors>2</Errors>
+  <Warnings>2</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>8</Successes>
+  <LogFile>20260108_115749.995/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Script Error -- Number of Errors logged: 2</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2026-01-08 12:32:22.263 +0530</RunDate>
+  <Status>Aborted</Status>
+  <Duration>273.088000</Duration>
+  <Errors>2</Errors>
+  <Warnings>1</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>8</Successes>
+  <LogFile>20260108_123222.263/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2026-01-08 12:54:02.518 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>654.926000</Duration>
+  <Errors>2</Errors>
+  <Warnings>2</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>8</Successes>
+  <LogFile>20260108_125402.518/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Script Error -- Number of Errors logged: 2</ErrorMessage>
+ </run>
+</runHistory>

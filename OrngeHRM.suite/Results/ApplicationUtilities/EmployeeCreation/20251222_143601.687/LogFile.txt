@@ -1,0 +1,3 @@
+﻿2025-12-22 14:36:01.695 +0530	START		Running ApplicationUtilities/OrangeHRM.script
+2025-12-22 14:36:01.699 +0530	EndTestCase		(Duration:"0.001", Errors:"0", Exceptions:"0", StartTime:"2025-12-22 14:36:01 +0530", Successes:"1", TestCase:"ApplicationUtilities/OrangeHRM.script", Warnings:"0")
+2025-12-22 14:36:01.786 +0530	SUCCESS		Execution Time 0:00:00 ApplicationUtilities/OrangeHRM.script

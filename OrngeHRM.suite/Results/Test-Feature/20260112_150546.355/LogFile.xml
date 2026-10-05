@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Test_feature" package="OrngeHRM.suite" timestamp="2026-01-12 15:05:46.355 +0530"
+ tests="3"  failures="2" errors="1" time="14.721000">
+  <properties>
+   <property name="RunDate" value="2026-01-12 15:05:46.355 +0530"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="that the Calculator app is running and in focus" assertions="1" status="(null)"  time="14.59">
+  </testcase>
+  <testcase name="there is no current value in the calculator" assertions="1" status="(null)"  time="0.043">
+  </testcase>
+  <testcase name="Test.feature" assertions="3" status="error"  time="14.697">
+    <failure type="LogError" message="Error at step: that the Calculator app is running and in focus" />
+    <failure type="LogError" message="Error at step: there is no current value in the calculator" />
+    <error type="Exception" message="Searching For Image: OCR Error: Operation was aborted" />
+  </testcase>
+ </testsuite>
+</testsuites>

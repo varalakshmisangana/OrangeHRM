@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_01_AddNewEmployeeInPMPModule_script" package="OrngeHRM.suite" timestamp="2026-01-08 15:02:32.381 +0530"
+ tests="1"  failures="4" errors="1" time="1780.079000">
+  <properties>
+   <property name="RunDate" value="2026-01-08 15:02:32.381 +0530"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="Testcases/TC_01_AddNewEmployeeInPMPModule.script" assertions="36" status="error"  time="1780.01">
+    <failure type="LogError" message="Element not found ( Employee Full Name )" />
+    <failure type="LogError" message="Element not found ( Success )" />
+    <failure type="LogError" message="Element not found ( Assigned Emergency Contacts )" />
+    <failure type="LogError" message=" Page: Text is not found on screen within the given time  &quot;Pay Frequency &quot;" />
+    <error type="Exception" message="Unable To Find Any Image On Screen &quot;(TEXT:&quot;Pay Frequency&quot;)&quot; within 30.00 seconds. Text not found." />
+  </testcase>
+ </testsuite>
+</testsuites>

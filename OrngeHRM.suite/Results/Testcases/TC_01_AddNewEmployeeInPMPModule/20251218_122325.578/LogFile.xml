@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_01_AddNewEmployeeInPMPModule_script" package="OrngeHRM.suite" timestamp="2025-12-18 12:23:25.578 +0530"
+ tests="1"  failures="2" errors="1" time="244.199000">
+  <properties>
+   <property name="RunDate" value="2025-12-18 12:23:25.578 +0530"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="Testcases/TC_01_AddNewEmployeeInPMPModule.script" assertions="3" status="error"  time="244.154">
+    <failure type="LogError" message="Element not found ( refreshIcon )" />
+    <failure type="LogError" message="Element not found ( browsing data )" />
+    <error type="Exception" message="Searching For Image: OCR Error: Operation was aborted" />
+  </testcase>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,44 @@
+{
+	"entries": [
+		{
+				"message": "Running TC_01.script",
+				"identifier": "START",
+				"timestamp": "2026-01-30 11:08:36.020 +0530"
+			},
+		{
+				"handlerName": "on_checklistofvariables",
+				"timestamp": "2026-01-30 11:08:36.663 +0530",
+				"message": "34465A",
+				"scriptName": "variables.script",
+				"handlerLine": 3,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_checklistofvariables",
+				"timestamp": "2026-01-30 11:08:36.663 +0530",
+				"message": "N9020B",
+				"scriptName": "variables.script",
+				"handlerLine": 3,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_checklistofvariables",
+				"timestamp": "2026-01-30 11:08:36.686 +0530",
+				"message": "AP500A",
+				"scriptName": "variables.script",
+				"handlerLine": 3,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"0.693\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2026-01-30 11:08:36 +0530\", Successes:\"1\", TestCase:\"TC_01.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2026-01-30 11:08:36.724 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:00 TC_01.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2026-01-30 11:08:36.822 +0530"
+			}
+	],
+	"createdTimestamp": "2026-01-30 11:08:36.025 +0530"
+}

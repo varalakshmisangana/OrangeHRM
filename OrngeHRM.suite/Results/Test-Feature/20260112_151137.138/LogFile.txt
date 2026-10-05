@@ -1,0 +1,29 @@
+﻿2026-01-12 15:11:37.146 +0530	START		Running Test.feature
+2026-01-12 15:11:37.150 +0530	BeginScenario		
+2026-01-12 15:11:37.153 +0530	BeginStep		Given: that the Calculator app is running and in focus
+2026-01-12 15:11:38.339 +0530	waitfor	(TEXT:"Standard")	found at (744, 103)	4	on_that_the_calculator_app_is_running_and_in_focus	Test.script<SOURCE>
+2026-01-12 15:11:38.468 +0530	LogSuccess		Start Time: 15:11:37, Stop Time: 15:11:38 step: that the Calculator app is running and in focus	3	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:11:38.472 +0530	EndTestCase		(Duration:"1.315", Errors:"0", Exceptions:"0", StartTime:"2026-01-12 15:11:37 +0530", Successes:"1", TestCase:"that the Calculator app is running and in focus", Warnings:"0")
+2026-01-12 15:11:38.477 +0530	EndStep		Given: that the Calculator app is running and in focus
+2026-01-12 15:11:38.482 +0530	BeginStep		And: there is no current value in the calculator
+2026-01-12 15:11:39.906 +0530	waitfor	(TEXT:"0")	found at (1111, 218)	2	on_there_is_no_current_value_in_the_calculator	Test.script<SOURCE>
+2026-01-12 15:11:40.003 +0530	LogSuccess		Start Time: 15:11:38, Stop Time: 15:11:40 step: there is no current value in the calculator	4	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:11:40.012 +0530	EndTestCase		(Duration:"1.524", Errors:"0", Exceptions:"0", StartTime:"2026-01-12 15:11:38 +0530", Successes:"1", TestCase:"there is no current value in the calculator", Warnings:"0")
+2026-01-12 15:11:40.018 +0530	EndStep		And: there is no current value in the calculator
+2026-01-12 15:11:40.023 +0530	BeginStep		When: you add 3 and 5
+2026-01-12 15:11:40.283 +0530	typetext		3	3	on_you_add_num_and_num	Test.script<SOURCE>
+2026-01-12 15:11:43.396 +0530	click	(TEXT:"+")	at (865, 312)	4	on_you_add_num_and_num	Test.script<SOURCE>
+2026-01-12 15:11:44.485 +0530	typetext		{text:"5"}	5	on_you_add_num_and_num	Test.script<SOURCE>
+2026-01-12 15:12:47.985 +0530	LogWarning		Unable to Find Text: = -- AutoUpdate engaged	6	on_you_add_num_and_num	Test.script<SOURCE>
+2026-01-12 15:13:09.025 +0530	Exception	(TEXT:"=")	No Text Found On Screen: "(TEXT:"=")". Text not found.	6	on_you_add_num_and_num	Test.script<SOURCE>
+2026-01-12 15:13:09.093 +0530	LogError		Error at step: you add 3 and 5	5	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:13:09.104 +0530	EndTestCase		(Duration:"89.073", Errors:"1", Exceptions:"1", StartTime:"2026-01-12 15:11:40 +0530", Successes:"0", TestCase:"you add 3 and 5", Warnings:"1")
+2026-01-12 15:13:09.109 +0530	EndStep		When: you add 3 and 5
+2026-01-12 15:13:09.114 +0530	BeginStep		Then: the value displayed should be 8
+2026-01-12 15:13:12.346 +0530	waitfor	(TEXT:"8")	found at (840, 552)	3	on_the_value_displayed_should_be_num	Test.script<SOURCE>
+2026-01-12 15:13:12.542 +0530	LogSuccess		Start Time: 15:13:09, Stop Time: 15:13:12 step: the value displayed should be 8	6	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:13:12.549 +0530	EndTestCase		(Duration:"3.428", Errors:"0", Exceptions:"0", StartTime:"2026-01-12 15:13:09 +0530", Successes:"1", TestCase:"the value displayed should be 8", Warnings:"0")
+2026-01-12 15:13:12.554 +0530	EndStep		Then: the value displayed should be 8
+2026-01-12 15:13:12.560 +0530	EndScenario		
+2026-01-12 15:13:12.568 +0530	EndTestCase		(Duration:"95.418", Errors:"2", Exceptions:"1", StartTime:"2026-01-12 15:11:37 +0530", Successes:"3", TestCase:"Test.feature", Warnings:"1")
+2026-01-12 15:13:13.895 +0530	FAILURE	Screen_Error.png	1 scenarios (1 failed, 0 passed) 4 steps (1 failed, 0 skipped, 3 passed) Execution Time 0:01:35

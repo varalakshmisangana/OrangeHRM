@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_02_UserRolesAndAccessRights_script" package="OrngeHRM.suite" timestamp="2026-01-08 12:54:02.518 +0530"
+ tests="1"  failures="3" errors="1" time="654.926000">
+  <properties>
+   <property name="RunDate" value="2026-01-08 12:54:02.518 +0530"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="Testcases/TC_02_UserRolesAndAccessRights.script" assertions="10" status="error"  time="654.852">
+    <failure type="LogError" message="Element not found ( Employee Full Name )" />
+    <failure type="LogError" message=" Page: Text is not found on screen within the given time  &quot;Middle Name &quot;" />
+    <failure type="FAILURE" message="Script Error: Number of Errors logged: 2 -- Execution Time 0:10:54 Testcases/TC_02_UserRolesAndAccessRights.script" />
+    <error type="Exception" message="Unable To Find Any Image On Screen &quot;(TEXT:&quot;Middle Name&quot;)&quot; within 30.00 seconds. Text not found." />
+  </testcase>
+ </testsuite>
+</testsuites>

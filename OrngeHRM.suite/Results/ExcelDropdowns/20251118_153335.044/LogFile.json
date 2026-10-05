@@ -1,0 +1,297 @@
+{
+	"entries": [
+		{
+				"message": "Running ExcelDropdowns.script",
+				"identifier": "START",
+				"timestamp": "2025-11-18 15:33:35.050 +0530"
+			},
+		{
+				"handlerName": "on_openexcelfile",
+				"timestamp": "2025-11-18 15:33:35.217 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "ExcelDropdowns.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openexcelfile",
+				"timestamp": "2025-11-18 15:33:36.255 +0530",
+				"message": "Excel.exe[return]",
+				"scriptName": "ExcelDropdowns.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openexcelfile",
+				"timestamp": "2025-11-18 15:33:38.442 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "found at (68, 66)",
+				"image": "(TEXT:\"Excel\")",
+				"handlerLine": 7,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_openexcelfile",
+				"timestamp": "2025-11-18 15:33:39.632 +0530",
+				"message": "[controlKey]o",
+				"scriptName": "ExcelDropdowns.script",
+				"handlerLine": 10,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openexcelfile",
+				"timestamp": "2025-11-18 15:33:40.581 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "found at (209, 94)",
+				"image": "(TEXT:\"Open\")",
+				"handlerLine": 11,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_openexcelfile",
+				"timestamp": "2025-11-18 15:33:40.689 +0530",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "ExcelDropdowns.script",
+				"handlerLine": 13,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_openexcelfile",
+				"timestamp": "2025-11-18 15:33:42.780 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "at (242, 616)",
+				"image": "(TEXT:\"Browse\")",
+				"handlerLine": 14,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_openexcelfile",
+				"timestamp": "2025-11-18 15:34:03.245 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "found at (163, 470)",
+				"image": "(TEXT:\"File name\")",
+				"handlerLine": 15,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_openexcelfile",
+				"timestamp": "2025-11-18 15:34:07.077 +0530",
+				"message": "C:\\Users\\varalakshmi.sangana\\Documents\\EggplantAutomation\\DropdownValidation.xlsx[return]",
+				"scriptName": "ExcelDropdowns.script",
+				"handlerLine": 18,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openexcelfile",
+				"timestamp": "2025-11-18 15:34:07.598 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "found at (125, 163)",
+				"image": "(TEXT:\"File\")",
+				"handlerLine": 19,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:10.336 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "at (92, 43)",
+				"image": "(TEXT:\"Home\")",
+				"handlerLine": 2,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:12.419 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "at (35, 166)",
+				"image": "(TEXT:\"Clipboard\")",
+				"handlerLine": 3,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:13.166 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "ExcelDropdowns.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:13.993 +0530",
+				"message": "B1[return]",
+				"scriptName": "ExcelDropdowns.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:14.583 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "found at (202, 223)",
+				"image": "dropdownicon",
+				"handlerLine": 8,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:14.952 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "at (202, 223)",
+				"image": "dropdownicon",
+				"handlerLine": 9,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:15.798 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "at [198,221,209,230]",
+				"image": "dropdownicon",
+				"handlerLine": 11,
+				"identifier": "imagerectangle"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:21.328 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "at (142, 255)",
+				"image": "(TEXT:\"TC2\")",
+				"handlerLine": 15,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:22.172 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "at [198,221,209,230]",
+				"image": "dropdownicon",
+				"handlerLine": 17,
+				"identifier": "imagerectangle"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:27.572 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "found at (142, 225)",
+				"image": "(TEXT:\"TC2\")",
+				"handlerLine": 21,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:28.941 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "at (92, 43)",
+				"image": "(TEXT:\"Home\")",
+				"handlerLine": 2,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:30.472 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "at (35, 166)",
+				"image": "(TEXT:\"Clipboard\")",
+				"handlerLine": 3,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:31.223 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "ExcelDropdowns.script",
+				"handlerLine": 5,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:32.045 +0530",
+				"message": "B8[return]",
+				"scriptName": "ExcelDropdowns.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:32.176 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "found at (202, 223)",
+				"image": "dropdownicon",
+				"handlerLine": 8,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:32.976 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "at (202, 363)",
+				"image": "dropdownicon",
+				"handlerLine": 9,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:33.812 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "at [198,361,209,370]",
+				"image": "dropdownicon",
+				"handlerLine": 11,
+				"identifier": "imagerectangle"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:39.343 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "at (142, 382)",
+				"image": "(TEXT:\"RC1\")",
+				"handlerLine": 15,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:40.163 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "at [198,361,209,370]",
+				"image": "dropdownicon",
+				"handlerLine": 17,
+				"identifier": "imagerectangle"
+			},
+		{
+				"handlerName": "on_validatecelldropdownvalues",
+				"timestamp": "2025-11-18 15:34:45.552 +0530",
+				"scriptName": "ExcelDropdowns.script",
+				"message": "found at (143, 365)",
+				"image": "(TEXT:\"RC1\")",
+				"handlerLine": 21,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_closeexcel",
+				"timestamp": "2025-11-18 15:34:45.842 +0530",
+				"message": "[windowsAltKey][F4]",
+				"scriptName": "ExcelDropdowns.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_closeexcel",
+				"timestamp": "2025-11-18 15:34:46.925 +0530",
+				"message": "n",
+				"scriptName": "ExcelDropdowns.script",
+				"handlerLine": 4,
+				"identifier": "typetext"
+			},
+		{
+				"message": "(Duration:\"72.038\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-11-18 15:33:35 +0530\", Successes:\"1\", TestCase:\"ExcelDropdowns.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-11-18 15:34:47.094 +0530"
+			},
+		{
+				"message": "Execution Time 0:01:12 ExcelDropdowns.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-11-18 15:34:47.224 +0530"
+			}
+	],
+	"createdTimestamp": "2025-11-18 15:33:35.053 +0530"
+}

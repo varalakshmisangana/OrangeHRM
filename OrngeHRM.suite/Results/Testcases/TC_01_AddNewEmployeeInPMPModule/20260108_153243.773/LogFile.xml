@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_01_AddNewEmployeeInPMPModule_script" package="OrngeHRM.suite" timestamp="2026-01-08 15:32:43.773 +0530"
+ tests="1"  failures="2" errors="1" time="1616.561000">
+  <properties>
+   <property name="RunDate" value="2026-01-08 15:32:43.773 +0530"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="Testcases/TC_01_AddNewEmployeeInPMPModule.script" assertions="48" status="error"  time="1616.536">
+    <failure type="LogError" message="Element not found ( Add Skill )" />
+    <failure type="LogError" message=" Page: Text is not found in the given rectangle area &quot;Skills&quot;" />
+    <error type="Exception" message="Unable To Find Image &quot;(TEXT:&quot;Skills&quot;)&quot;. Text not found." />
+  </testcase>
+ </testsuite>
+</testsuites>

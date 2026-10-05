@@ -1,0 +1,28 @@
+﻿2026-01-12 15:13:35.462 +0530	START		Running Test.feature
+2026-01-12 15:13:35.468 +0530	BeginScenario		
+2026-01-12 15:13:35.473 +0530	BeginStep		Given: that the Calculator app is running and in focus
+2026-01-12 15:13:36.798 +0530	waitfor	(TEXT:"Standard")	found at (744, 103)	4	on_that_the_calculator_app_is_running_and_in_focus	Test.script<SOURCE>
+2026-01-12 15:13:37.074 +0530	LogSuccess		Start Time: 15:13:35, Stop Time: 15:13:37 step: that the Calculator app is running and in focus	3	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:13:37.084 +0530	EndTestCase		(Duration:"1.606", Errors:"0", Exceptions:"0", StartTime:"2026-01-12 15:13:35 +0530", Successes:"1", TestCase:"that the Calculator app is running and in focus", Warnings:"0")
+2026-01-12 15:13:37.100 +0530	EndStep		Given: that the Calculator app is running and in focus
+2026-01-12 15:13:37.109 +0530	BeginStep		And: there is no current value in the calculator
+2026-01-12 15:13:39.191 +0530	waitfor	(TEXT:"0")	found at (1111, 218)	2	on_there_is_no_current_value_in_the_calculator	Test.script<SOURCE>
+2026-01-12 15:13:39.340 +0530	LogSuccess		Start Time: 15:13:37, Stop Time: 15:13:39 step: there is no current value in the calculator	4	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:13:39.345 +0530	EndTestCase		(Duration:"2.226", Errors:"0", Exceptions:"0", StartTime:"2026-01-12 15:13:37 +0530", Successes:"1", TestCase:"there is no current value in the calculator", Warnings:"0")
+2026-01-12 15:13:39.350 +0530	EndStep		And: there is no current value in the calculator
+2026-01-12 15:13:39.353 +0530	BeginStep		When: you add 3 and 5
+2026-01-12 15:13:39.405 +0530	typetext		3	3	on_you_add_num_and_num	Test.script<SOURCE>
+2026-01-12 15:13:44.425 +0530	click	(TEXT:"+")	at (865, 312)	4	on_you_add_num_and_num	Test.script<SOURCE>
+2026-01-12 15:13:45.515 +0530	typetext		{text:"5"}	5	on_you_add_num_and_num	Test.script<SOURCE>
+2026-01-12 15:13:46.264 +0530	typetext		[return]	6	on_you_add_num_and_num	Test.script<SOURCE>
+2026-01-12 15:13:46.270 +0530	LogSuccess		Start Time: 15:13:39, Stop Time: 15:13:46 step: you add 3 and 5	5	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:13:46.274 +0530	EndTestCase		(Duration:"6.917", Errors:"0", Exceptions:"0", StartTime:"2026-01-12 15:13:39 +0530", Successes:"1", TestCase:"you add 3 and 5", Warnings:"0")
+2026-01-12 15:13:46.279 +0530	EndStep		When: you add 3 and 5
+2026-01-12 15:13:46.282 +0530	BeginStep		Then: the value displayed should be 8
+2026-01-12 15:13:50.922 +0530	waitfor	(TEXT:"8")	found at (840, 552)	3	on_the_value_displayed_should_be_num	Test.script<SOURCE>
+2026-01-12 15:13:51.196 +0530	LogSuccess		Start Time: 15:13:46, Stop Time: 15:13:51 step: the value displayed should be 8	6	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:13:51.206 +0530	EndTestCase		(Duration:"4.918", Errors:"0", Exceptions:"0", StartTime:"2026-01-12 15:13:46 +0530", Successes:"1", TestCase:"the value displayed should be 8", Warnings:"0")
+2026-01-12 15:13:51.214 +0530	EndStep		Then: the value displayed should be 8
+2026-01-12 15:13:51.222 +0530	EndScenario		
+2026-01-12 15:13:51.232 +0530	EndTestCase		(Duration:"15.764", Errors:"0", Exceptions:"0", StartTime:"2026-01-12 15:13:35 +0530", Successes:"4", TestCase:"Test.feature", Warnings:"0")
+2026-01-12 15:13:51.373 +0530	SUCCESS		1 scenarios (0 failed, 1 passed) 4 steps (0 failed, 0 skipped, 4 passed) Execution Time 0:00:15

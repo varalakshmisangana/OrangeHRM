@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TC_01_script" package="OrngeHRM.suite" timestamp="2026-01-30 11:10:26.840 +0530"
+ tests="1"  failures="0" errors="0" time="90.209000">
+  <properties>
+   <property name="RunDate" value="2026-01-30 11:10:26.840 +0530"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="TC_01.script" assertions="1" status="success"  time="90.198">
+  </testcase>
+ </testsuite>
+</testsuites>

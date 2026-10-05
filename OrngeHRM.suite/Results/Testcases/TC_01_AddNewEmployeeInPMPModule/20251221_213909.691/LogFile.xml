@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_01_AddNewEmployeeInPMPModule_script" package="OrngeHRM.suite" timestamp="2025-12-21 21:39:09.691 +0530"
+ tests="1"  failures="2" errors="1" time="1068.677000">
+  <properties>
+   <property name="RunDate" value="2025-12-21 21:39:09.691 +0530"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="Testcases/TC_01_AddNewEmployeeInPMPModule.script" assertions="39" status="error"  time="1068.662">
+    <failure type="LogError" message="300000 not found on the screen" />
+    <failure type="FAILURE" message="Image Not Found: WaitFor Error - Unable To Find Any Image On Screen &quot;(TEXT:&quot;Amount*&quot;)&quot; within 30.00 seconds. Text not found.  Restricted Search Rectangle ((0,0),(1920,540))\n -- Execution Time 0:17:48 Testcases/TC_01_AddNewEmployeeInPMPModule.script" />
+    <error type="Exception" message="Unable To Find Any Image On Screen &quot;(TEXT:&quot;Amount*&quot;)&quot; within 30.00 seconds. Text not found." />
+  </testcase>
+ </testsuite>
+</testsuites>

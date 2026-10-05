@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_02_UserRolesAndAccessRights_script" package="OrngeHRM.suite" timestamp="2025-12-24 15:37:53.183 +0530"
+ tests="1"  failures="0" errors="0" time="169.660000">
+  <properties>
+   <property name="RunDate" value="2025-12-24 15:37:53.183 +0530"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="Testcases/TC_02_UserRolesAndAccessRights.script" assertions="12" status="error"  time="169.642">
+    <error type="Exception" message="Searching For Image: OCR Error: Operation was aborted" />
+  </testcase>
+ </testsuite>
+</testsuites>

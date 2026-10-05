@@ -1,0 +1,27 @@
+﻿2026-01-12 15:07:15.931 +0530	START		Running Test.feature
+2026-01-12 15:07:15.935 +0530	BeginScenario		
+2026-01-12 15:07:15.937 +0530	BeginStep		Given: that the Calculator app is running and in focus
+2026-01-12 15:07:16.048 +0530	typetext		[windowsKey]	2	on_that_the_calculator_app_is_running_and_in_focus	Test.script<SOURCE>
+2026-01-12 15:07:17.187 +0530	typetext		Calculator[return]	3	on_that_the_calculator_app_is_running_and_in_focus	Test.script<SOURCE>
+2026-01-12 15:08:38.781 +0530	LogWarning		Unable to Find Text: Standard -- AutoUpdate engaged	4	on_that_the_calculator_app_is_running_and_in_focus	Test.script<SOURCE>
+2026-01-12 15:08:55.571 +0530	Exception	(TEXT:"Standard")	Unable To Find Any Image On Screen "(TEXT:"Standard")" within 60.00 seconds. Text not found.	4	on_that_the_calculator_app_is_running_and_in_focus	Test.script<SOURCE>
+2026-01-12 15:08:55.620 +0530	LogError		Error at step: that the Calculator app is running and in focus	3	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:08:55.625 +0530	EndTestCase		(Duration:"99.684", Errors:"1", Exceptions:"1", StartTime:"2026-01-12 15:07:15 +0530", Successes:"0", TestCase:"that the Calculator app is running and in focus", Warnings:"1")
+2026-01-12 15:08:55.629 +0530	EndStep		Given: that the Calculator app is running and in focus
+2026-01-12 15:08:55.636 +0530	BeginStep		And: there is no current value in the calculator
+2026-01-12 15:09:01.201 +0530	waitfor	(TEXT:"0")	found at (1869, 1047)	2	on_there_is_no_current_value_in_the_calculator	Test.script<SOURCE>
+2026-01-12 15:09:01.428 +0530	LogSuccess		Start Time: 15:08:55, Stop Time: 15:09:01 step: there is no current value in the calculator	4	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:09:01.437 +0530	EndTestCase		(Duration:"5.792", Errors:"0", Exceptions:"0", StartTime:"2026-01-12 15:08:55 +0530", Successes:"1", TestCase:"there is no current value in the calculator", Warnings:"0")
+2026-01-12 15:09:01.444 +0530	EndStep		And: there is no current value in the calculator
+2026-01-12 15:09:01.449 +0530	BeginStep		When: you add 3 and 5
+2026-01-12 15:09:01.741 +0530	typetext		3	3	on_you_add_num_and_num	Test.script<SOURCE>
+2026-01-12 15:09:32.264 +0530	Exception		Searching For Image: OCR Error: Operation was aborted	4	on_you_add_num_and_num	Test.script<SOURCE>
+2026-01-12 15:09:32.284 +0530	LogError		Error at step: you add 3 and 5	5	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:09:32.290 +0530	EndTestCase		(Duration:"30.832", Errors:"1", Exceptions:"1", StartTime:"2026-01-12 15:09:01 +0530", Successes:"0", TestCase:"you add 3 and 5", Warnings:"0")
+2026-01-12 15:09:32.294 +0530	EndStep		When: you add 3 and 5
+2026-01-12 15:09:32.299 +0530	BeginStep		Then: the value displayed should be 8
+2026-01-12 15:09:32.338 +0530	LogError		Error at step: the value displayed should be 8	6	Test.feature	GHERKIN_STEP_RESULT
+2026-01-12 15:09:32.345 +0530	EndTestCase		(Duration:"0.032", Errors:"1", Exceptions:"0", StartTime:"2026-01-12 15:09:32 +0530", Successes:"0", TestCase:"the value displayed should be 8", Warnings:"0")
+2026-01-12 15:09:32.351 +0530	EndScenario		
+2026-01-12 15:09:32.360 +0530	EndTestCase		(Duration:"136.423", Errors:"4", Exceptions:"2", StartTime:"2026-01-12 15:07:15 +0530", Successes:"1", TestCase:"Test.feature", Warnings:"1")
+2026-01-12 15:09:32.388 +0530	ABORTED		1 scenarios (1 failed, 0 passed) 4 steps (3 failed, 0 skipped, 1 passed) Execution Time 0:02:16

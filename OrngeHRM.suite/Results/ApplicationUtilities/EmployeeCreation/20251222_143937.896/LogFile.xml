@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="ApplicationUtilities/OrangeHRM_script" package="OrngeHRM.suite" timestamp="2025-12-22 14:39:37.896 +0530"
+ tests="1"  failures="0" errors="0" time="0.025000">
+  <properties>
+   <property name="RunDate" value="2025-12-22 14:39:37.896 +0530"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="ApplicationUtilities/OrangeHRM.script" assertions="1" status="success"  time="0">
+  </testcase>
+ </testsuite>
+</testsuites>

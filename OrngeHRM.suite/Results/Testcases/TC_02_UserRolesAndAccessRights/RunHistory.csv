@@ -1,0 +1,7 @@
+﻿Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2025-12-24 15:37:53.183 +0530,"Aborted",0:02:49,1,1,1,"20251224_153753.183/LogFile.txt","","",11
+2025-12-24 15:58:39.572 +0530,"Failure",0:10:56,1,4,0,"20251224_155839.572/LogFile.txt","","Script Error -- Number of Errors logged: 1",47
+2026-01-08 11:56:00.727 +0530,"Aborted",0:01:31,2,0,1,"20260108_115600.727/LogFile.txt","","",0
+2026-01-08 11:57:49.995 +0530,"Failure",0:09:28,2,2,1,"20260108_115749.995/LogFile.txt","","Script Error -- Number of Errors logged: 2",8
+2026-01-08 12:32:22.263 +0530,"Aborted",0:04:33,2,1,1,"20260108_123222.263/LogFile.txt","","",8
+2026-01-08 12:54:02.518 +0530,"Failure",0:10:54,2,2,1,"20260108_125402.518/LogFile.txt","","Script Error -- Number of Errors logged: 2",8

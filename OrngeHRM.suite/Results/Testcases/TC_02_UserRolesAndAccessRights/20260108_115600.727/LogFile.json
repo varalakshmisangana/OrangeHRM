@@ -1,0 +1,111 @@
+{
+	"entries": [
+		{
+				"message": "Running Testcases/TC_02_UserRolesAndAccessRights.script",
+				"identifier": "START",
+				"timestamp": "2026-01-08 11:56:00.785 +0530"
+			},
+		{
+				"handlerName": "on_readjsontestdata",
+				"timestamp": "2026-01-08 11:56:05.457 +0530",
+				"message": "{adminPassword:\"Testing@123\", firstName:\"Lakshmi\", lastName:\"Sangana\", loginPassword:\"Testing@123\", middleName:\"Vara\", status:\"Enabled\", testcaseName:\"TC_02_UserRolesAndAccessRights\", uerRole:\"Admin\"}",
+				"scriptName": "ApplicationUtilities/InitialSetup.script",
+				"handlerLine": 10,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2026-01-08 11:56:07.081 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2026-01-08 11:56:22.288 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "found at (117, 875)",
+				"image": "(TEXT:\"Type the name\")",
+				"handlerLine": 4,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2026-01-08 11:56:23.072 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2026-01-08 11:56:24.172 +0530",
+				"message": "Firefox",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 7,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_textentry",
+				"timestamp": "2026-01-08 11:56:24.922 +0530",
+				"message": "[return]",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 9,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 11:57:00.554 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "Unable to Find Image refreshIcon",
+				"image": "refreshIcon",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 11:57:01.152 +0530",
+				"message": "Element not found ( refreshIcon )",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 6,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 11:57:07.289 +0530",
+				"scriptName": "commonUtilities/core.script",
+				"message": "UserCapturedScreenshot",
+				"image": "C:/Users/varalakshmi.sangana/Documents/EggplantAutomation/OrangeHRM/OrngeHRM.suite/Resources/screenshots/Thu, Jan 8, 2026/refreshIcon 11 57.png",
+				"handlerLine": 8,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearcache",
+				"timestamp": "2026-01-08 11:57:09.954 +0530",
+				"message": "[controlKey][shiftKey][deleteKey]",
+				"scriptName": "commonUtilities/browser.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_validateelement",
+				"timestamp": "2026-01-08 11:57:31.475 +0530",
+				"message": "Searching For Image: OCR Error: Operation was aborted",
+				"scriptName": "commonUtilities/core.script",
+				"handlerLine": 3,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"91.106\", Errors:\"2\", Exceptions:\"1\", StartTime:\"2026-01-08 11:56:00 +0530\", Successes:\"0\", TestCase:\"Testcases/TC_02_UserRolesAndAccessRights.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2026-01-08 11:57:31.985 +0530"
+			},
+		{
+				"message": "Execution Time 0:01:31 Testcases/TC_02_UserRolesAndAccessRights.script",
+				"identifier": "ABORTED",
+				"timestamp": "2026-01-08 11:57:32.226 +0530"
+			}
+	],
+	"createdTimestamp": "2026-01-08 11:56:00.848 +0530"
+}

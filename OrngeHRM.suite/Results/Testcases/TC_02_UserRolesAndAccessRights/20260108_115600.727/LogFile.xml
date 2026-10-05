@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_02_UserRolesAndAccessRights_script" package="OrngeHRM.suite" timestamp="2026-01-08 11:56:00.727 +0530"
+ tests="1"  failures="1" errors="1" time="91.237000">
+  <properties>
+   <property name="RunDate" value="2026-01-08 11:56:00.727 +0530"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="Testcases/TC_02_UserRolesAndAccessRights.script" assertions="2" status="error"  time="91.106">
+    <failure type="LogError" message="Element not found ( refreshIcon )" />
+    <error type="Exception" message="Searching For Image: OCR Error: Operation was aborted" />
+  </testcase>
+ </testsuite>
+</testsuites>

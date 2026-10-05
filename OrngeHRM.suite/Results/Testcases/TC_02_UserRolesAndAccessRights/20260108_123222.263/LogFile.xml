@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/TC_02_UserRolesAndAccessRights_script" package="OrngeHRM.suite" timestamp="2026-01-08 12:32:22.263 +0530"
+ tests="1"  failures="1" errors="1" time="273.088000">
+  <properties>
+   <property name="RunDate" value="2026-01-08 12:32:22.263 +0530"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="Testcases/TC_02_UserRolesAndAccessRights.script" assertions="10" status="error"  time="273.069">
+    <failure type="LogError" message="Element not found ( Employee Full Name )" />
+    <error type="Exception" message="Searching For Image: OCR Error: Operation was aborted" />
+  </testcase>
+ </testsuite>
+</testsuites>
