@@ -1,1 +1,4 @@
-﻿set the ScriptLogging to "Off"
+﻿--set the ScriptLogging to "Off"
+
+
+log suiteInfo()

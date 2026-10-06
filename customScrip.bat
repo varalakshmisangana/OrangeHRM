@@ -1,32 +1,20 @@
 @echo off
 setlocal
 
-echo Finding Git repository...
+set "EGGPLANT_HOME=C:\Program Files\Eggplant"
+set "SCRIPT_NAME=customFile"
+set "SCRIPT_PATH=%~dp0OrngeHRM.suite\Scripts\%SCRIPT_NAME%.script"
 
-for /f "delims=" %%G in ('git -C "%~dp0" rev-parse --show-toplevel 2^>nul') do set "GIT_ROOT=%%G"
+echo Running Eggplant script: %SCRIPT_PATH%
 
-if not defined GIT_ROOT (
-    echo ERROR: Git repository not found.
-    exit /b 1
-)
-
-echo Git repository: "%GIT_ROOT%"
-
-set "SCRIPT_PATH=%GIT_ROOT%\OrngeHRM.suite\Scripts\customFile.script"
-
-echo Script path: "%SCRIPT_PATH%"
-
-if not exist "%SCRIPT_PATH%" (
-    echo ERROR: Eggplant script not found.
-    exit /b 1
-)
-
-echo Running Eggplant script...
-
-"C:\Program Files\Eggplant\runscript.bat" "%SCRIPT_PATH%"
+call "%EGGPLANT_HOME%\runscript.bat" "%SCRIPT_PATH%"
 
 set "EXIT_CODE=%ERRORLEVEL%"
 
-echo Eggplant execution completed with exit code %EXIT_CODE%
+if %EXIT_CODE% NEQ 0 (
+    echo Eggplant script FAILED with exit code %EXIT_CODE%
+) else (
+    echo Eggplant script PASSED
+)
 
-exit /b %EXIT_CODE%
+endlocal & exit /b %EXIT_CODE%
