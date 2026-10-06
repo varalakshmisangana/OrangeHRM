@@ -1,4 +1,5 @@
 ﻿to testing
 	log "Testing"
-	log suiteInfo()
+	--log suiteInfo()
+	log the ScriptLogging
 end testing
